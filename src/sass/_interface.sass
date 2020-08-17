@@ -1,0 +1,27 @@
+.button 
+    display: flex
+    align-items: center
+    padding: 14px 25px 13px
+    border-radius: 3px
+    border: 1px solid rgba(255, 255, 255, 0.65)
+    font-size: 1.4rem
+    color: #ffffff
+    text-transform: uppercase
+    line-height: 1
+    font-weight: 500
+    transition: all 0.2s
+    &:hover
+        background: $primary
+    &--red
+        background: $secondary
+        color: #ffffff
+        border: 1px solid $secondary
+        &:hover
+            background: lighten($secondary, 6%)
+    &--white
+        background: #ffffff
+        color: $txt-color
+        border: 1px solid #ffffff
+        &:hover
+            background: transparent 
+            color: #ffffff

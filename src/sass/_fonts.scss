@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Etelka';
+    src: url('../fonts/EtelkaTextPro.eot');
+    src: local('EtelkaTextPro'),
+        url('../fonts/EtelkaTextPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EtelkaTextPro.woff2') format('woff2'),
+        url('../fonts/EtelkaTextPro.woff') format('woff'),
+        url('../fonts/EtelkaTextPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Etelka';
+    src: url('../fonts/EtelkaTextPro-Bold.eot');
+    src: local('EtelkaTextPro-Bold'),
+        url('../fonts/EtelkaTextPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EtelkaTextPro-Bold.woff2') format('woff2'),
+        url('../fonts/EtelkaTextPro-Bold.woff') format('woff'),
+        url('../fonts/EtelkaTextPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Etelka';
+    src: url('EtelkaMediumPro.eot');
+    src: local('EtelkaMediumPro'),
+        url('../fonts/EtelkaMediumPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EtelkaMediumPro.woff2') format('woff2'),
+        url('../fonts/EtelkaMediumPro.woff') format('woff'),
+        url('../fonts/EtelkaMediumPro.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
