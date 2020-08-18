@@ -14,7 +14,27 @@ document.addEventListener("DOMContentLoaded", function() {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true
-      }
+      },
+      autoHeight: true
+    });
+  } 
+
+  // Company-Swiper
+  const companySlider = document.querySelectorAll('.company-slider.swiper-container .swiper-slide');
+  if (companySlider.length > 5) {
+    var promoSwiper = new Swiper('.company-slider.swiper-container', {
+      speed: 400,
+      slidesPerView: 5,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      autoplay: {
+        delay: 2600,
+        disableOnInteraction: false,
+      },
+      loop: true
     });
   } 
 

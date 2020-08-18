@@ -1,7 +1,7 @@
 .button 
     display: flex
     align-items: center
-    padding: 14px 25px 13px
+    padding: 1em 1.7857em 0.92857em
     border-radius: 3px
     border: 1px solid rgba(255, 255, 255, 0.65)
     font-size: 1.4rem
@@ -11,17 +11,23 @@
     font-weight: 500
     transition: all 0.2s
     &:hover
-        background: $primary
+        background: #ffffff
+        color: $primary
+        box-shadow: 0px 0.5rem 1.1rem rgba(0,0,0,0.2)
     &--red
         background: $secondary
         color: #ffffff
         border: 1px solid $secondary
         &:hover
-            background: lighten($secondary, 6%)
+            background: $secondary
+            color: #ffffff
     &--white
         background: #ffffff
         color: $txt-color
         border: 1px solid #ffffff
-        &:hover
-            background: transparent 
-            color: #ffffff
+
+.title 
+    margin-right: 20px
+    font-size: 4.8rem
+    line-height: 1
+    color: #000000
