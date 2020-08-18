@@ -1,0 +1,35 @@
+.gallery
+    padding: 100px 0 50px 0
+    height: 850px
+    background: url('../images/gallery/gallery-bg.jpg') no-repeat
+    background-size: cover
+    &__wrapper
+        width: 575px
+    &__box
+        display: inline-block
+        padding: 11px 17px
+        border-radius: 18px
+        background-color: #5f94ff
+        color: #ffffff
+        line-height: 1
+    &__title
+        margin-top: 20px
+        position: relative
+        color: #ffffff
+        &::after
+            content: ''
+            position: absolute
+            bottom: -37px
+            left: 0
+            background: url('../images/gallery/gallery-title-after.svg') no-repeat
+            background-size: cover 
+            width: 156px
+            height: 17px
+    &__descr
+        margin-top: 65px
+        color: #ffffff
+        font-size: 18px
+        line-height: 28px
+    &-slider
+        .swiper-slide
+            width: auto
