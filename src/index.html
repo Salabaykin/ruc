@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Российский университет кооперации</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -12,6 +13,7 @@
     <header class="header">
         
         <div class="header-top">
+
             <div class="container">
                 <div class="header-top__wrapper">
                     <div class="header-top__branch">
@@ -31,10 +33,13 @@
                     </div>
                 </div>
             </div>
+            <!-- /.container -->
+
         </div>
         <!-- /.header-top -->
 
         <div class="header-bottom">
+
             <div class="container">
                 <div class="header-bottom__wrapper">
                     <div class="header-bottom__logo">
@@ -53,6 +58,7 @@
                     <a href="#" class="button button--red header-bottom__button">Партнёрам</a>
                 </div>
             </div>
+            <!-- /.container -->
 
             <div class="burger-button">
                 <svg class="burger-button__icon"><use xlink:href="images/sprite.svg#burger"></use></svg>
@@ -66,6 +72,47 @@
         
     </header>
     <!-- /.header -->
+
+    <div class="overlay"></div>
+
+    <div class="menu">
+        <div class="menu__wrapper">
+
+            <div class="menu__head">
+                <div class="close">
+                    <svg class="close__svg"><use xlink:href="images/sprite.svg#close"></use></svg>
+                </div>
+            </div>
+            <!-- /.menu__head -->
+
+            <div class="menu__body">
+
+                <div class="menu__nav-list">
+                    1
+                </div>
+
+                <div class="menu__nav-list">
+                    2
+                </div>
+
+                <div class="menu__block">
+                    block
+                </div>
+
+            </div>
+            <!-- /.menu__body -->
+
+            <div class="menu__bottom">
+
+                bottom
+
+            </div>
+            <!-- /.menu__bottom -->
+
+        </div>
+        <!-- /.menu__wrapper -->
+    </div>
+    <!-- /.menu -->
 
     <section class="promo">
         <div class="promo-slider swiper-container">
@@ -608,6 +655,7 @@
         
         <div class="container">
             <div class="footer__wrapper">
+
                 <div class="footer-head">
                     <div class="footer-head__logo">
                         <a href="#"><img src="images/logo.jpg" alt="Казанский кооперативный институт"></a>
@@ -674,7 +722,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="footer-bottom__contacts">
+                    <div class="contacts">
                         <ul>
                             <li>Приемная комиссия: <a href="tel:+89872979297">8 (987) 297-92-97</a></li>
                             <li>Бухгалтерия: <a href="tel:+89600516305">8 (960) 051-63-05</a></li>
@@ -685,6 +733,7 @@
                     </div>
                 </div>
                 <!-- /.footer-bottom -->
+
             </div>
         </div>
         <!-- /.container -->
@@ -692,8 +741,8 @@
     </footer>
     <!-- /.footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="js/jquery.fancybox.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/svgxuse.js" defer></script>
     <script src="js/app.js"></script>

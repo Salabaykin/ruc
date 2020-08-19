@@ -73,4 +73,19 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   cropText();
 
+  // Menu-Open
+  const menu = document.querySelector('.menu'),
+        burgerBtn = document.querySelector('.burger-button'),
+        overlay = document.querySelector('.overlay'),
+        close = document.querySelector('.close');
+
+  function toggle() {
+    overlay.classList.toggle('open');
+    menu.classList.toggle('open');
+  }
+
+  burgerBtn.addEventListener('click', () => toggle());
+  close.addEventListener('click', () => toggle());
+  overlay.addEventListener('click', () => toggle());
+
 });

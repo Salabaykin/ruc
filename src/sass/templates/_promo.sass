@@ -8,6 +8,13 @@
     height: 60rem
     &-slider
         height: 100%
+        &:hover
+            .swiper-button-prev,
+            .swiper-button-next
+                transition: opacity 0.3s
+                opacity: 1
+            .swiper-button-disabled
+                opacity: 0.5
         &__wrapper
             min-height: 60rem
             padding: 0 1.5rem
@@ -75,6 +82,8 @@
             height: 5.2rem
             background-repeat: no-repeat
             background-size: cover
+            opacity: 0
+            transition: opacity 0.3s
         .swiper-button-next
             transform: rotate(180deg)
             margin-left: 3.2rem

@@ -1,0 +1,72 @@
+.overlay
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 99
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,0.3)
+
+.menu
+    width: 114.5rem
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    z-index: 100
+    background: #ffffff
+    box-shadow: 2.5rem 0 6.5rem rgba(0, 0, 0, 0.3)
+    transform: translateX(-115%)
+    transition: all 0.6s
+    &__wrapper
+        position: relative
+        width: 100%
+        height: 100%
+    &__head
+        padding: 0 3rem
+        height: 8rem
+        box-shadow: 0 1px 0 #d2d3d5
+        background: #f5f3f0
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        .close
+            width: 3.5rem
+            height: 3.5rem
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            &:hover
+                .close__svg
+                    fill: $secondary
+            &__svg
+                width: 2.5rem
+                height: 2.5rem
+                fill: #999999
+                transition: all 0.2s
+    &__body,
+    &__bottom
+        padding: 4rem 7rem
+        width: 100%
+    &__bottom
+        position: absolute
+        bottom: 0
+        left: 0
+        border-top: 1px solid rgba(109, 110, 113, 0.35)
+
+.overlay.open
+    display: block
+    animation-name: opacity
+    animation-duration: 1s
+.menu.open
+    transform: translateX(0%)
+
+@keyframes opacity
+    0%
+        opacity: 0 
+    100%
+        opacity: 1

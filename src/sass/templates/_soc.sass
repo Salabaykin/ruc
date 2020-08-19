@@ -1,0 +1,35 @@
+.soc
+    display: flex
+    justify-content: space-between
+    align-items: center
+    a 
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+    &__svg
+        width: 28px
+        height: 28px
+        transition: all 0.2s
+    &__vk,
+    &__facebook,
+    &__instagram,
+    &__youtube,
+    &__twitter,
+        &:hover
+            .soc__svg
+                fill: $secondary
+    &__vk
+        .soc__svg
+            fill: #4872A9
+    &__facebook
+        .soc__svg
+            fill: #3B5998
+    &__instagram
+        .soc__svg
+            fill: #CD4781
+    &__youtube
+        .soc__svg
+            fill: #FF0000
+    &__twitter
+        .soc__svg
+            fill: #5DA9DD
