@@ -14,8 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         el: '.swiper-pagination',
         type: 'bullets',
         clickable: true
-      },
-      autoHeight: true
+      }
     });
   } 
 
@@ -43,13 +42,35 @@ document.addEventListener("DOMContentLoaded", function() {
   if (gallerySlider.length > 5) {
     var gallerySwiper = new Swiper('.gallery-slider.swiper-container', {
       speed: 400,
-      slidesPerView: 'auto',
-      loop: true,
+      slidesPerView: 3,
+      spaceBetween: 30,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next.gallery-slider__next',
+        prevEl: '.swiper-button-prev.gallery-slider__prev',
       },
+      breakpoints: {
+        // >= 1380px
+        1380: {
+          slidesPerView: 4
+        }
+      }
     });
   } 
+
+  // Crop-Text
+  const cropElement = document.querySelectorAll('.crop-text'), // выбор элементов 
+        size = 200, // кол-во символов 
+        endCharacter = '...'; // окончание 
+  function cropText() {
+    cropElement.forEach(el => {
+      let text = el.innerText;
+
+      if (el.innerText.length > size) {
+          text = text.substr(0, size);
+          el.innerText = `${text} ${endCharacter}`;
+      }
+    });
+  }
+  cropText();
 
 });
