@@ -10,71 +10,7 @@
 </head>
 <body>
 
-    <header class="header">
-        
-        <div class="header-top">
-
-            <div class="container">
-                <div class="header-top__wrapper">
-                    <div class="header-top__branch">
-                        <svg class="header-top__icon"><use xlink:href="images/sprite.svg#map"></use></svg>
-                        <span>Казанский кооперативный институт</span>
-                    </div>
-                    <div class="header-top__email">
-                        <svg class="header-top__icon"><use xlink:href="images/sprite.svg#email"></use></svg>
-                        <a href="mailto:kazan@ruc.su">kazan@ruc.su</a>
-                    </div>
-                    <div class="header-top__info">
-                        <a class="button header-top--button" href="#">Сведения об образовательной организации</a>
-                        <div class="header-top__eye">
-                            <svg class="header-top__icon"><use xlink:href="images/sprite.svg#eye"></use></svg>
-                            <a href="#">Для слабовидящих</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /.container -->
-
-        </div>
-        <!-- /.header-top -->
-
-        <div class="header-bottom">
-
-            <div class="container">
-                <div class="header-bottom__wrapper">
-                    <div class="header-bottom__logo">
-                        <a href="#"><img src="images/logo.jpg" alt="Российский университет кооперации"></a>
-                    </div>
-                    <nav class="nav">
-                        <ul>
-                            <li class="nav__list"><a href="#">АБИТУРИЕНТУ</a></li>
-                            <li class="nav__list"><a href="#">СТУДЕНТУ</a></li>
-                            <li class="nav__list"><a href="#">ВЫПУСКНИКУ</a></li>
-                            <li class="nav__list"><a href="#">НАУКА</a></li>
-                            <li class="nav__list"><a href="#">ВАКАНСИИ</a></li>
-                            <li class="nav__list"><a href="#">COVID-19 Инфо</a></li>
-                        </ul>
-                    </nav>
-                    <a href="#" class="button button--red header-bottom__button">Партнёрам</a>
-                </div>
-            </div>
-            <!-- /.container -->
-
-            <div class="burger-button">
-                <svg class="burger-button__icon"><use xlink:href="images/sprite.svg#burger"></use></svg>
-            </div>
-
-            <div class="search-button">
-                <svg class="search-button__icon"><use xlink:href="images/sprite.svg#search"></use></svg>
-            </div>
-        </div>
-        <!-- /.header-bottom -->
-        
-    </header>
-    <!-- /.header -->
-
     <div class="overlay"></div>
-
     <div class="menu">
         <div class="menu__wrapper">
 
@@ -113,6 +49,81 @@
         <!-- /.menu__wrapper -->
     </div>
     <!-- /.menu -->
+
+    <header class="header">
+        
+        <div class="header-top">
+
+            <div class="container">
+                <div class="header-top__wrapper">
+                    <div class="header-top__branch">
+                        <svg class="header-top__icon"><use xlink:href="images/sprite.svg#map"></use></svg>
+                        <span>Казанский кооперативный институт</span>
+                    </div>
+                    <div class="header-top__email">
+                        <svg class="header-top__icon"><use xlink:href="images/sprite.svg#email"></use></svg>
+                        <a href="mailto:kazan@ruc.su">kazan@ruc.su</a>
+                    </div>
+                    <div class="header-top__info">
+                        <a class="button header-top--button" href="#">Сведения об образовательной организации</a>
+                        <div class="header-top__eye">
+                            <svg class="header-top__icon"><use xlink:href="images/sprite.svg#eye"></use></svg>
+                            <a href="#">Для слабовидящих</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.header-top -->
+
+        <div class="header-bottom">
+
+            <div class="container header-bottom__container">
+                <div class="burger-button">
+                    <svg class="burger-button__icon"><use xlink:href="images/sprite.svg#burger"></use></svg>
+                </div>
+                <div class="header-bottom__wrapper">
+                    <div class="header-bottom__logo">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Российский университет кооперации">
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li class="nav__list"><a href="#">АБИТУРИЕНТУ</a></li>
+                            <li class="nav__list"><a href="#">СТУДЕНТУ</a></li>
+                            <li class="nav__list"><a href="#">ВЫПУСКНИКУ</a></li>
+                            <li class="nav__list"><a href="#">НАУКА</a></li>
+                            <li class="nav__list"><a href="#">ВАКАНСИИ</a></li>
+                            <li class="nav__list"><a href="#">COVID-19 Инфо</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="button button--red header-bottom__button">Партнёрам</a>
+                </div>
+                <div class="search-button">
+                    <svg class="search-button__icon"><use xlink:href="images/sprite.svg#search"></use></svg>
+                </div>
+            </div>
+            <!-- /.container -->
+
+            <div class="search">
+                <div class="container">
+                    <form action="#" class="search-form">
+                        <input class="search-form__input" type="search" name="search" pattern=".*\S.*" placeholder="Поиск..." required>
+                        <button class="search-form__btn">
+                            <svg class="search-form__svg"><use xlink:href="images/sprite.svg#searcharrow"></use></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.header-bottom -->
+        
+    </header>
+    <!-- /.header -->
 
     <section class="promo">
         <div class="promo-slider swiper-container">
@@ -207,7 +218,9 @@
     <!-- /.promo -->
 
     <section class="news">
+
         <div class="container">
+
             <div class="news__head">
                 <h3 class="title">Новости, события и анонсы</h3>
                 <div class="news__more">
@@ -348,124 +361,400 @@
 
             </div>
             <!-- /.news__wrapper -->
+            
         </div>
         <!-- /.container -->
+
     </section>
     <!-- /.news -->
 
     <section class="programme">
+
         <div class="container">
             <h3 class="title programme__title">Программы обучения</h3>
 
             <div class="programme__wrapper">
+
                 <h5 class="programme__subtitle">Возьми будущее в свои руки</h5>
+
                 <div class="programme-tabs">
-                    Tabs
+
+                    <button class="programme-tabs__link active" data-country="tab-1">БАКАЛАВРИАТ</button>
+                    <button class="programme-tabs__link" data-country="tab-2">Специалитет</button>
+                    <button class="programme-tabs__link" data-country="tab-3">ЦЕНТР КАРЬЕРЫ, ПРАКТИКИ  И ТРУДОУСТРОЙСТВА</button>
+                    <button class="programme-tabs__link" data-country="tab-4">КУРСЫ ДПО</button>
+                    <button class="programme-tabs__link" data-country="tab-5">ОГЭ И ЕГЭ</button>
+                    <button class="programme-tabs__link" data-country="tab-6">МАГИСТРАТУРА</button>
+                    <button class="programme-tabs__link" data-country="tab-7">АСПИРАНТУРА</button>
+
                 </div>
                 <!-- /.programme-tabs -->
 
-                <div class="programme__content">
+                <div class="programme-tabs__body">
 
-                    <a href="#" class="programme-item">
-                        <div class="programme-item__icon">
-                            <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
-                        </div>
-                        <div class="programme-item__text">
-                            <div class="programme-item__title">
-                                Экономика
-                            </div>
-                            <div class="programme-item__descr">
-                                Экономика малого и среднего бизнеса
-                            </div>
-                        </div>
-                    </a>
-                    <!-- /.programme-item -->
+                    <div id="tab-1" class="programme__content active">
 
-                    <a href="#" class="programme-item">
-                        <div class="programme-item__icon">
-                            <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-2"></use></svg>
-                        </div>
-                        <div class="programme-item__text">
-                            <div class="programme-item__title">
-                                Технология продукции и организация общественного питания
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
                             </div>
-                            <div class="programme-item__descr">
-                                Организация производства и обслуживания в индустрии питания
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
                             </div>
-                            <span class="programme-item__budget">Бюджетные места</span>
-                        </div>
-                    </a>
-                    <!-- /.programme-item -->
+                        </a>
+                        <!-- /.programme-item -->
+    
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-2"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Технология продукции и организация общественного питания
+                                </div>
+                                <div class="programme-item__descr">
+                                    Организация производства и обслуживания в индустрии питания
+                                </div>
+                                <span class="programme-item__budget">Бюджетные места</span>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+    
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-3"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Бизнес-информатика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Электронный бизнес
+                                </div>
+                                <span class="programme-item__budget">Бюджетные места</span>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+    
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-4"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Товароведение
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экспертиза качества и безопасности товаров
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+    
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-5"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Гостиничное дело
+                                </div>
+                                <div class="programme-item__descr">
+                                    Отельный бизнес
+                                </div>
+                                <span class="programme-item__budget">Бюджетные места</span>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+    
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-6"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Менеджмент
+                                </div>
+                                <div class="programme-item__descr">
+                                    Маркетинг
+                                </div>
+                                <span class="programme-item__budget">Бюджетные места</span>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+    
+                    </div>
+                    <!-- /.programme__content -->
 
-                    <a href="#" class="programme-item">
-                        <div class="programme-item__icon">
-                            <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-3"></use></svg>
-                        </div>
-                        <div class="programme-item__text">
-                            <div class="programme-item__title">
-                                Бизнес-информатика
-                            </div>
-                            <div class="programme-item__descr">
-                                Электронный бизнес
-                            </div>
-                            <span class="programme-item__budget">Бюджетные места</span>
-                        </div>
-                    </a>
-                    <!-- /.programme-item -->
+                    <div id="tab-2" class="programme__content">
 
-                    <a href="#" class="programme-item">
-                        <div class="programme-item__icon">
-                            <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-4"></use></svg>
-                        </div>
-                        <div class="programme-item__text">
-                            <div class="programme-item__title">
-                                Товароведение
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
                             </div>
-                            <div class="programme-item__descr">
-                                Экспертиза качества и безопасности товаров
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <!-- /.programme-item -->
+                        </a>
+                        <!-- /.programme-item -->
+    
+                    </div>
+                    <!-- /.programme__content -->
 
-                    <a href="#" class="programme-item">
-                        <div class="programme-item__icon">
-                            <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-5"></use></svg>
-                        </div>
-                        <div class="programme-item__text">
-                            <div class="programme-item__title">
-                                Гостиничное дело
-                            </div>
-                            <div class="programme-item__descr">
-                                Отельный бизнес
-                            </div>
-                            <span class="programme-item__budget">Бюджетные места</span>
-                        </div>
-                    </a>
-                    <!-- /.programme-item -->
+                    <div id="tab-3" class="programme__content">
 
-                    <a href="#" class="programme-item">
-                        <div class="programme-item__icon">
-                            <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-6"></use></svg>
-                        </div>
-                        <div class="programme-item__text">
-                            <div class="programme-item__title">
-                                Менеджмент
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
                             </div>
-                            <div class="programme-item__descr">
-                                Маркетинг
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
                             </div>
-                            <span class="programme-item__budget">Бюджетные места</span>
-                        </div>
-                    </a>
-                    <!-- /.programme-item -->
+                        </a>
+                        <!-- /.programme-item -->
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+    
+                    </div>
+                    <!-- /.programme__content -->
+
+                    <div id="tab-4" class="programme__content">
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+    
+                    </div>
+                    <!-- /.programme__content -->
+
+                    <div id="tab-5" class="programme__content">
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+    
+                    </div>
+                    <!-- /.programme__content -->
+
+                    <div id="tab-6" class="programme__content">
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+    
+                    </div>
+                    <!-- /.programme__content -->
+
+                    <div id="tab-7" class="programme__content">
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+
+                        <a href="#" class="programme-item">
+                            <div class="programme-item__icon">
+                                <svg class="programme-item__svg"><use xlink:href="images/sprite.svg#programme-icon-1"></use></svg>
+                            </div>
+                            <div class="programme-item__text">
+                                <div class="programme-item__title">
+                                    Экономика
+                                </div>
+                                <div class="programme-item__descr">
+                                    Экономика малого и среднего бизнеса
+                                </div>
+                            </div>
+                        </a>
+                        <!-- /.programme-item -->
+    
+                    </div>
+                    <!-- /.programme__content -->
 
                 </div>
-                <!-- /.programme__content -->
+                <!-- /.programme-tabs__body -->
+
             </div>
             <!-- /.programme__wrapper -->
+
         </div>
         <!-- /.container -->
+
     </section>
     <!-- /.programme -->
     
@@ -743,7 +1032,7 @@
 
     <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="js/jquery.fancybox.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/svgxuse.js" defer></script>
     <script src="js/app.js"></script>
 

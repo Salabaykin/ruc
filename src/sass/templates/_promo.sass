@@ -5,7 +5,19 @@
     background-size: cover
     background-position: center top
     width: 100%
-    height: 60rem
+    min-height: 60rem
+    @media ( max-width: 1150px )
+        min-height: 50rem
+    @media ( max-width: 1024px )
+        background: url('../images/promo/mob-promo-bg.jpg')
+        background-position: right bottom
+        background-size: cover
+        min-height: auto        
+    @media ( max-width: 620px )
+        background: url('../images/promo/xs-mob-promo-bg.png')
+        background-color: $secondary
+        background-position: right top     
+        background-size: cover  
     &-slider
         height: 100%
         &:hover
@@ -20,12 +32,22 @@
             padding: 0 1.5rem
             display: flex
             justify-content: space-between
+            @media ( max-width: 1150px )
+                min-height: 50rem
+            @media ( max-width: 1024px )
+                min-height: auto
         &__images
             margin-left: -7.7rem
             width: 56.5rem
             min-height: 60rem
             display: flex
             align-items: flex-end
+            @media ( max-width: 1150px )
+                width: 45rem
+                margin-left: 0
+                min-height: auto
+            @media ( max-width: 1024px )
+                display: none
             img 
                 display: block
                 max-width: 100%
@@ -37,12 +59,36 @@
             display: flex
             flex-direction: column
             justify-content: center
+            @media ( max-width: 1330px )
+                margin-right: 2rem
+            @media ( max-width: 1150px )
+                max-width: 62rem
+            @media ( max-width: 1080px )
+                max-width: 55rem
+            @media ( max-width: 1024px )
+                margin-right: 4.5rem
+                margin-left: 4.5rem
+                margin-top: 7rem
+                margin-bottom: 10rem
+            @media ( max-width: 767px )
+                max-width: 100%
+                margin-top: 4rem
+                margin-bottom: 7rem
+            @media ( max-width: 575px )
+                margin-right: 1.8rem
+                margin-left: 1.8rem
         &__title
             position: relative
             margin-bottom: 1.1em
             color: #ffffff
             font-size: 6rem
             line-height: 1em
+            @media ( max-width: 1150px )
+                font-size: 5rem
+            @media ( max-width: 767px )
+                font-size: 4rem
+            @media ( max-width: 575px )
+                font-size: 3rem
             &::after
                 content: ''
                 position: absolute
@@ -57,10 +103,14 @@
             color: #ffffff
             font-size: 1.8rem
             line-height: 1.55556em
+            @media ( max-width: 1150px )
+                font-size: 1.5rem
         &__block
             display: flex
+            flex-wrap: wrap
         &__button
             margin-right: 0.55556em
+            margin-bottom: 0.555556em
             padding: 1.11111em 1.94444em 1em
             font-size: 1.8rem
             text-transform: uppercase
@@ -70,8 +120,19 @@
                 color: $secondary
             &--blue
                 color: $primary
+            @media ( max-width: 1150px )
+                font-size: 1.5rem
+            @media ( max-width: 767px )
+                font-size: 1.3rem
+            @media ( max-width: 550px )
+                width: 100%
+                margin-right: 0
         .swiper-wrapper
             height: 60rem
+            @media ( max-width: 1150px )
+                height: 55rem
+            @media ( max-width: 1024px )
+                height: auto
         .swiper-button-prev:after,
         .swiper-button-next:after
             display: none
@@ -84,12 +145,27 @@
             background-size: cover
             opacity: 0
             transition: opacity 0.3s
+            @media ( max-width: 1024px )
+                opacity: 1
+            @media ( max-width: 767px )
+                width: 2.65rem
+                height: 3.2rem
         .swiper-button-next
             transform: rotate(180deg)
             margin-left: 3.2rem
         .swiper-pagination
             bottom: 5rem
             padding: 0 1.5rem
+            @media ( max-width: 1024px )
+                text-align: left
+                margin-right: 4.5rem
+                margin-left: 4.5rem
+                bottom: 4rem
+            @media ( max-width: 767px )
+                bottom: 3rem
+            @media ( max-width: 620px )
+                text-align: center
+                margin: 0
         .swiper-pagination-bullets .swiper-pagination-bullet
             margin: 0 1.5rem
             background: #ffffff

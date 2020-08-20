@@ -61,13 +61,14 @@ document.addEventListener("DOMContentLoaded", function() {
   const cropElement = document.querySelectorAll('.crop-text'), // выбор элементов 
         size = 200, // кол-во символов 
         endCharacter = '...'; // окончание 
+
   function cropText() {
-    cropElement.forEach(el => {
+    cropElement.forEach(function(el) {
       let text = el.innerText;
 
       if (el.innerText.length > size) {
           text = text.substr(0, size);
-          el.innerText = `${text} ${endCharacter}`;
+          el.innerText = text + endCharacter;
       }
     });
   }
@@ -84,8 +85,37 @@ document.addEventListener("DOMContentLoaded", function() {
     menu.classList.toggle('open');
   }
 
-  burgerBtn.addEventListener('click', () => toggle());
-  close.addEventListener('click', () => toggle());
-  overlay.addEventListener('click', () => toggle());
+  burgerBtn.addEventListener('click', function() {toggle()});
+  close.addEventListener('click', function() {toggle()});
+  overlay.addEventListener('click', function() {toggle()});
+
+  // Programme-Tabs
+  const tabLinks = document.querySelectorAll('.programme-tabs__link'),
+        tabContent = document.querySelectorAll(".programme__content");
+
+  tabLinks.forEach(function(el) {
+    el.addEventListener("click", openTabs);
+  });
+
+  function openTabs(el) {
+    const btnTarget = el.currentTarget;
+    const country = btnTarget.dataset.country;
+    tabContent.forEach(function(el) {
+        el.classList.remove('active');
+    });
+    tabLinks.forEach(function(el) {
+        el.classList.remove('active');
+    });
+    document.querySelector('#' + country).classList.add('active');
+    btnTarget.classList.add('active');
+  }
+
+  // Search-Block 
+  const searchButton = document.querySelector('.search-button'),
+        searchForm = document.querySelector('.search');
+
+  searchButton.addEventListener('click', function() {
+    searchForm.classList.toggle('active');
+  })
 
 });

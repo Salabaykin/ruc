@@ -1,0 +1,40 @@
+.programme-tabs 
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    &__link 
+        margin: 0 0.714285em 1.07142857em 0
+        background: #ffffff
+        border: none
+        outline: none
+        cursor: pointer
+        padding: 1.07142857em 2.142857em
+        border-radius: 1.642857em
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 1.4rem
+        color: #000000
+        text-transform: uppercase
+        transition: 0.3s ease
+        &:hover
+            color: #ffffff
+            background: $secondary
+
+.programme-tabs__link.active 
+    background: $secondary
+    color: #ffffff
+
+.programme
+    &__content 
+        display: none
+
+.programme__content.active 
+    display: flex
+    animation: opacity 0.9s ease
+ 
+@keyframes opacity 
+    0% 
+       opacity: 0
+    100% 
+       opacity: 1
