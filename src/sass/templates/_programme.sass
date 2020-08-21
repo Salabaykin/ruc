@@ -3,6 +3,9 @@
     margin-top: 6.5rem
     padding: 8rem 0
     background: $primary
+    @media ( max-width: 1200px )
+        margin-top: 3rem
+        padding: 4rem 0 2rem 0
     &::after
         content: ''
         position: absolute
@@ -29,6 +32,10 @@
         margin-bottom: 0.66667em
         color: #ffffff
         font-size: 3rem
+        @media ( max-width: 1200px )
+            font-size: 2rem
+        @media ( max-width: 575px )
+            font-size: 1.8rem
     &__wrapper
         position: relative
         z-index: 5
@@ -43,24 +50,32 @@
         margin-bottom: 0.7rem
         display: flex
         padding: 2rem
-        width: 38.5rem
-        min-height: 18rem
+        width: 32.65%
+        // min-height: 18rem
         box-shadow: 0 1rem 2rem rgba(204, 204, 223, 0.3)
         border-radius: 1rem
         background-color: #ffffff
         transition: all 0.2s
-        &:nth-child(3)
-            margin-right: 0
         &:last-child
             margin-right: 0
-        &:hover
-            box-shadow: 0 0.8rem 2rem rgba(0,0,0, 0.35)
+        @media ( max-width: 1240px )
+            width: 49%
+        @media ( max-width: 767px )
+            width: 100%
+            margin-right: 0
+        @media ( max-width: 575px )
+            padding: 1.2rem
         &__icon
             margin-right: 2rem
+            @media ( max-width: 575px )
+                margin-right: 1.2rem
         &__svg
             width: 4.5rem
             height: 4.5rem
             fill: $primary
+            @media ( max-width: 575px )
+                width: 3.5rem
+                height: 3.5rem
         &__title
             margin-bottom: 0.571428em
             color: $secondary
@@ -68,10 +83,14 @@
             font-weight: 500
             text-transform: uppercase
             letter-spacing: 0.012857em
+            @media ( max-width: 575px )
+                font-size: 1.2rem
         &__descr
             margin-bottom: 1rem
             font-weight: 500
             line-height: 2rem
+            @media ( max-width: 575px )
+                font-size: 1.4rem
         &__budget
             padding: 0.35714em 0.85714em
             border-radius: 0.92857em
@@ -80,3 +99,5 @@
             font-size: 1.4rem
             line-height: 1
             align-self: flex-end
+            @media ( max-width: 575px )
+                font-size: 1.2rem

@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   } 
 
+
   // Company-Swiper
   const companySlider = document.querySelectorAll('.company-slider.swiper-container .swiper-slide');
   if (companySlider.length > 5) {
@@ -33,29 +34,48 @@ document.addEventListener("DOMContentLoaded", function() {
         delay: 2600,
         disableOnInteraction: false,
       },
-      loop: true
+      loop: true,
+      breakpoints: {
+        // >= 991px
+        991: {
+          slidesPerView: 4
+        },
+        870: {
+          slidesPerView: 3
+        },
+        460: {
+          slidesPerView: 2
+        }
+      },
     });
   } 
 
-  // gallery-Swiper
+
+  // Gallery-Swiper
   const gallerySlider = document.querySelectorAll('.gallery-slider.swiper-container .swiper-slide');
   if (gallerySlider.length > 5) {
     var gallerySwiper = new Swiper('.gallery-slider.swiper-container', {
       speed: 400,
-      slidesPerView: 3,
+      slidesPerView: 5,
       spaceBetween: 30,
       navigation: {
         nextEl: '.swiper-button-next.gallery-slider__next',
         prevEl: '.swiper-button-prev.gallery-slider__prev',
       },
       breakpoints: {
-        // >= 1380px
-        1380: {
+        1650: {
           slidesPerView: 4
+        },
+        1380: {
+          slidesPerView: 3
+        },
+        1024: {
+          slidesPerView: 2
         }
       }
     });
   } 
+
 
   // Crop-Text
   const cropElement = document.querySelectorAll('.crop-text'), // выбор элементов 
@@ -74,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   cropText();
 
+
   // Menu-Open
   const menu = document.querySelector('.menu'),
         burgerBtn = document.querySelector('.burger-button'),
@@ -88,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
   burgerBtn.addEventListener('click', function() {toggle()});
   close.addEventListener('click', function() {toggle()});
   overlay.addEventListener('click', function() {toggle()});
+
 
   // Programme-Tabs
   const tabLinks = document.querySelectorAll('.programme-tabs__link'),
@@ -109,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector('#' + country).classList.add('active');
     btnTarget.classList.add('active');
   }
+
 
   // Search-Block 
   const searchButton = document.querySelector('.search-button'),
