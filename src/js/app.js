@@ -58,19 +58,33 @@ document.addEventListener("DOMContentLoaded", function() {
       speed: 400,
       slidesPerView: 5,
       spaceBetween: 30,
+      loop: false,
       navigation: {
         nextEl: '.swiper-button-next.gallery-slider__next',
         prevEl: '.swiper-button-prev.gallery-slider__prev',
       },
       breakpoints: {
         1650: {
-          slidesPerView: 4
+          slidesPerView: 4,
+          centeredSlides: false,
+          loop: false
         },
         1380: {
-          slidesPerView: 3
+          slidesPerView: 3,
+          centeredSlides: false,
+          loop: false
         },
-        1024: {
-          slidesPerView: 2
+        991: {
+          slidesPerView: 'auto',
+          centeredSlides: true,
+          spaceBetween: 10,
+          loop: true
+        },
+        670: {
+          slidesPerView: 'auto',
+          centeredSlides: true,
+          spaceBetween: 10,
+          loop: true
         }
       }
     });

@@ -2,27 +2,50 @@
     background: #ffffff
     &__wrapper
         padding: 8rem 0 6rem 0
+        @media ( max-width: 1200px )
+            padding: 3.5rem 0
     &-head
         margin-bottom: 5rem
         display: flex
+        @media ( max-width: 1100px )
+            flex-direction: column
+            margin-bottom: 3rem
         &__logo
             margin-right: 9rem
             display: flex
             flex-direction: column
             max-width: 20.8rem
+            @media ( max-width: 1100px )
+                flex-direction: row
+                max-width: 40rem
             a 
                 margin-bottom: 4rem
+                display: flex
+                align-items: center
+                @media ( max-width: 1100px )
+                    margin-bottom: 0
+                    margin-right: 4rem
+                    &:last-child
+                        margin-right: 0
             img
                 max-width: 100%
         &__wrapper
             width: 100%
             display: flex
-            justify-content: space-between
+            @media ( max-width: 1100px )
+                margin-top: 3.5rem
+            @media ( max-width: 800px )
+                flex-direction: column
         &__nav
             min-width: 12rem
             max-width: 17rem
-            margin-right: 4rem
+            margin-right: 10rem
+            @media ( max-width: 800px )
+                margin-right: 0
+                margin-bottom: 4rem
+                max-width: 100%
             .nav
+                ul 
                 &__list
                     margin-bottom: 2.5rem
                     &:last-child
@@ -33,21 +56,26 @@
                         font-size: 1.4rem
                         text-transform: uppercase
                         transition: color 0.2s
+                        @media ( max-width: 991px )
+                            font-size: 1.2rem
                         &:hover
                             color: $secondary
         &__categories
-            flex: 1
+            width: 70%
             .nav 
                 ul 
                     height: 260px
                     display: flex
                     flex-direction: column
                     flex-wrap: wrap 
-                    align-content: flex-end
+                    @media ( max-width: 767px )
+                        height: 100%
                 &__list
                     margin-bottom: 2rem
                     margin-right: 6rem
                     max-width: 23.5rem
+                    @media ( max-width: 991px )
+                        margin-right: 2rem
                     &:last-child
                         margin-bottom: 0
                     a 
@@ -55,6 +83,8 @@
                         color: #6d6e71
                         font-size: 1.6rem
                         transition: all 0.2s
+                        @media ( max-width: 991px )
+                            font-size: 1.4rem
                         &::after
                             content: ''
                             position: absolute
@@ -75,12 +105,30 @@
         align-items: center
         width: 100%
         border-top: 1px solid rgba(109, 110, 113, 0.35)
+        @media ( max-width: 1100px )
+            padding-top: 3rem
+        @media ( max-width: 767px )
+            flex-direction: column-reverse
+            align-items: flex-start
         &__copy
             margin-right: 22rem
+            @media ( max-width: 1100px )
+                margin-right: 10rem
+            @media ( max-width: 767px )
+                margin-right: 0
+                margin-top: 3rem
+            @media ( max-width: 575px )
+                width: 100%
         &__txt
             margin-top: 3.21428571em
             color: #6d6e71
             font-size: 1.4rem
+            @media ( max-width: 767px )
+                font-size: 1.2rem
+                margin-top: 3rem
+            @media ( max-width: 370px )
+                font-size: 1.1rem
+
         
 
 
