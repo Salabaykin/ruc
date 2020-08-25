@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сведения об образовательной организации</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
+    <div class="menu">
+        <div class="menu__wrapper">
+
+            <div class="menu__head">
+                <div class="close">
+                    <svg class="close__svg"><use xlink:href="images/sprite.svg#close"></use></svg>
+                </div>
+            </div>
+            <!-- /.menu__head -->
+
+            <div class="menu__body">
+
+                <div class="menu__body--wrapper">
+
+                    <div class="menu__nav-list">
+
+                        <div class="menu__nav menu__nav--main">
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">АБИТУРИЕНТУ</a></li>
+                                    <li class="nav__list"><a href="#">СТУДЕНТУ</a></li>
+                                    <li class="nav__list"><a href="#">ВЫПУСКНИКУ</a></li>
+                                    <li class="nav__list"><a href="#">НАУКА</a></li>
+                                    <li class="nav__list"><a href="#">ВАКАНСИИ</a></li>
+                                    <li class="nav__list"><a href="#">COVID-19 Инфо</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+    
+                        <div class="menu__nav menu__nav--second">
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">ТРУДОУСТРОЙСТВО</a></li>
+                                    <li class="nav__list"><a href="#">КАЛЕНДАРЬ</a></li>
+                                    <li class="nav__list"><a href="#">WORLDSKILLS</a></li>
+                                    <li class="nav__list"><a href="#">МЕЖДУНАРОДНЫЕ ПРОГРАММЫ</a></li>
+                                    <li class="nav__list"><a href="#">КООПЕРАТОРАМ</a></li>
+                                    <li class="nav__list"><a href="#">СМИ О НАС</a></li>
+                                    <li class="nav__list"><a href="#">ПАРТНЕРЫ</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="menu__nav-list">
+                        
+                        <div id="accordion" class="accordion">
+    
+                            <div class="accordion-item show">
+                              <div class="accordion-item__header">
+                                БАКАЛАВРИАТ
+                              </div>
+                              <!-- /.accordion-item__header -->
+                              <div class="accordion-item__content">
+                                     
+                                    <nav class="nav">
+                                        <ul>
+                                            <li class="nav__list"><a href="#">Экономика</a></li>
+                                            <li class="nav__list"><a href="#">Менеджмент</a></li>
+                                            <li class="nav__list"><a href="#">Товароведение</a></li>
+                                            <li class="nav__list"><a href="#">Бизнес-информатика</a></li>
+                                            <li class="nav__list"><a href="#">Технология продукции и организация общественного питания</a></li>
+                                            <li class="nav__list"><a href="#">Туризм</a></li>
+                                            <li class="nav__list"><a href="#">Гостиничное дело</a></li>
+                                            <li class="nav__list"><a href="#">Сервис</a></li>
+                                        </ul>
+                                    </nav>
+          
+                              </div>
+                              <!-- /.accordion-item__content -->
+                            </div>
+                            <!-- /.accordion-item -->
+          
+                            <div class="accordion-item show">
+                              <div class="accordion-item__header">
+                                Специалитет
+                              </div>
+                              <!-- /.accordion-item__header -->
+                              <div class="accordion-item__content">
+                                
+                                <nav class="nav">
+                                    <ul>
+                                        <li class="nav__list"><a href="#">Таможенная логистика</a></li>
+                                        <li class="nav__list"><a href="#">Таможенные платежи</a></li>
+                                        <li class="nav__list"><a href="#">Таможенный постаудит</a></li>
+                                        <li class="nav__list"><a href="#">Правоохранительная деятельность и информационные технологии в таможенном деле</a></li>
+                                    </ul>
+                                </nav>
+    
+                              </div>
+                              <!-- /.accordion-item__content -->
+                            </div>
+                            <!-- /.accordion-item -->
+    
+                        </div>
+                        <!-- /.accordion -->
+
+                        <div class="menu__nav--third">
+                            
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">Учредитель</a></li>
+                                    <li class="nav__list"><a href="#">Университет</a></li>
+                                    <li class="nav__list"><a href="#">Региональная сеть</a></li>
+                                    <li class="nav__list"><a href="#">Об институте</a></li>
+                                    <li class="nav__list"><a href="#">Сведения об образовательной организации</a></li>
+                                    <li class="nav__list"><a href="#">Факультеты и кафедры</a></li>
+                                    <li class="nav__list"><a href="#">Библиотечно-информационный центр</a></li>
+                                    <li class="nav__list"><a href="#">Внеучебная деятельность</a></li>
+                                    <li class="nav__list"><a href="#">Карта сайта</a></li>
+                                    <li class="nav__list"><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+    
+                    </div>
+
+                </div>
+
+                <div class="menu__block">
+                    
+                    <div class="menu-search">
+                        <form action="#" class="menu-search__form">
+                            <input class="menu-search__input" type="search" name="menu-search" pattern=".*\S.*" placeholder="Поиск по сайту..." required>
+                        </form>
+                    </div>
+
+                    <a href="#" class="button menu__button">Партнёрам</a>
+
+                    <div class="menu-email">
+                        <svg class="header-top__icon menu--mob-icon"><use xlink:href="images/sprite.svg#email"></use></svg>
+                        <a href="mailto:kazan@ruc.su">kazan@ruc.su</a>
+                    </div>
+
+                    <div class="menu-branch">
+                        <svg class="header-top__icon menu--mob-icon"><use xlink:href="images/sprite.svg#map"></use></svg>
+                        <span class="modal-link">Казанский кооперативный институт</span>
+                    </div>
+
+                    <a class="button menu--button" href="#">Сведения об образовательной организации</a>
+
+                </div>
+
+            </div>
+            <!-- /.menu__body -->
+
+            <div class="menu__bottom">
+
+                <div class="menu__bottom--wrap">
+
+                    <a class="menu__bottom--logo" href="#"><img src="images/logo-kazan.png" alt="Казанский кооперативный институт"></a>    
+
+                    <div class="soc">
+                        <a href="#" class="soc__vk">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#vk"></use></svg>
+                        </a>
+                        <a href="#" class="soc__facebook">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#facebook"></use></svg>
+                        </a>
+                        <a href="#" class="soc__instagram">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#instagram"></use></svg>
+                        </a>
+                        <a href="#" class="soc__youtube">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#youtube"></use></svg>
+                        </a>
+                        <a href="#" class="soc__twitter">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#twitter"></use></svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="contacts">
+                    <ul>
+                        <li>Приемная комиссия: <a href="tel:+89872979297">8 (987) 297-92-97</a></li>
+                        <li>Бухгалтерия: <a href="tel:+89600516305">8 (960) 051-63-05</a></li>
+                        <li>Отдел кадров: <a href="tel:+88432103026">8 (843) 210-30-26</a></li>
+                        <li>Деканаты: <a href="tel:+88432103025">8 (843) 210-30-25</a></li>
+                        <li><a href="mailto:kazan@ruc.su" class="m-0">kazan@ruc.su</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- /.menu__bottom -->
+
+        </div>
+        <!-- /.menu__wrapper -->
+    </div>
+    <!-- /.menu -->
+
+    <header class="header">
+        
+        <div class="header-top">
+
+            <div class="container">
+                <div class="header-top__wrapper">
+                    <div class="header-top__branch">
+                        <svg class="header-top__icon"><use xlink:href="images/sprite.svg#map"></use></svg>
+                        <span class="modal-link">Казанский кооперативный институт</span>
+                    </div>
+                    <div class="header-top__email">
+                        <svg class="header-top__icon"><use xlink:href="images/sprite.svg#email"></use></svg>
+                        <a href="mailto:kazan@ruc.su">kazan@ruc.su</a>
+                    </div>
+                    <div class="header-top__info">
+                        <a class="button header-top--button" href="/educational-organization.html">Сведения об образовательной организации</a>
+                        <div class="header-top__eye">
+                            <svg class="header-top__icon"><use xlink:href="images/sprite.svg#eye"></use></svg>
+                            <a href="#">Для слабовидящих</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.header-top -->
+
+        <div class="header-bottom">
+
+            <div class="container header-bottom__container">
+                <div class="burger-button">
+                    <svg class="burger-button__icon"><use xlink:href="images/sprite.svg#burger"></use></svg>
+                </div>
+                <div class="header-bottom__wrapper">
+                    <div class="header-bottom__logo">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Российский университет кооперации">
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li class="nav__list"><a href="#">АБИТУРИЕНТУ</a></li>
+                            <li class="nav__list"><a href="#">СТУДЕНТУ</a></li>
+                            <li class="nav__list"><a href="#">ВЫПУСКНИКУ</a></li>
+                            <li class="nav__list"><a href="#">НАУКА</a></li>
+                            <li class="nav__list"><a href="#">ВАКАНСИИ</a></li>
+                            <li class="nav__list"><a href="#">COVID-19 Инфо</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="button button--red header-bottom__button">Партнёрам</a>
+                </div>
+                <div class="search-button">
+                    <svg class="search-button__icon"><use xlink:href="images/sprite.svg#search"></use></svg>
+                </div>
+            </div>
+            <!-- /.container -->
+
+            <div class="search">
+                <div class="container">
+                    <form action="#" class="search-form">
+                        <input class="search-form__input" type="search" name="search" pattern=".*\S.*" placeholder="Поиск по сайту..." required>
+                        <button class="search-form__btn">
+                            <svg class="search-form__svg"><use xlink:href="images/sprite.svg#searcharrow"></use></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.header-bottom -->
+        
+    </header>
+    <!-- /.header -->
+
+    <main class="main">
+
+        <div class="container main__wrapper">
+
+            <aside class="navigation">
+                <nav class="nav">
+                    <ul>
+                        <li class="nav__list"><a href="#">История</a></li>
+                        <li class="nav__list active"><a href="#">Сведения об образовательной организации</a></li>
+                        <li class="nav__list"><a href="#">Ректорат</a></li>
+                        <li class="nav__list"><a href="#">Ученый совет</a></li>
+                        <li class="nav__list"><a href="#">Электронная информационно-образовательная среда</a></li>
+                        <li class="nav__list"><a href="#">Структура института</a></li>
+                        <li class="nav__list"><a href="#">Научно-исследовательская деятельность института</a></li>
+                        <li class="nav__list"><a href="#">Материально-техническое обеспечение</a></li>
+                        <li class="nav__list"><a href="#">Информация о наличии условий для обучения инвалидов и лиц с ограниченными возможностями здоровья</a></li>
+                    </ul>
+                </nav>
+                <!-- /.nav -->
+            </aside>
+            <!-- /.navigation -->
+        
+            <div class="content">
+                <div class="content-container">
+        
+                    <div class="bread-crumbs">
+                        <ul>
+                            <li class="item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="item">
+                                <span class="active">Сведения об образовательной организации</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.bread-crumbs -->
+        
+                    <div class="content-inner">
+
+                        <h2>Структура и органы управления образовательной организацией</h2>
+                             
+                            <div class="cut">
+                                <table> 
+                                    <tbody> 
+                                      <tr> 
+                                          <td>
+                                              Наименование органа управления / структурного подразделения
+                                          </td> 
+                                          <td>
+                                              ФИО должностного лица/ руководителя структурного подразделения
+                                          </td> 
+                                          <td>
+                                              Должность руководителя структурного подразделения
+                                          </td> 
+                                          <td>Адрес местонахождения структурного подразделения</td>
+                                          <td>
+                                              Адрес электронной почты органа управления/структурного подразделения
+                                          </td> 
+                                          <td>
+                                              Адрес официального сайтаоргана управления/структурного подразделения
+                                          </td> 
+                                          <td>
+                                              Положение об органе управления/ о структурном подразделении
+                                          </td> 
+                                      </tr>
+                                     
+                                      <tr><td colspan="7"><b>Органы управления образовательной организации</b></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" class="setbw"><a href="struct.html#consist1" class="setbw"> Учёный совет </a></div>
+                                         </td><td itemprop="fio"> 
+                                          <div itemprop="fio" class="setbw">Набиева Алсу Рустэмовна</div>
+                                         </td><td itemprop="post"> 
+                                          <div itemprop="post" class="setbw">Председатель Ученого совета </div>
+                                         </td><td itemprop="addressStr"> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.2-01А</div>
+                                         </td><td itemprop="email"> 
+                                          <div itemprop="E-mail" class="setbw">-</div>
+                                         </td><td itemprop="site"> 
+                                          <div itemprop="site" class="setbw">-</div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"><a href="http://kazan.ruc.su/upload/documents/norma/Pologenie_uch_sovet.pdf" class="setbw">Положение</a></div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" class="setbw"><a href="struct.html#consist2" class="setbw">Ректорат </a></div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Набиева Алсу Рустэмовна</div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Ректор</div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.2-01А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">-</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw">Официального сайта нет</div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_rectorat.pdf" class="setbw">Положение</a></div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" class="setbw"><a href="struct.html#consist3" class="setbw">Совет студенческого самоуправления</a></div>
+                                         <a href="struct.html#consist3" class="setbw"> <b style="font-weight: bold;"> </b></a></td><td> 
+                                          <div itemprop="fio" style="text-align: center;" class="setbw">Заляев Динар Раилевич</div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw"> Председатель совета </div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58 
+                                            <br>
+                                           </div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">studsovet@mail.ru</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw">Официального сайта нет</div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/ЦМП/polozhenie-o-studencheskom-sovete-kazanskogo-kooperativnogo-instituta--filiala--rossiyskogo-universiteta-kooperacii.pdf" target="_blank" class="setbw">Положение</a></div>
+                                         </td></tr>
+                                     
+                                      <tr><td colspan="7" style="text-align: left;"><b>Структурные подразделения образовательной организации</b></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Казанский кооперативный институт</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Набиева Алсу Рустэмовна</div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Ректор</div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.2-01А 
+                                            <br>
+                                           </div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">anabieva@ruc.su</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw">-</div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw">-</div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Казанский кооперативный институт</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Астраханцева Елена Анатольевна</div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Проректор по научной работе 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.3-17А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">eastrahantseva@ruc.su</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw">-</div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw">-</div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Казанский кооперативный институт</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Мнускина Ирина Валерьевна</div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Проректор по учебной работе</div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.3-04А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">i.v.mnuskina@ruc.su</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw">-</div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"> - </div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Казанский кооперативный институт</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw"> Галаутдинова Лейсан Ильгизовна 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Помощник ректора </div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.2-01А </div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw"> galautdinova_l@mail.ru 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw">-</div>
+                                         <a id="bxid_726573" href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"> - </div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Казанский кооперативный институт</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw"> </div>
+                                         Набиев Сиразетдин Мингалеевич 
+                                          <br>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Помощник ректора 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.2-01А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw"> </div>
+                                         snabiev@ruc.su 
+                                          <br>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw">-</div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"> - </div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Бухгалтерия 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Галимова Фирая Юнусовна 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Главный бухгалтер 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.1-04А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">fgalimova@ruc.su</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw">-</div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_buhgalterija.pdf" class="setbw">Положение</a></div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Отдел кадров 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Начальник 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.1-06А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">kazan@ruc.su</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw"> - </div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_otdel_kadrov.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Управление стратегического развития</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Валиуллина Наталья Сергеевна 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Руководитель</div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.2-03А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">sukhorukova_n@mail.ru 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw"> - </div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_USR.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Факультет экономики и таможенного дела 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Фаррахова Лилия Ильдусовна 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Заместитель декана</div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.3-11А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">lilia.farrahova@yandex.ru</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw"> - </div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_fakultet_VO.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Инженерно-технологический факультет</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Зиннатуллина Алиса Габделхабировна 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Заместитель декана 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.3-08А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">a.g.zinnatullina@ruc.su</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw"> - </div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_fakultet_VO.pdf" class="setbw">Положение</a></div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Кафедра товароведения и технологии общественного питания</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw"> Габдрахманова Алися Рафиковна
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw"> 
+                                            <div itemprop="post" class="setbw">Заместитель зав.кафедрой </div>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.2-07А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">a.r.hayrullina@ruc.su
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw"> - </div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_kafedra.pdf" class="setbw">Положение</a></div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Кафедра естественных дисциплин, сервиса и туризма</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Биктимирова Халида Саидовна 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Заместитель зав.кафедрой </div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.5-01А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">khalidakzn@mail.ru</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw"> - </div>
+                                         <a href="http://kazan.ruc.su/upload/documents/norma/poloj_dkod.pdf" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_kafedra.pdf" class="setbw">Положение</a></div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Кафедра экономики и инноватики</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Шамсутдинова Марина Райхановна 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Заведующий кафедрой </div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw"> 420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.5-07А 
+                                            <br>
+                                           </div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">sham-marina@yandex.ru</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw"> - </div>
+                                         <a href="http://kazan.ruc.su/upload/documents/norma/poloj_dkod.pdf" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_kafedra.pdf" class="setbw">Положение</a></div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Кафедра бухгалтерского учета и финансов 
+                                            <br>
+                                           </div>
+                                         </td><td itemprop="fio">Миннехаметова Илхамия Мансуровна</td><td itemprop="post">Заместитель зав.кафедрой 
+                                          <br>
+                                         </td><td itemprop="addressStr" style="text-align: left;">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.5-06А 
+                                          <br>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">mimilhamiya@mail.ru</div>
+                                         </td><td itemprop="site">-</td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_kafedra.pdf" class="setbw">Положение</a></div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Кафедра таможенного дела</div>
+                                         </td><td itemprop="fio"> 
+                                          <div itemprop="fio" class="setbw">Базаров Рустам Торекульевич 
+                                            <br>
+                                           </div>
+                                         </td><td itemprop="post"> 
+                                          <div itemprop="post" class="setbw">Заведующий</div>
+                                         </td><td itemprop="addressStr"> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.2-05Б</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">kazan@ruc.su 
+                                            <br>
+                                           </div>
+                                         </td><td itemprop="site"> 
+                                          <div itemprop="site" class="setbw">-</div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"> <a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_kafedra.pdf" class="setbw">Положение</a> </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Кафедра гуманитарных дисциплин и иностранных языков</div>
+                                         </td><td itemprop="fio"> 
+                                          <br>
+                                         </td><td itemprop="post"> 
+                                          <br>
+                                         </td><td itemprop="addressStr" style="text-align: left;">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.5-03А</td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">kazan@ruc.su</div>
+                                         </td><td itemprop="site">-</td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_kafedra.pdf" class="setbw">Положение</a></div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Кафедра физической культуры и спорта</div>
+                                         </td><td itemprop="fio">Фазлеев Наиль Шамсиевич 
+                                          <br>
+                                         </td><td itemprop="post">Заведующий</td><td itemprop="addressStr" style="text-align: left;">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.4-01А</td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">n.s.fazleev@ruc.su</div>
+                                         </td><td itemprop="site">-</td><td itemprop="divisionClause_DocLink"> 
+                                          <div itemprop="divisionClauseDocLink" class="setbw"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_kafedra.pdf" class="setbw">Положение</a></div>
+                                         </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Факультет среднего профессионального образования 
+                                            <br>
+                                           </div>
+                                         </td><td itemprop="fio">Егорчева Светлана Валентиновна</td><td itemprop="post">Заместитель декана 
+                                          <br>
+                                         </td><td itemprop="addressStr" style="text-align: left;">420087, Республика Татарстан, г. Казань, ул. Даурская, дом 32 
+                                          <br>
+                                         каб.1-05</td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">segorcheva@ruc.su</div>
+                                         </td><td itemprop="site">-</td><td itemprop="divisionClause_DocLink"> <a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_FSPO.pdf" class="setbw">Положение</a> </td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Учебно-методическое управление</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Алюшева Диляра Наримановна 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Начальник</div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.3-19А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">dalusheva@ruc.su</div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw"> - </div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_UMU.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Учебно-организационный отдел</div>
+                                         </td><td itemprop="fio">Бондарь Елена Сергеевна 
+                                          <br>
+                                         </td><td itemprop="post">Начальник</td><td itemprop="addressStr" style="text-align: left;">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.3-01А</td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">oaleksandrova2018@mail.ru</div>
+                                         </td><td itemprop="site">-</td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_UOO.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Центр практики карьеры и трудоустройства</div>
+                                         </td><td itemprop="fio"> 
+                                          <br>
+                                         </td><td itemprop="post"> 
+                                          <br>
+                                         </td><td itemprop="addressStr" style="text-align: left;">420087, Республика Татарстан, г. Казань, ул. Даурская, дом 32, 
+                                          <br>
+                                         каб.2-07 
+                                          <br>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw"> 
+                                            <br>
+                                           </div>
+                                         </td><td itemprop="site">-</td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_centr_pkakt_kar_i_trud.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Центр организации научно-исследовательской работы и инноваций</div>
+                                         </td><td itemprop="fio">
+                                          <br>
+                                         </td><td itemprop="post">Руководитель центра 
+                                          <br>
+                                         </td><td itemprop="addressStr" style="text-align: left;">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.3-03А</td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">nirs2012@mail.ru</div>
+                                         </td><td itemprop="site">-</td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/NIR/388-1-o-ob-utverzhdenii-polozheniya-o-cnir.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Центр дополнительного профессионального образования 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">Царева Светлана Николаевна 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Руководитель 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.1-01А</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">s.n.tsareva@ruc.su 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw"> - </div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_DPO.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Центр молодежной политики</div>
+                                         </td><td itemprop="fio">Гемадеева Юлия Эдуардовна 
+                                          <br>
+                                         </td><td itemprop="post">Руководитель</td><td itemprop="addressStr" style="text-align: left;">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.1-06/1 А</td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">y.gemadeeva@ruc.su 
+                                            <br>
+                                           </div>
+                                         </td><td itemprop="site">-</td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_centr_mol_polit.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Центр информационных технологий</div>
+                                         </td><td itemprop="fio">Ткачёв Евгений Александрович 
+                                          <br>
+                                         </td><td itemprop="post">Руководитель</td><td itemprop="addressStr" style="text-align: left;">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.1-07А</td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">etkachev@ruc.su</div>
+                                         </td><td itemprop="site">-</td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_centr_inf_tehnologij.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Библиотека</div>
+                                         </td><td> 
+                                          <div itemprop="fio" class="setbw">- </div>
+                                         </td><td> 
+                                          <div itemprop="post" class="setbw">Директор</div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, каб.1-05Б</div>
+                                         </td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">kazan@ruc.su 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw"> - </div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_bibl.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Здравпункт</div>
+                                         </td><td itemprop="fio">- </td><td itemprop="post">Заведующий</td><td itemprop="addressStr" style="text-align: left;">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58, 
+                                          <br>
+                                         каб.1-11А 
+                                          <br>
+                                         
+                                          <br>
+                                         420087, Республика Татарстан, г. Казань, ул. Даурская, дом 32, 
+                                          <br>
+                                         каб.1-11</td><td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">kazan@ruc.su 
+                                            <br>
+                                           </div>
+                                         </td><td itemprop="site">-</td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_zdravpunkt.pdf" class="setbw">Положение</a></td></tr>
+                                     
+                                      <tr><td itemprop="name"> 
+                                          <div itemprop="structOrgUprav" style="text-align: left;" class="setbw">Административно-хозяйственное управление</div>
+                                         <b style="font-weight: bold;"> </b></td><td itemprop="fio"> 
+                                          <div itemprop="fio" class="setbw">Марин Камиль Робертович 
+                                            <br>
+                                           </div>
+                                         </td><td itemprop="post"> 
+                                          <div itemprop="post" class="setbw">Начальник</div>
+                                         </td><td> 
+                                          <div itemprop="addressStr" style="text-align: left;" class="setbw">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58</div>
+                                         </td> <td itemprop="E-mail"> 
+                                          <div itemprop="email" class="setbw">mkamil2005@mail.ru 
+                                            <br>
+                                           </div>
+                                         </td><td> 
+                                          <div itemprop="site" class="setbw"> - </div>
+                                         <a href="http://kazan.ruc.su/" class="setbw"> </a></td><td itemprop="divisionClause_DocLink"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/sveden/Pologenie_AXU.pdf" class="setbw">Положение</a></td></tr>
+                                     </tbody>
+                                   </table>
+                            </div>
+                             
+                              <br>
+                             
+                              <h2 style="text-align: center;" class="setbw">Учредитель образовательной организации</h2>
+                            <div class="setbw">
+                            <table itemprop="uchredLaw" itemscope="" itemtype="http://obrnadzor.gov.ru/microformats/UchredLaw" > 
+                                <tbody> 
+                                  <tr> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);"> Наименование учредителя </td> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);"> Фамилия, имя, отчество руководителя учредителя (ей) образовательной организации </td> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);"> Адрес местонахождения учредителя(ей) </td> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);"> Контактные телефоны </td> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);"> Адрес электронной почты </td> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);"> Адрес сайта учредителя(ей) в сети «Интернет» </td> </tr>
+                                 
+                                  <tr> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);" itemprop="nameUchred"> Центральный союз потребительских обществ Российской Федерации (Центросоюз РФ) </td> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);" itemprop="fullnameUchred"> Зубов Дмитрий Львович </td> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);" itemprop="addressUchred"> 107996, г.Москва ул.Гиляровского, 57 </td> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);" itemprop="telUchred"> +7&nbsp;(495) 6840495</td> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);" itemprop="mailUchred"> <a href="mailto:info@rus.coop" class="setbw">info@rus.coop</a> </td> <td style="border: 1px solid rgb(102, 102, 102); line-height: 1.25; padding: 8px 8px 4px; vertical-align: top; background-color: rgb(255, 255, 255);" itemprop="websiteUchred"> <a href="http://www.rus.coop" class="setbw">http://www.rus.coop</a> </td> </tr>
+                                 </tbody>
+                               </table>
+                            </div>
+                            <br>
+                              <h2 style="text-align: center;" class="setbw">Состав Ученого совета</h2>
+                             
+                              <div class="setbw"> 
+                                <table style="border-collapse: collapse;" width="100%" cellpadding="5" border="1"> 	 
+                                  <tbody> 		 
+                                    <tr> 			<td><b>Фамилия, имя, отчество</b></td> 			<td><b>Должность (ученая степень, ученое звание)</b></td> 		</tr>
+                                            
+                                    <tr> 			<td>Набиева Алсу Рустэмовна</td> 			<td>ректор института, кандидат исторических наук; Председатель Ученого совета</td> 		</tr>
+                                            
+                                    <tr> 			<td>Шаймарданов Рашат Рифкатович</td> 			<td>председатель Татпотребсоюза</td> 		</tr>
+                                            
+                                    <tr> 			<td>Мнускина Ирина Валерьевна</td> 			<td>проректор по учебной работе, кандидат химических наук, доцент</td> 		</tr>
+                                            
+                                    <tr> 			<td>Астраханцева Елена Анатольевна</td> 			<td>проректор по научной работе, кандидат экономических наук</td> 		</tr>
+                                            
+                                    <tr> 			<td>Козар Надежда Константиновна</td> 			<td>секретарь Ученого совета, кандидат технических наук, доцент</td> 		</tr>
+                                            
+                                    <tr> 			<td>Зиннатуллина Алиса Габделхабировна</td> 			<td>декан инженерно-технологического факультета</td> 		</tr>
+                                            
+                                    <tr> 			<td>Фаррахова Лилия Ильдусовна</td> 			<td>и.о.декана факультета экономики и таможенного дела</td> 		</tr>
+                                            
+                                    <tr> 			<td>Миннехаметова Илхамия Мансуровна</td> 			<td>зам. заведующего кафедрой бухгалтерского учета и финансов, кандидат педагогических наук</td> 		</tr>
+                                            
+                                    <tr> 			<td>Магдеева Марина Райхановна</td> 			<td>заведующий кафедрой экономики и инноватики, кандидат экономических наук, доцент</td> 		</tr>
+                                            
+                                    <tr> 			<td>Гаптрахманова Альфия Возиховна</td> 			<td>зам.заведующего кафедрой таможенного дела</td> 		</tr>
+                                            
+                                    <tr> 			<td>Фазлеев Наиль Шамсиевич</td> 			<td>заведующий кафедрой физической культуры и спорта, кандидат педагогических наук, доцент</td> 		</tr>
+                                            
+                                    <tr> 			<td>Биктимирова Халида Саидовна</td> 			<td>зам.&nbsp;заведующего кафедрой естественных дисциплин, сервиса и туризма</td> 		</tr>
+                                            
+                                    <tr> 			<td>Галимова Фирая Юнусовна</td> 			<td>главный бухгалтер</td> 		</tr>
+                                            
+                                    <tr> 			<td>Хамитова Ирина Алексеевна</td> 			<td>руководитель центра НИР и инноваций</td> 		</tr>
+                                            
+                                    <tr> 			<td>Алюшева Диляра Наримановна</td> 			<td>начальник Учебно-методического управления</td> 		</tr>
+                                            
+                                    <tr> 			<td>Ткачев Евгений Александрович</td> 			<td>руководитель Центра информационных технологий</td> 		</tr>
+                                            
+                                    <tr> 			<td>Егорчева Светлана Валентиновна</td> 			<td>руководитель Центра карьеры, практики и трудоустройства</td> 		</tr>
+                                            
+                                    <tr> 			<td>Поташев Андрей Валерьевич</td> 			<td>профессор кафедры естественных дисциплин, сервиса и туризма, доктор физико-математических наук, профессор</td> 		</tr>
+                                            
+                                    <tr> 			<td>Яхина Луиза Тагировна</td> 			<td>доцент кафедры бухгалтерского учета и финансов, кандидат экономических наук, доцент</td> 		</tr>
+                                            
+                                    <tr> 			<td>Степанова Галина Станиславовна</td> 			<td>доцент кафедры товароведения и технологии общественного питания, кандидат химических наук</td> 		</tr>
+                                            
+                                    <tr> 			<td>Заляев Динар Раилевич</td> 			<td>председатель Студенческого Совета</td> 		</tr>
+                                       </tbody>
+                                 </table>
+                               </div>
+                             
+                              <br>
+                             
+                            <a name="consist2" class="setbw"></a>
+                             
+                              <h2 style="text-align: center;" class="setbw">Состав Ректората</h2>
+                             
+                              <div class="setbw"> 
+                                <table style="border-collapse: collapse;" width="100%" border="1"> 	 
+                                  <tbody> 			 
+                                    <tr> 			<td style="vertical-align: middle;"> 				<b>Фамилия, имя, отчество</b> 			</td> 			<td style="vertical-align: middle;"> 				<b>Должность (ученая степень, ученое звание)</b> 			</td> 			<td style="vertical-align: middle;"> 				<b>Адрес электронной почты</b> 			</td> 			<td style="vertical-align: middle;"> 				<b>Адрес личной страницы на сайте (при наличии)</b> 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Набиева Алсу Рустэмовна 			</td> 			<td> 				Ректор 			</td> 			<td> 				anabieva@ruc.su 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Мнускина Ирина Валерьевна 			</td> 			<td> 				Проректор по учебной работе 			</td> 			<td> 				i.v.mnuskina@ruc.su 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Астраханцева Елена Анатольевна 			</td> 			<td> 				Проректор по научной работе 			</td> 			<td> 				eastrahantseva@ruc.su 			</td> 			<td> 				- 			</td> 		</tr>
+                                                     
+                                    <tr> 			<td> 				Галимова Фирая Юнусовна 			</td> 			<td> 				Главный бухгалтер 			</td> 			<td> 				fgalimova@ruc.su 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Егорчева Светлана Валентиновна 			</td> 			<td> 				Руководитель центра карьеры, практики и трудоустройства 			</td> 			<td> 				segorcheva@ruc.su 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Ткачёв Евгений Александрович 			</td> 			<td> 				Руководитель центра информационных технологий 			</td> 			<td> 				etkachev@ruc.su 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Алюшева Диляра Наримановна 			</td> 			<td> 				Начальник учебно-методического управления 			</td> 			<td> 				dalusheva@ruc.su 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Зиннатуллина Алиса Габделхабировна 			</td> 			<td> 				Заместитель декана инженерно-технологического факультета 			</td> 			<td> 				a.g.zinnatullina@ruc.su 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Фаррахова Лилия Ильдусовна 			</td> 			<td> 				Заместитель декана факультета экономики и таможенного дела 			</td> 			<td> 				lilia.farrahova@yandex.ru 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Миннехаметова Илхамия Мансуровна 			</td> 			<td> 				Заместитель заведующего кафедрой «Бухгалтерский учет и финансы» 			</td> 			<td> 				mimilhamiya@mail.ru 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td>Шамсутдинова Марина Райхановна</td> 			<td> 				Заведующий кафедрой «Экономика и инноватика» 			</td> 			<td> 				sham-marina@yandex.ru 			</td> 			<td> 				- 			</td> 		</tr>
+                                                     
+                                    <tr> 			<td> 				Биктимирова Халида Саидовна 			</td> 			<td> 				Заместитель заведующего кафедрой «Естественные дисциплины, сервис и туризм» 			</td> 			<td> 				khalidakzn@mail.ru 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Фазлеев Наиль Шамсиевич 			</td> 			<td> 				Заведующий кафедрой «Физическая культура и спорт» 			</td> 			<td> 				n.s.fazleev@ruc.su 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td>Бондарь Елена Сергеевна 
+                                        <br>
+                                       </td> 			<td> 				Начальник учебно-организационного отдела 			</td> 			<td> 				oaleksandrova2018@mail.ru 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Хамитова Ирина Алексеевна 			</td> 			<td> 				Руководитель центра НИР и инноваций 			</td> 			<td> 				nirs2012@mail.ru 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Царёва Светлана Николаевна 			</td> 			<td> 				Руководитель центра дополнительного профессионального образования 			</td> 			<td> 				s.n.tsareva@ruc.su 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Валиуллина Наталья Сергеевна 			</td> 			<td> 				Начальник управления стратегического развития 			</td> 			<td> 				sukhorukova_n@mail.ru 			</td> 			<td> 				- 			</td> 		</tr>
+                                            
+                                    <tr> 			<td> 				Гемадеева Юлия Эдуардовна 			</td> 			<td> 				Руководитель Центра молодежной политики 			</td> 			<td> 				gemadeeva.yulia@yandex.ru 			</td> 			<td> 				- 			</td> 		</tr>
+                                                </tbody>
+                                 </table>
+                               </div>
+                             
+                              <div class="setbw"> 
+                                <br>
+                               </div>
+                             
+                            <a name="consist3" class="setbw"></a>
+                             
+                              <h2 style="text-align: center;" class="setbw">Совет студенческого самоуправления</h2>
+                             
+                              <div class="setbw"> 
+                                <table style="border-collapse: collapse;" width="100%" border="1"> 
+                                  <tbody> 
+                                    <tr><td style="vertical-align: middle;"><b>Фамилия, имя, отчество</b></td><td style="vertical-align: middle;"><b>Должность руководящих 
+                                          <br>
+                                         (ответственных) лиц</b></td><td style="vertical-align: middle;"><b>Место нахождения совета 
+                                          <br>
+                                         обучающихся (при наличии)</b></td><td style="vertical-align: middle;"><b>Адрес электронной почты 
+                                          <br>
+                                         совета обучающихся (при наличии)</b></td><td style="vertical-align: middle;"><b>Сведения о порядке формирования совета обучающихся</b></td></tr>
+                                   
+                                    <tr><td style="text-align: left;">Заляев Динар Раилевич</td><td>Председатель Студенческого Совета 
+                                        <br>
+                                       </td><td style="vertical-align: middle;" rowspan="9">420081, Республика Татарстан, г. Казань, ул. Николая Ершова, дом 58</td><td style="vertical-align: middle;" rowspan="9"> studsovet@mail.ru </td><td style="vertical-align: middle;" rowspan="9"><a href="http://kazan.ruc.su/upload/KAZAN_UPLOAD/ЦМП/polozhenie-o-studencheskom-sovete-kazanskogo-kooperativnogo-instituta--filiala--rossiyskogo-universiteta-kooperacii.pdf" target="_blank" class="setbw">Положение</a></td></tr>
+                                   
+                                    <tr><td style="text-align: left;">Киселёва Ксения Евгеньевна</td><td>Заместитель председателя Студенческого Совета 
+                                        <br>
+                                       </td></tr>
+                                   
+                                    <tr><td style="text-align: left;">Дидык Руслан Радикович 
+                                        <br>
+                                       </td><td>Руководитель сектора по гражданско-патриотическому и трудовому воспитанию 
+                                        <br>
+                                       </td></tr>
+                                   
+                                    <tr><td style="text-align: left;">Лукин Андрей Петрович</td><td>Руководитель сектора спорта и здорового образа жизни 
+                                        <br>
+                                       </td></tr>
+                                   
+                                    <tr><td style="text-align: left;">Ямилов Нияз Абдуллович</td><td>Руководитель культурно-творческого сектора 
+                                        <br>
+                                       </td></tr>
+                                   
+                                    <tr><td style="text-align: left;">Галицкая Анастасия Павловна</td><td>Руководитель волонтерского сектора 
+                                        <br>
+                                       </td></tr>
+                                   
+                                    <tr><td style="text-align: left;">Ахматнурова Карина Ринафовна</td><td>Руководитель сектора общественных коммуникаций 
+                                        <br>
+                                       </td></tr>
+                                   
+                                    <tr><td style="text-align: left;">Исаев Евгений Олегович</td><td>Руководитель сектора по профессионально-ориентирующему воспитанию 
+                                        <br>
+                                       </td></tr>
+                                   
+                                    <tr><td style="text-align: left;">Шадрина Анастасия Павловна</td><td>Секретарь ССУ 
+                                        <br>
+                                       </td></tr>
+                                   </tbody>
+                                 </table>
+                               </div>
+                                            
+                           </div>   
+                                            
+
+                    </div>
+                    <!-- /.content-inner -->
+        
+                </div>
+                <!-- /.content-container -->
+            </div>
+            <!-- /.content -->
+
+        </div>
+        <!-- /.main__wrapper -->
+            
+    </main>
+    <!-- /.main -->
+
+    <footer class="footer">
+
+        <div class="subscribe">
+            <div class="container">
+                <div class="subscribe__wrapper">
+                    <div class="subscribe__title">
+                        <span>Подпишитесь на рассылку</span>
+                    </div>
+                    <div class="subscribe__form">
+                        <form action="#">
+                            <input type="email" name="email" class="subscribe__input" placeholder="введите свой email">
+                            <button class="subscribe__button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.subscribe__wrapper -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.subscribe -->
+        
+        <div class="container">
+            <div class="footer__wrapper">
+
+                <div class="footer-head">
+                    <div class="footer-head__logo">
+                        <a href="#"><img src="images/logo.jpg" alt="Казанский кооперативный институт"></a>
+                        <a href="#"><img src="images/logo-kazan.png" alt="Казанский кооперативный институт"></a>
+                    </div>
+                    <div class="footer-head__wrapper">
+                        <div class="footer-head__nav">
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">АБИТУРИЕНТУ</a></li>
+                                    <li class="nav__list"><a href="#">СТУДЕНТУ</a></li>
+                                    <li class="nav__list"><a href="#">ВЫПУСКНИКУ</a></li>
+                                    <li class="nav__list"><a href="#">НАУКА</a></li>
+                                    <li class="nav__list"><a href="#">ВАКАНСИИ</a></li>
+                                    <li class="nav__list"><a href="#">COVID-19 Инфо</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-head__categories">
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">Учредитель</a></li>
+                                    <li class="nav__list"><a href="#">Университет</a></li>
+                                    <li class="nav__list"><a href="#">Региональная сеть</a></li>
+                                    <li class="nav__list"><a href="#">Об институте</a></li>
+                                    <li class="nav__list"><a href="#">Сведения об образовательной организации</a></li>
+                                    <li class="nav__list"><a href="#">Факультеты и кафедры</a></li>
+                                    <li class="nav__list"><a href="#">Библиотечно-информационный центр</a></li>
+                                    <li class="nav__list"><a href="#">Внеучебная деятельность</a></li>
+                                    <li class="nav__list"><a href="#">Карта сайта</a></li>
+                                    <li class="nav__list"><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.footer-head -->
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom__copy">
+                        <div class="soc">
+                            <a href="#" class="soc__vk">
+                                <svg class="soc__svg"><use xlink:href="images/sprite.svg#vk"></use></svg>
+                            </a>
+                            <a href="#" class="soc__facebook">
+                                <svg class="soc__svg"><use xlink:href="images/sprite.svg#facebook"></use></svg>
+                            </a>
+                            <a href="#" class="soc__instagram">
+                                <svg class="soc__svg"><use xlink:href="images/sprite.svg#instagram"></use></svg>
+                            </a>
+                            <a href="#" class="soc__youtube">
+                                <svg class="soc__svg"><use xlink:href="images/sprite.svg#youtube"></use></svg>
+                            </a>
+                            <a href="#" class="soc__twitter">
+                                <svg class="soc__svg"><use xlink:href="images/sprite.svg#twitter"></use></svg>
+                            </a>
+                        </div>
+                        <div class="footer-bottom__txt">
+                            <p>
+                                © Российский университет кооперации<br>
+                                Учредитель – Центросоюз Российской Федерации<br>
+                                Министерство науки и высшего образования РФ<br>
+                                Министерство просвещения РФ<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <ul>
+                            <li>Приемная комиссия: <a href="tel:+89872979297">8 (987) 297-92-97</a></li>
+                            <li>Бухгалтерия: <a href="tel:+89600516305">8 (960) 051-63-05</a></li>
+                            <li>Отдел кадров: <a href="tel:+88432103026">8 (843) 210-30-26</a></li>
+                            <li>Деканаты: <a href="tel:+88432103025">8 (843) 210-30-25</a></li>
+                            <li><a href="mailto:kazan@ruc.su" class="m-0">kazan@ruc.su</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.footer-bottom -->
+
+            </div>
+        </div>
+        <!-- /.container -->
+
+    </footer>
+    <!-- /.footer -->
+
+    <div class="modal">
+        <div class="modal__wrapper">
+            <div class="modal__body">
+                <div class="close">
+                    <svg class="close__svg"><use xlink:href="images/sprite.svg#close"></use></svg>
+                </div>
+                <div class="branch">
+                    <div class="branch__head">
+                        Выберите филиал:
+                    </div>
+
+                    <div class="branch__list">
+                        <div class="branch__item">
+                            <a href="#">Головной вуз</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Арзамасский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Владимирский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Ижевский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Калининградский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Мурманский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Саранский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Сыктывкарский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Камчатский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Башкирский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Волгоградский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Казанский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Краснодарский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Поволжский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Смоленский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Чебоксарский кооперативный институт</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.branch -->
+            </div>
+            <!-- /.modal__body -->
+        </div>
+        <!-- /.modal__wrapper -->
+    </div>
+    <!-- /.modal -->
+
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="js/jquery.fancybox.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/svgxuse.js" defer></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
