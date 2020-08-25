@@ -1,0 +1,26 @@
+.bread-crumbs
+    margin-bottom: 3.7rem
+    ul 
+        display: flex
+        align-items: center
+        .item
+            position: relative
+            padding-right: 35px
+            font-size: 1.2rem
+            &:last-child
+                padding-right: 0
+                &::after
+                    display: none
+            &::after
+                content: '>'
+                position: absolute
+                right: 15px
+                top: 1px
+                bottom: 0
+                font-weight: bold
+            .active
+                color: #c2c3c7
+            a 
+                transition: color 0.2s
+                &:hover
+                    color: $secondary

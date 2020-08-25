@@ -1,0 +1,27 @@
+.branch
+    width: 800px
+    @media ( max-width: 991px ) 
+        width: 500px
+    @media ( max-width: 690px ) 
+        width: 100%
+    &__head
+        padding-bottom: 2rem 
+        color: #78787A
+    &__list
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap 
+        max-height: 400px
+        @media ( max-width: 991px ) 
+            max-height: 580px
+        @media ( max-width: 690px ) 
+            max-height: 100%
+    &__item
+        max-width: 250px
+        padding: 2rem 3rem 2rem 0
+        a 
+            position: relative
+            transition: all 0.3s
+            &:hover 
+                color: $secondary
+                text-decoration: underline

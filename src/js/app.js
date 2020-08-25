@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
           loop: true
         },
         670: {
-          slidesPerView: 'auto',
+          slidesPerView: 2,
           centeredSlides: true,
           spaceBetween: 10,
           loop: true
@@ -113,11 +113,13 @@ document.addEventListener("DOMContentLoaded", function() {
   const menu = document.querySelector('.menu'),
         burgerBtn = document.querySelector('.burger-button'),
         overlay = document.querySelector('.overlay'),
-        close = document.querySelector('.close');
+        close = document.querySelector('.close'),
+        menuBody = document.querySelector('body');
 
   function toggle() {
     overlay.classList.toggle('open');
     menu.classList.toggle('open');
+    menuBody.classList.toggle('hidden');
   }
 
   burgerBtn.addEventListener('click', function() {toggle()});
@@ -154,5 +156,68 @@ document.addEventListener("DOMContentLoaded", function() {
   searchButton.addEventListener('click', function() {
     searchForm.classList.toggle('active');
   })
+
+  // Modal 
+  const modal = document.querySelector('.modal'),
+        modalWrapper = document.querySelector('.modal__wrapper'),
+        body = document.querySelector('body'),
+        modalLink = document.querySelectorAll('.modal-link'),
+        closeModal = document.querySelector('.modal .close'),
+        modalBody = document.querySelector('.modal__body');
+
+  modalLink.forEach( function(el) {
+    el.addEventListener('click', function() {
+      modal.classList.toggle('active');
+      body.classList.toggle('hidden');
+    });
+  })
+
+  closeModal.addEventListener('click', function() {
+    modal.classList.toggle('active');
+    body.classList.toggle('hidden');
+  });
+
+  // Accordion 
+  var accordion = (function (element) {
+    var _getItem = function (elements, className) { // функция для получения элемента с указанным классом
+      var element = undefined;
+      elements.forEach(function (item) {
+        if (item.classList.contains(className)) {
+          element = item;
+        }
+      });
+      return element;
+    };
+    return function () {
+      var _mainElement = {}, // .accordion
+        _items = {}, // .accordion-item
+        _contents = {}; // .accordion-item-content 
+      var _actionClick = function (e) {
+        if (!e.target.classList.contains('accordion-item__header')) { // прекращаем выполнение функции если кликнули не по заголовку
+          return;
+        }
+        e.preventDefault(); // отменям стандартное действие
+        // получаем необходимые данные
+        var header = e.target;
+        var item = header.parentElement;
+        item.classList.toggle('show');
+      },
+      _setupListeners = function () {
+        // добавим к элементу аккордиона обработчик события click
+        _mainElement.addEventListener('click', _actionClick);
+      };
+
+      return {
+        init: function (element) {
+          _mainElement = (typeof element === 'string' ? document.querySelector(element) : element);
+          _items = _mainElement.querySelectorAll('.accordion-item');
+          _setupListeners();
+        }
+      }
+    }
+  })();
+
+  var group = accordion();
+  group.init('#accordion');
 
 });

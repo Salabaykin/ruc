@@ -1,0 +1,51 @@
+.navigation
+    .nav 
+        ul 
+            background: #ffffff
+            margin-left: 10px
+        &__list 
+            position: relative
+            margin-left: -10px
+            padding: 30px 30px 30px 20px
+            width: 270px
+            background: $primary
+            min-height: 90px
+            display: flex
+            align-items: center
+            transition: background 0.2s
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: 10px
+                width: calc(100% - 10px)
+                height: 1px
+                background: #77A4FF
+            &:first-child
+                &::after
+                    opacity: 0
+            a 
+                font-size: 12px
+                font-weight: 500
+                color: #ffffff
+                text-transform: uppercase
+            &:hover
+                background: #77A4FF
+                border-radius: 10px 0 0 10px
+
+.nav__list.active 
+    background: #ffffff
+    border-radius: 10px 0 0 10px
+    &:hover
+        background: #ffffff
+    a 
+        color: $primary 
+    &::after
+        opacity: 0
+
+.nav__list.active + li 
+    border-radius: 0 10px 0 0
+    &::after
+        width: calc(100% - 20px) 
+    &:hover
+        border-radius: 10px 10px 0 10px

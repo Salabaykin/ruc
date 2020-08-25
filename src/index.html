@@ -23,16 +23,137 @@
 
             <div class="menu__body">
 
-                <div class="menu__nav-list">
-                    1
-                </div>
+                <div class="menu__body--wrapper">
 
-                <div class="menu__nav-list">
-                    2
+                    <div class="menu__nav-list">
+
+                        <div class="menu__nav menu__nav--main">
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">АБИТУРИЕНТУ</a></li>
+                                    <li class="nav__list"><a href="#">СТУДЕНТУ</a></li>
+                                    <li class="nav__list"><a href="#">ВЫПУСКНИКУ</a></li>
+                                    <li class="nav__list"><a href="#">НАУКА</a></li>
+                                    <li class="nav__list"><a href="#">ВАКАНСИИ</a></li>
+                                    <li class="nav__list"><a href="#">COVID-19 Инфо</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+    
+                        <div class="menu__nav menu__nav--second">
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">ТРУДОУСТРОЙСТВО</a></li>
+                                    <li class="nav__list"><a href="#">КАЛЕНДАРЬ</a></li>
+                                    <li class="nav__list"><a href="#">WORLDSKILLS</a></li>
+                                    <li class="nav__list"><a href="#">МЕЖДУНАРОДНЫЕ ПРОГРАММЫ</a></li>
+                                    <li class="nav__list"><a href="#">КООПЕРАТОРАМ</a></li>
+                                    <li class="nav__list"><a href="#">СМИ О НАС</a></li>
+                                    <li class="nav__list"><a href="#">ПАРТНЕРЫ</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="menu__nav-list">
+                        
+                        <div id="accordion" class="accordion">
+    
+                            <div class="accordion-item show">
+                              <div class="accordion-item__header">
+                                БАКАЛАВРИАТ
+                              </div>
+                              <!-- /.accordion-item__header -->
+                              <div class="accordion-item__content">
+                                     
+                                    <nav class="nav">
+                                        <ul>
+                                            <li class="nav__list"><a href="#">Экономика</a></li>
+                                            <li class="nav__list"><a href="#">Менеджмент</a></li>
+                                            <li class="nav__list"><a href="#">Товароведение</a></li>
+                                            <li class="nav__list"><a href="#">Бизнес-информатика</a></li>
+                                            <li class="nav__list"><a href="#">Технология продукции и организация общественного питания</a></li>
+                                            <li class="nav__list"><a href="#">Туризм</a></li>
+                                            <li class="nav__list"><a href="#">Гостиничное дело</a></li>
+                                            <li class="nav__list"><a href="#">Сервис</a></li>
+                                        </ul>
+                                    </nav>
+          
+                              </div>
+                              <!-- /.accordion-item__content -->
+                            </div>
+                            <!-- /.accordion-item -->
+          
+                            <div class="accordion-item show">
+                              <div class="accordion-item__header">
+                                Специалитет
+                              </div>
+                              <!-- /.accordion-item__header -->
+                              <div class="accordion-item__content">
+                                
+                                <nav class="nav">
+                                    <ul>
+                                        <li class="nav__list"><a href="#">Таможенная логистика</a></li>
+                                        <li class="nav__list"><a href="#">Таможенные платежи</a></li>
+                                        <li class="nav__list"><a href="#">Таможенный постаудит</a></li>
+                                        <li class="nav__list"><a href="#">Правоохранительная деятельность и информационные технологии в таможенном деле</a></li>
+                                    </ul>
+                                </nav>
+    
+                              </div>
+                              <!-- /.accordion-item__content -->
+                            </div>
+                            <!-- /.accordion-item -->
+    
+                        </div>
+                        <!-- /.accordion -->
+
+                        <div class="menu__nav--third">
+                            
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">Учредитель</a></li>
+                                    <li class="nav__list"><a href="#">Университет</a></li>
+                                    <li class="nav__list"><a href="#">Региональная сеть</a></li>
+                                    <li class="nav__list"><a href="#">Об институте</a></li>
+                                    <li class="nav__list"><a href="#">Сведения об образовательной организации</a></li>
+                                    <li class="nav__list"><a href="#">Факультеты и кафедры</a></li>
+                                    <li class="nav__list"><a href="#">Библиотечно-информационный центр</a></li>
+                                    <li class="nav__list"><a href="#">Внеучебная деятельность</a></li>
+                                    <li class="nav__list"><a href="#">Карта сайта</a></li>
+                                    <li class="nav__list"><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+    
+                    </div>
+
                 </div>
 
                 <div class="menu__block">
-                    block
+                    
+                    <div class="menu-search">
+                        <form action="#" class="menu-search__form">
+                            <input class="menu-search__input" type="search" name="menu-search" pattern=".*\S.*" placeholder="Поиск по сайту..." required>
+                        </form>
+                    </div>
+
+                    <a href="#" class="button menu__button">Партнёрам</a>
+
+                    <div class="menu-email">
+                        <svg class="header-top__icon menu--mob-icon"><use xlink:href="images/sprite.svg#email"></use></svg>
+                        <a href="mailto:kazan@ruc.su">kazan@ruc.su</a>
+                    </div>
+
+                    <div class="menu-branch">
+                        <svg class="header-top__icon menu--mob-icon"><use xlink:href="images/sprite.svg#map"></use></svg>
+                        <span class="modal-link">Казанский кооперативный институт</span>
+                    </div>
+
+                    <a class="button menu--button" href="#">Сведения об образовательной организации</a>
+
                 </div>
 
             </div>
@@ -40,7 +161,39 @@
 
             <div class="menu__bottom">
 
-                bottom
+                <div class="menu__bottom--wrap">
+
+                    <a class="menu__bottom--logo" href="#"><img src="images/logo-kazan.png" alt="Казанский кооперативный институт"></a>    
+
+                    <div class="soc">
+                        <a href="#" class="soc__vk">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#vk"></use></svg>
+                        </a>
+                        <a href="#" class="soc__facebook">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#facebook"></use></svg>
+                        </a>
+                        <a href="#" class="soc__instagram">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#instagram"></use></svg>
+                        </a>
+                        <a href="#" class="soc__youtube">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#youtube"></use></svg>
+                        </a>
+                        <a href="#" class="soc__twitter">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#twitter"></use></svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="contacts">
+                    <ul>
+                        <li>Приемная комиссия: <a href="tel:+89872979297">8 (987) 297-92-97</a></li>
+                        <li>Бухгалтерия: <a href="tel:+89600516305">8 (960) 051-63-05</a></li>
+                        <li>Отдел кадров: <a href="tel:+88432103026">8 (843) 210-30-26</a></li>
+                        <li>Деканаты: <a href="tel:+88432103025">8 (843) 210-30-25</a></li>
+                        <li><a href="mailto:kazan@ruc.su" class="m-0">kazan@ruc.su</a></li>
+                    </ul>
+                </div>
 
             </div>
             <!-- /.menu__bottom -->
@@ -58,14 +211,14 @@
                 <div class="header-top__wrapper">
                     <div class="header-top__branch">
                         <svg class="header-top__icon"><use xlink:href="images/sprite.svg#map"></use></svg>
-                        <span>Казанский кооперативный институт</span>
+                        <span class="modal-link">Казанский кооперативный институт</span>
                     </div>
                     <div class="header-top__email">
                         <svg class="header-top__icon"><use xlink:href="images/sprite.svg#email"></use></svg>
                         <a href="mailto:kazan@ruc.su">kazan@ruc.su</a>
                     </div>
                     <div class="header-top__info">
-                        <a class="button header-top--button" href="#">Сведения об образовательной организации</a>
+                        <a class="button header-top--button" href="/educational-organization.html">Сведения об образовательной организации</a>
                         <div class="header-top__eye">
                             <svg class="header-top__icon"><use xlink:href="images/sprite.svg#eye"></use></svg>
                             <a href="#">Для слабовидящих</a>
@@ -111,7 +264,7 @@
             <div class="search">
                 <div class="container">
                     <form action="#" class="search-form">
-                        <input class="search-form__input" type="search" name="search" pattern=".*\S.*" placeholder="Поиск..." required>
+                        <input class="search-form__input" type="search" name="search" pattern=".*\S.*" placeholder="Поиск по сайту..." required>
                         <button class="search-form__btn">
                             <svg class="search-form__svg"><use xlink:href="images/sprite.svg#searcharrow"></use></svg>
                         </button>
@@ -233,9 +386,10 @@
                 <div class="news-section">
 
                     <div class="news-section__item">
-                        <div class="news-section__images">
-                            <a href="#"><img src="https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg" alt="news-images"></a>
-                        </div>
+                        <a href="#">
+                            <div class="news-section__images" style="background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');">
+                            </div>
+                        </a>
                         <div class="news-section__content">
                             <div class="news-section__head">
                                 <a href="#" class="news-section__category">Новость</a>
@@ -252,9 +406,10 @@
                     <!-- /.news-section__item -->
 
                     <div class="news-section__item">
-                        <div class="news-section__images">
-                            <a href="#"><img src="images/news/news-images.jpg" alt="news-images"></a>
-                        </div>
+                        <a href="#">
+                            <div class="news-section__images" style="background-image: url('images/news/news-images.jpg')">
+                            </div>
+                        </a>
                         <div class="news-section__content">
                             <div class="news-section__head">
                                 <a href="#" class="news-section__category">Новость</a>
@@ -276,9 +431,10 @@
                 <div class="news-section-event">
 
                     <div class="news-section__item news-section-event__item">
-                        <div class="news-section__images">
-                            <a href="#"><img src="images/news/news-images-2.jpg" alt="news-images"></a>
-                        </div>
+                        <a href="#">
+                            <div class="news-section__images" style="background-image: url('images/news/news-images-2.jpg')">
+                            </div>
+                        </a>
                         <div class="news-section__content">
                             <div class="news-section__head">
                                 <a href="#" class="news-section__category news-section-event__category">Событие</a>
@@ -295,9 +451,10 @@
                     <!-- /.news-section__item -->
 
                     <div class="news-section__item news-section-event__item">
-                        <div class="news-section__images">
-                            <a href="#"><img src="images/news/news-images-2.jpg" alt="news-images"></a>
-                        </div>
+                        <a href="#">
+                            <div class="news-section__images" style="background-image: url('images/news/news-images-2.jpg')">
+                            </div>
+                        </a>
                         <div class="news-section__content">
                             <div class="news-section__head">
                                 <a href="#" class="news-section__category news-section-event__category">Событие</a>
@@ -319,9 +476,10 @@
                 <div class="news-section-anons">
 
                     <div class="news-section__item">
-                        <div class="news-section__images">
-                            <a href="#"><img src="https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg" alt="news-images"></a>
-                        </div>
+                        <a href="#">
+                            <div class="news-section__images" style="background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg')">
+                            </div>
+                        </a>
                         <div class="news-section__content">
                             <div class="news-section__head">
                                 <a href="#" class="news-section__category news-section-anons__category">Анонс</a>
@@ -338,9 +496,10 @@
                     <!-- /.news-section__item -->
 
                     <div class="news-section__item">
-                        <div class="news-section__images">
-                            <a href="#"><img src="images/news/news-images-3.jpg" alt="news-images"></a>
-                        </div>
+                        <a href="#">
+                            <div class="news-section__images" style="background-image: url('images/news/news-images-3.jpg')">
+                            </div>
+                        </a>
                         <div class="news-section__content">
                             <div class="news-section__head">
                                 <a href="#" class="news-section__category news-section-anons__category">Анонс</a>
@@ -1036,7 +1195,63 @@
                 <div class="close">
                     <svg class="close__svg"><use xlink:href="images/sprite.svg#close"></use></svg>
                 </div>
-                Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Над, путь меня. Буквоград предупредила, реторический единственное, о толку родного прямо образ своего переписали буквенных ты страна большой своих осталось там первую наш пояс, страну необходимыми однажды. Предложения приставка раз агентство обеспечивает он первую от всех, пустился большой меня встретил свое, необходимыми журчит что моей щеке? Большой букв решила своего запятых себя это раз домах назад лучше необходимыми коварных собрал повстречался образ, до напоивший свое. Точках, грустный о над проектах свой имеет оксмокс. Правилами пустился парадигматическая ведущими имени, великий своих? Составитель маленький образ, рекламных снова прямо языком коварный грустный родного взобравшись!
+                <div class="branch">
+                    <div class="branch__head">
+                        Выберите филиал:
+                    </div>
+
+                    <div class="branch__list">
+                        <div class="branch__item">
+                            <a href="#">Головной вуз</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Арзамасский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Владимирский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Ижевский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Калининградский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Мурманский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Саранский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Сыктывкарский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Камчатский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Башкирский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Волгоградский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Казанский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Краснодарский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Поволжский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Смоленский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Чебоксарский кооперативный институт</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.branch -->
             </div>
             <!-- /.modal__body -->
         </div>

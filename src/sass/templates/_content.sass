@@ -1,0 +1,101 @@
+.content
+    width: 100%
+    background: #ffffff
+    &-container
+        padding: 4rem 0 4rem 3rem 
+    &-inner 
+        max-width: 870px
+        h1 
+            display: inline-block
+            font-size: 2.4rem
+            font-weight: 500
+        h2
+            display: inline-block
+            position: relative
+            padding-bottom: 20px
+            margin-bottom: 20px
+            font-size: 2.4rem
+            font-weight: 500
+            &::after
+                content: ''
+                position: absolute
+                bottom: 0
+                left: 0
+                background: $secondary 
+                width: 100px
+                height: 5px
+                border-radius: 3px
+        h3, h4, h5, h6 
+            display: inline-block
+            font-size: 2.2rem
+            font-weight: 500
+        ul 
+            li 
+                position: relative
+                padding-left: 16px
+                margin-bottom: 18px
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: 0
+                    width: 5px
+                    height: 5px
+                    border-radius: 50%
+                    background: $secondary
+                a 
+                    color: #6d6e71
+                    font-size: 1.8rem
+                    &:hover
+                        text-decoration: underline
+        p 
+            margin-bottom: 15px
+            color: #6d6e71
+            font-size: 1.8rem
+        a 
+            color: $primary 
+            &:hover
+                text-decoration: underline
+        strong
+            font-size: 1.6rem 
+            font-weight: bold
+        table
+            width: 100%
+            margin-bottom: 1.5rem
+            border: 1px solid #dcdde0
+            border-collapse: collapse
+            text-align: left 
+            color: #6d6e71
+            tr 
+                td,
+                th 
+                    border: 1px solid #dcdde0 !important 
+                    line-height: 1.25
+                    padding: 0.7% !important 
+                    vertical-align: top
+                    font-size: 1.4rem !important 
+                    overflow-wrap: break-word
+                    hyphens: auto
+            p 
+                font-size: 1.6rem
+        ol 
+            li.setbw 
+                padding-left: 3.5rem
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 0
+                    left: 0.5rem
+                    width: 2rem
+                    height: 2rem
+                    background: url('../images/icons/doc.svg') no-repeat
+                    background-size: cover 
+
+.cut 
+    max-width: 100%
+    overflow: auto
+    max-height: 800px
+                 
+                
