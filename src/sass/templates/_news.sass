@@ -38,7 +38,26 @@
                     &:nth-child(2),
                     &:nth-child(3)
                         display: none
-                        
+
+        &--event
+            .news-section__category
+                 &::before
+                    background: #ffca2a
+            .news-section__title
+                &::after
+                    background-color: #ffca2a
+                &:hover
+                    color: #ffca2a
+
+        &--anons
+            .news-section__category
+                 &::before
+                    background: #9ecb45
+            .news-section__title
+                &::after
+                    background-color: #9ecb45
+                &:hover
+                    color: #9ecb45
 
         &__item
             box-shadow: 0 1rem 3rem rgba(204, 204, 223, 0.5)
