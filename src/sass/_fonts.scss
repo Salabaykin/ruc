@@ -8,6 +8,7 @@
         url('../fonts/EtelkaTextPro.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -20,6 +21,7 @@
         url('../fonts/EtelkaTextPro-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -32,4 +34,5 @@
         url('../fonts/EtelkaMediumPro.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }

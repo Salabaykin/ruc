@@ -13,6 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
+    },
+    on: {
+      slideChange: function () {
+        new WOW().init();
+      },
     }
   });
 
@@ -245,5 +250,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var group = accordion();
   group.init('#accordion');
+
+
+  // WOW Animations 
+  new WOW().init();
 
 });
