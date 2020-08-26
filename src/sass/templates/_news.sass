@@ -24,9 +24,7 @@
             border-color: $secondary
     &__wrapper
         margin-top: 2rem
-    &-section,
-    &-section-event,
-    &-section-anons
+    &-section
         margin-bottom: 3rem
         display: flex
         &:last-child
@@ -34,45 +32,106 @@
         @media ( max-width: 1090px )
             flex-direction: column
             margin-bottom: 0
-    &-section
+            &_double,
+            &_triple
+                .news-section__item
+                    &:nth-child(2),
+                    &:nth-child(3)
+                        display: none
+                        
+
         &__item
             box-shadow: 0 1rem 3rem rgba(204, 204, 223, 0.5)
             border-radius: 3px
             background-color: #ffffff
             transition: all 0.3s
+            margin-right: 3rem
+            &:last-child
+                margin-right: 0
             &:hover
                 transform: scale(1.013)
             @media ( max-width: 1090px )
                 margin-bottom: 1.5rem
-            &:nth-child(1)
-                margin-right: 3rem
-                display: flex
-                max-width: 77rem
-                @media ( max-width: 1090px )
-                    max-width: 100%
+
+        &_reverse
+            flex-direction: row-reverse
+            .news-section__item
+                &:first-child
                     margin-right: 0
-                @media ( max-width: 767px )
+        &_reverse.news-section_double
+            .news-section__item
+                &:nth-child(2)
+                    margin-right: 3rem
+
+        &_double
+            .news-section__item
+                &:nth-child(1)
+                    display: flex
+                    max-width: 77rem
+                    @media ( max-width: 1090px )
+                        max-width: 100%
+                        margin-right: 0
+                        .news-section__images
+                            min-height: 18.5rem
+                        .news-section__title
+                            margin-bottom: 0
+
+                    @media ( max-width: 767px )
+                        flex-direction: column
+                &:nth-child(2)
+                    display: flex
                     flex-direction: column
-            &:nth-child(2)
+                    max-width: 37rem
+                    margin-right: 0
+                    @media ( max-width: 1090px )
+                        display: none
+                    .news-section__images 
+                        min-width: 37rem
+                        max-width: 37rem
+                        min-height: 18.5rem
+                        position: relative
+                        padding: 0 0 48% 0
+                        overflow: hidden
+                        border-radius: 3px 3px 0 0 
+                    .news-section__text
+                        display: none
+                    .news-section__title
+                        margin-bottom: 0
+                        &::after
+                            display: none
+                &:nth-child(3)
+                    display: none
+
+        &_triple
+            .news-section__item
                 display: flex
                 flex-direction: column
                 max-width: 37rem
                 @media ( max-width: 1090px )
-                    display: none
+                    max-width: 100%
+                    margin-right: 0
+                    flex-direction: row
+                @media ( max-width: 767px )
+                    flex-direction: column
                 .news-section__images 
-                    min-width: 37rem
+                    min-width: 30rem
                     max-width: 37rem
                     min-height: 18.5rem
                     position: relative
                     padding: 0 0 48% 0
                     overflow: hidden
                     border-radius: 3px 3px 0 0 
+                    @media ( max-width: 767px )
+                        max-width: 100%
+                        padding: 0
+                        min-width: 100%
                 .news-section__text
                     display: none
                 .news-section__title
                     margin-bottom: 0
                     &::after
                         display: none
+
         &__images
             min-width: 30rem
             max-width: 37rem
@@ -147,7 +206,7 @@
                 height: 0.22222em
                 border-radius: 0.55556em
                 background-color: #5f94ff
-                @media ( max-width: 767px )
+                @media ( max-width: 1090px )
                     display: none
             &:hover
                 color: $primary
@@ -155,97 +214,5 @@
             color: #6d6e71
             font-size: 1.8rem
             line-height: 1.44444em
-            @media ( max-width: 767px )
+            @media ( max-width: 1090px )
                 display: none
-        &-event
-            &__item
-                &:nth-child(1)
-                    display: flex
-                    flex-direction: column
-                    max-width: 37rem
-                    box-shadow: 0 1rem 3rem rgba(204, 204, 223, 0.5)
-                    border-radius: 3px
-                    background-color: #ffffff
-                    @media ( max-width: 1090px )
-                        flex-direction: row
-                        border-radius: 3px
-                        background-color: #ffffff
-                        max-width: 100%
-                        margin-right: 0
-                    @media ( max-width: 767px )
-                        flex-direction: column
-                        max-width: 100%
-                    .news-section__images 
-                        min-width: 37rem
-                        max-width: 37rem
-                        min-height: 18.5rem
-                        overflow: hidden
-                        border-radius: 3px 3px 0 0
-                        @media ( max-width: 1090px )
-                            min-width: 30rem
-                            max-width: 37rem
-                            border-radius: 3px 0 0 3px
-                            min-height: 28rem
-                            padding: 0 0 30% 0
-                        @media ( max-width: 767px )
-                            max-width: 100%
-                        @media ( max-width: 575px )
-                            min-width: 25rem
-                        @media ( max-width: 540px )
-                            min-height: 20rem
-                    .news-section__text
-                        display: none
-                        @media ( max-width: 1090px )
-                            display: block
-                        @media ( max-width: 767px )
-                            display: none
-                    .news-section__title
-                        margin-bottom: 0
-                        @media ( max-width: 1090px )
-                            margin-bottom: 3.44444em
-                        @media ( max-width: 767px )
-                            margin-bottom: 0
-                        &::after
-                            display: none
-                            @media ( max-width: 1090px )
-                                display: block
-                            @media ( max-width: 767px )
-                                display: none
-                &:nth-child(2)
-                    display: flex
-                    flex-direction: row
-                    max-width: 77rem
-                    box-shadow: 0 1rem 3rem rgba(204, 204, 223, 0.5)
-                    border-radius: 3px
-                    background-color: #ffffff
-                    @media ( max-width: 1090px )
-                        display: none
-                    .news-section__images 
-                        min-width: 30rem
-                        max-width: 37rem
-                        min-height: 100%
-                        overflow: hidden
-                        border-radius: 3px 0 0 3px
-                    .news-section__text
-                        display: block
-                    .news-section__title
-                        margin-bottom: 3.44444em
-                        &::after
-                            display: block                    
-            &__category
-                &::before
-                    background: #ffca2a
-            &__title
-                &::after
-                    background: #ffca2a
-                &:hover
-                    color: #ffca2a
-        &-anons
-            &__category
-                &::before
-                    background: #9ecb45
-            &__title
-                &::after
-                    background-color: #9ecb45
-                &:hover
-                    color: #9ecb45
