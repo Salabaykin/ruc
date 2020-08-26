@@ -1,22 +1,25 @@
 document.addEventListener("DOMContentLoaded", function() {
 
   // Promo-Swiper
-  const promoSlider = document.querySelectorAll('.promo-slider.swiper-container .swiper-slide');
-  if (promoSlider.length > 1) {
-    var promoSwiper = new Swiper('.promo-slider.swiper-container', {
-      speed: 400,
-      slidesPerView: 1,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+  var promoSwiper = new Swiper('.promo-slider.swiper-container', {
+    speed: 400,
+    watchOverflow: true,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    on: {
+      slideChange: function () {
+        new WOW().init();
       },
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-      }
-    });
-  } 
+    }
+  });
 
 
   // Company-Swiper
@@ -51,12 +54,40 @@ document.addEventListener("DOMContentLoaded", function() {
   } 
 
 
+  // More News Swiper
+  var MoreNewsSwiper = new Swiper('.more-news-slider.swiper-container', {
+    speed: 400,
+    slidesPerView: 3,
+    watchOverflow: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+
+  // News Page Swiper
+  var NewsPageSwiper = new Swiper('.news-page-slider.swiper-container', {
+    speed: 400,
+    slidesPerView: 3,
+    lazy: true,
+    watchOverflow: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+
   // Gallery-Swiper
   const gallerySlider = document.querySelectorAll('.gallery-slider.swiper-container .swiper-slide');
   if (gallerySlider.length > 5) {
     var gallerySwiper = new Swiper('.gallery-slider.swiper-container', {
       speed: 400,
       slidesPerView: 5,
+      lazy: true,
       spaceBetween: 30,
       loop: false,
       navigation: {
@@ -219,5 +250,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var group = accordion();
   group.init('#accordion');
+
+
+  // WOW Animations 
+  new WOW().init();
 
 });

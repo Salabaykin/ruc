@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сведения об образовательной организации</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
+    <div class="menu">
+        <div class="menu__wrapper">
+
+            <div class="menu__head">
+                <div class="close">
+                    <svg class="close__svg"><use xlink:href="images/sprite.svg#close"></use></svg>
+                </div>
+            </div>
+            <!-- /.menu__head -->
+
+            <div class="menu__body">
+
+                <div class="menu__body--wrapper">
+
+                    <div class="menu__nav-list">
+
+                        <div class="menu__nav menu__nav--main">
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">АБИТУРИЕНТУ</a></li>
+                                    <li class="nav__list"><a href="#">СТУДЕНТУ</a></li>
+                                    <li class="nav__list"><a href="#">ВЫПУСКНИКУ</a></li>
+                                    <li class="nav__list"><a href="#">НАУКА</a></li>
+                                    <li class="nav__list"><a href="#">ВАКАНСИИ</a></li>
+                                    <li class="nav__list"><a href="#">COVID-19 Инфо</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+    
+                        <div class="menu__nav menu__nav--second">
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">ТРУДОУСТРОЙСТВО</a></li>
+                                    <li class="nav__list"><a href="#">КАЛЕНДАРЬ</a></li>
+                                    <li class="nav__list"><a href="#">WORLDSKILLS</a></li>
+                                    <li class="nav__list"><a href="#">МЕЖДУНАРОДНЫЕ ПРОГРАММЫ</a></li>
+                                    <li class="nav__list"><a href="#">КООПЕРАТОРАМ</a></li>
+                                    <li class="nav__list"><a href="#">СМИ О НАС</a></li>
+                                    <li class="nav__list"><a href="#">ПАРТНЕРЫ</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="menu__nav-list">
+                        
+                        <div id="accordion" class="accordion">
+    
+                            <div class="accordion-item show">
+                              <div class="accordion-item__header">
+                                БАКАЛАВРИАТ
+                              </div>
+                              <!-- /.accordion-item__header -->
+                              <div class="accordion-item__content">
+                                     
+                                    <nav class="nav">
+                                        <ul>
+                                            <li class="nav__list"><a href="#">Экономика</a></li>
+                                            <li class="nav__list"><a href="#">Менеджмент</a></li>
+                                            <li class="nav__list"><a href="#">Товароведение</a></li>
+                                            <li class="nav__list"><a href="#">Бизнес-информатика</a></li>
+                                            <li class="nav__list"><a href="#">Технология продукции и организация общественного питания</a></li>
+                                            <li class="nav__list"><a href="#">Туризм</a></li>
+                                            <li class="nav__list"><a href="#">Гостиничное дело</a></li>
+                                            <li class="nav__list"><a href="#">Сервис</a></li>
+                                        </ul>
+                                    </nav>
+          
+                              </div>
+                              <!-- /.accordion-item__content -->
+                            </div>
+                            <!-- /.accordion-item -->
+          
+                            <div class="accordion-item show">
+                              <div class="accordion-item__header">
+                                Специалитет
+                              </div>
+                              <!-- /.accordion-item__header -->
+                              <div class="accordion-item__content">
+                                
+                                <nav class="nav">
+                                    <ul>
+                                        <li class="nav__list"><a href="#">Таможенная логистика</a></li>
+                                        <li class="nav__list"><a href="#">Таможенные платежи</a></li>
+                                        <li class="nav__list"><a href="#">Таможенный постаудит</a></li>
+                                        <li class="nav__list"><a href="#">Правоохранительная деятельность и информационные технологии в таможенном деле</a></li>
+                                    </ul>
+                                </nav>
+    
+                              </div>
+                              <!-- /.accordion-item__content -->
+                            </div>
+                            <!-- /.accordion-item -->
+    
+                        </div>
+                        <!-- /.accordion -->
+
+                        <div class="menu__nav--third">
+                            
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">Учредитель</a></li>
+                                    <li class="nav__list"><a href="#">Университет</a></li>
+                                    <li class="nav__list"><a href="#">Региональная сеть</a></li>
+                                    <li class="nav__list"><a href="#">Об институте</a></li>
+                                    <li class="nav__list"><a href="#">Сведения об образовательной организации</a></li>
+                                    <li class="nav__list"><a href="#">Факультеты и кафедры</a></li>
+                                    <li class="nav__list"><a href="#">Библиотечно-информационный центр</a></li>
+                                    <li class="nav__list"><a href="#">Внеучебная деятельность</a></li>
+                                    <li class="nav__list"><a href="#">Карта сайта</a></li>
+                                    <li class="nav__list"><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+
+                        </div>
+    
+                    </div>
+
+                </div>
+
+                <div class="menu__block">
+                    
+                    <div class="menu-search">
+                        <form action="#" class="menu-search__form">
+                            <input class="menu-search__input" type="search" name="menu-search" pattern=".*\S.*" placeholder="Поиск по сайту..." required>
+                        </form>
+                    </div>
+
+                    <a href="#" class="button menu__button">Партнёрам</a>
+
+                    <div class="menu-email">
+                        <svg class="header-top__icon menu--mob-icon"><use xlink:href="images/sprite.svg#email"></use></svg>
+                        <a href="mailto:kazan@ruc.su">kazan@ruc.su</a>
+                    </div>
+
+                    <div class="menu-branch">
+                        <svg class="header-top__icon menu--mob-icon"><use xlink:href="images/sprite.svg#map"></use></svg>
+                        <span class="modal-link">Казанский кооперативный институт</span>
+                    </div>
+
+                    <a class="button menu--button" href="#">Сведения об образовательной организации</a>
+
+                </div>
+
+            </div>
+            <!-- /.menu__body -->
+
+            <div class="menu__bottom">
+
+                <div class="menu__bottom--wrap">
+
+                    <a class="menu__bottom--logo" href="#"><img src="images/logo-kazan.png" alt="Казанский кооперативный институт"></a>    
+
+                    <div class="soc">
+                        <a href="#" class="soc__vk">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#vk"></use></svg>
+                        </a>
+                        <a href="#" class="soc__facebook">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#facebook"></use></svg>
+                        </a>
+                        <a href="#" class="soc__instagram">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#instagram"></use></svg>
+                        </a>
+                        <a href="#" class="soc__youtube">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#youtube"></use></svg>
+                        </a>
+                        <a href="#" class="soc__twitter">
+                            <svg class="soc__svg"><use xlink:href="images/sprite.svg#twitter"></use></svg>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div class="contacts">
+                    <ul>
+                        <li>Приемная комиссия: <a href="tel:+89872979297">8 (987) 297-92-97</a></li>
+                        <li>Бухгалтерия: <a href="tel:+89600516305">8 (960) 051-63-05</a></li>
+                        <li>Отдел кадров: <a href="tel:+88432103026">8 (843) 210-30-26</a></li>
+                        <li>Деканаты: <a href="tel:+88432103025">8 (843) 210-30-25</a></li>
+                        <li><a href="mailto:kazan@ruc.su" class="m-0">kazan@ruc.su</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- /.menu__bottom -->
+
+        </div>
+        <!-- /.menu__wrapper -->
+    </div>
+    <!-- /.menu -->
+
+    <header class="header">
+        
+        <div class="header-top">
+
+            <div class="container">
+                <div class="header-top__wrapper">
+                    <div class="header-top__branch">
+                        <svg class="header-top__icon"><use xlink:href="images/sprite.svg#map"></use></svg>
+                        <span class="modal-link">Казанский кооперативный институт</span>
+                    </div>
+                    <div class="header-top__email">
+                        <svg class="header-top__icon"><use xlink:href="images/sprite.svg#email"></use></svg>
+                        <a href="mailto:kazan@ruc.su">kazan@ruc.su</a>
+                    </div>
+                    <div class="header-top__info">
+                        <a class="button header-top--button" href="/educational-organization.html">Сведения об образовательной организации</a>
+                        <div class="header-top__eye">
+                            <svg class="header-top__icon"><use xlink:href="images/sprite.svg#eye"></use></svg>
+                            <a href="#">Для слабовидящих</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.header-top -->
+
+        <div class="header-bottom">
+
+            <div class="container header-bottom__container">
+                <div class="burger-button">
+                    <svg class="burger-button__icon"><use xlink:href="images/sprite.svg#burger"></use></svg>
+                </div>
+                <div class="header-bottom__wrapper">
+                    <div class="header-bottom__logo">
+                        <a href="#">
+                            <img src="images/logo.jpg" alt="Российский университет кооперации">
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li class="nav__list"><a href="#">АБИТУРИЕНТУ</a></li>
+                            <li class="nav__list"><a href="#">СТУДЕНТУ</a></li>
+                            <li class="nav__list"><a href="#">ВЫПУСКНИКУ</a></li>
+                            <li class="nav__list"><a href="#">НАУКА</a></li>
+                            <li class="nav__list"><a href="#">ВАКАНСИИ</a></li>
+                            <li class="nav__list"><a href="#">COVID-19 Инфо</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="button button--red header-bottom__button">Партнёрам</a>
+                </div>
+                <div class="search-button">
+                    <svg class="search-button__icon"><use xlink:href="images/sprite.svg#search"></use></svg>
+                </div>
+            </div>
+            <!-- /.container -->
+
+            <div class="search">
+                <div class="container">
+                    <form action="#" class="search-form">
+                        <input class="search-form__input" type="search" name="search" pattern=".*\S.*" placeholder="Поиск по сайту..." required>
+                        <button class="search-form__btn">
+                            <svg class="search-form__svg"><use xlink:href="images/sprite.svg#searcharrow"></use></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.header-bottom -->
+        
+    </header>
+    <!-- /.header -->
+
+    <main class="main">
+
+        <div class="container main__wrapper">
+
+            <aside class="navigation">
+                <nav class="nav">
+                    <ul>
+                        <li class="nav__list"><a href="#">Новости</a></li>
+                        <li class="nav__list active"><a href="#">События</a></li>
+                        <li class="nav__list"><a href="#">События университета</a></li>
+                    </ul>
+                </nav>
+                <!-- /.nav -->
+            </aside>
+            <!-- /.navigation -->
+        
+            <div class="content">
+                <div class="content-container">
+        
+                    <div class="bread-crumbs">
+                        <ul>
+                            <li class="item">
+                                <a href="/">Главная</a>
+                            </li>
+                            <li class="item">
+                                <a href="/">Новости</a>
+                            </li>
+                            <li class="item">
+                                <span class="active">В ККИ завершились первые курсы по полилингвальному образованию</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.bread-crumbs -->
+        
+                    <div class="content-inner">
+
+                        <div class="news-page__date">17.08.2020</div>
+
+                        <h2>В ККИ завершились первые курсы по полилингвальному образованию</h2>
+
+                        <div class="news-page__img">
+                            <img src="images/news/news-page-img.jpg" alt="В ККИ завершились первые курсы по полилингвальному образованию">
+                        </div>
+
+                        <div class="news-page__content">
+
+                            <p>Программа обучения разработана как дополнительное профессиональное образование для102-х педагогов из казанской школы №165 и лицея №121, а также преподавателей школ и воспитателей детских садов Елабуги, сообщила руководитель Центра дополнительного образования Казанского кооперативного института РУК Светлана Царева. Кроме того, она подчеркнула, что эти курсы был первыми такого в истории Татарстана, и даже России.</p>
+
+                            <p>Проректор по учебной работе ККИ Ирина Мнускина поздравила выпускников с получением заветных дипломов со сцены актового зала института:</p>
+
+                            <p>- Поздравляю вас от имени ректора Российского университета кооперации Алсу Набиевой и от себя лично! Вы у нас пионеры-первопроходцы! Это как первый выход в космос – потом много кто добивался этого, но все запомнили первого. Я желаю вам и дальше быть первыми во всех сферах и большой удачи!</p>
+
+                            <img src="images/news/news-page-img-2.jpg" alt="">
+
+                            <p>Светлана Царева также обратилась к слушателям:</p>
+
+                            <p>- Вы просто молодцы! Занимались активно, никто не пропускал занятия. Первыми начали обучение с нашим преподавателем из Великобритании, не боялись ничего и успешно завершили курсы!</p>
+
+                            <p>Выпускники в свою очередь благодарили ректора РУК Алсу Набиеву за предоставленную возможность сотрудничества и обучения. Особую благодарность педагоги выразили организатору курсов Светлане Царевой. «Мы очень рады, что учились именно у вас!» – подчеркнули обладатели дипломов.</p>
+
+                            <p>Сеть полилингвальных образовательных комплексов создаются в республике по инициативе Государственного советника РТ Минтимера Шаймиева при содействии Республиканского Фонда «Возрождение». По его словам, эти комплексы призваны стать моделью современной школы, обеспечивающей качественное образование на русском, татарском и английском языках.</p>
+
+                            <p>Полилингвальный кластер начал формироваться в республике с 2019 года. До 2023 года планируется построить шесть комплексов. Первые два уже построены в Казани и Елабуге. Также комплексы будут создаваться в Набережных Челнах, Нижнекамске, Альметьевске. </p>
+
+                        </div>
+                        <!-- /.news-page__content -->
+
+                        <div class="news-page-slider swiper-container">
+                                
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="img-hover" href="https://source.unsplash.com/IvfoDk30JnI/1500x1000" data-fancybox="news">
+                                        <img data-src="images/news/news-page-img-3.jpg" class="swiper-lazy">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="img-hover" href="https://source.unsplash.com/IvfoDk30JnI/1500x1000" data-fancybox="news">
+                                        <img data-src="images/news/news-page-img-4.jpg" class="swiper-lazy">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="img-hover" href="https://source.unsplash.com/IvfoDk30JnI/1500x1000" data-fancybox="news">
+                                        <img data-src="images/news/news-page-img-5.jpg" class="swiper-lazy">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="img-hover" href="https://source.unsplash.com/IvfoDk30JnI/1500x1000" data-fancybox="news">
+                                        <img data-src="images/news/news-page-img-6.jpg" class="swiper-lazy">
+                                        <div class="swiper-lazy-preloader"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-pagination"></div>
+                        
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                        </div>
+
+                        <div class="share">
+                            <div class="share--right">
+                                поделиться новостью
+                            </div>
+                        </div>
+                        <!-- /.share -->
+
+                        <div class="more-news">
+                            <div class="more-news__head">
+                                <div class="more-news__title">
+                                    <h3>Другие новости</h3>
+                                </div>
+                                <div class="more-news__more">
+                                    <a href="/news-list.html">Все новости</a>
+                                </div>
+                            </div>
+
+                            <div class="more-news-slider swiper-container">
+
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+
+                                        <a href="/news-page.html" class="news-card">
+                                            <div class="news-card__img" style="background-image: url('images/news/news-page-img-2.jpg');"></div>
+                                            <div class="news-card__info">
+                                                <div class="news-card__date">31 август 2020</div>
+                                            </div>
+                                            <h4 class="news-card__title">Ключевая ставка: роль решений Центробанка в жизни студентов</h4>
+                                        </a>
+                                        <!-- /.news-card -->
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <a href="/news-page.html" class="news-card">
+                                            <div class="news-card__img" style="background-image: url('images/news/news-page-img.jpg');"></div>
+                                            <div class="news-card__info">
+                                                <div class="news-card__date">31 август 2020</div>
+                                            </div>
+                                            <h4 class="news-card__title">Ключевая ставка: роль решений Центробанка в жизни студентов</h4>
+                                        </a>
+                                        <!-- /.news-card -->
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <a href="/news-page.html" class="news-card">
+                                            <div class="news-card__img" style="background-image: url('images/news/news-page-img.jpg');"></div>
+                                            <div class="news-card__info">
+                                                <div class="news-card__date">31 август 2020</div>
+                                            </div>
+                                            <h4 class="news-card__title">Ключевая ставка: роль решений Центробанка в жизни студентов</h4>
+                                        </a>
+                                        <!-- /.news-card -->
+
+                                    </div>
+                                    
+                                </div>
+                            
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+
+                            </div>
+                        </div>
+                        <!-- /.more-news -->
+
+                    </div>
+                    <!-- /.content-inner -->
+        
+                </div>
+                <!-- /.content-container -->
+            </div>
+            <!-- /.content -->
+
+        </div>
+        <!-- /.main__wrapper -->
+            
+    </main>
+    <!-- /.main -->
+
+    <footer class="footer">
+
+        <div class="subscribe">
+            <div class="container">
+                <div class="subscribe__wrapper">
+                    <div class="subscribe__title">
+                        <span>Подпишитесь на рассылку</span>
+                    </div>
+                    <div class="subscribe__form">
+                        <form action="#">
+                            <input type="email" name="email" class="subscribe__input" placeholder="введите свой email">
+                            <button class="subscribe__button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.subscribe__wrapper -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.subscribe -->
+        
+        <div class="container">
+            <div class="footer__wrapper">
+
+                <div class="footer-head">
+                    <div class="footer-head__logo">
+                        <a href="#"><img src="images/logo.jpg" alt="Казанский кооперативный институт"></a>
+                        <a href="#"><img src="images/logo-kazan.png" alt="Казанский кооперативный институт"></a>
+                    </div>
+                    <div class="footer-head__wrapper">
+                        <div class="footer-head__nav">
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">АБИТУРИЕНТУ</a></li>
+                                    <li class="nav__list"><a href="#">СТУДЕНТУ</a></li>
+                                    <li class="nav__list"><a href="#">ВЫПУСКНИКУ</a></li>
+                                    <li class="nav__list"><a href="#">НАУКА</a></li>
+                                    <li class="nav__list"><a href="#">ВАКАНСИИ</a></li>
+                                    <li class="nav__list"><a href="#">COVID-19 Инфо</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-head__categories">
+                            <nav class="nav">
+                                <ul>
+                                    <li class="nav__list"><a href="#">Учредитель</a></li>
+                                    <li class="nav__list"><a href="#">Университет</a></li>
+                                    <li class="nav__list"><a href="#">Региональная сеть</a></li>
+                                    <li class="nav__list"><a href="#">Об институте</a></li>
+                                    <li class="nav__list"><a href="#">Сведения об образовательной организации</a></li>
+                                    <li class="nav__list"><a href="#">Факультеты и кафедры</a></li>
+                                    <li class="nav__list"><a href="#">Библиотечно-информационный центр</a></li>
+                                    <li class="nav__list"><a href="#">Внеучебная деятельность</a></li>
+                                    <li class="nav__list"><a href="#">Карта сайта</a></li>
+                                    <li class="nav__list"><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.footer-head -->
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom__copy">
+                        <div class="soc">
+                            <a href="#" class="soc__vk">
+                                <svg class="soc__svg"><use xlink:href="images/sprite.svg#vk"></use></svg>
+                            </a>
+                            <a href="#" class="soc__facebook">
+                                <svg class="soc__svg"><use xlink:href="images/sprite.svg#facebook"></use></svg>
+                            </a>
+                            <a href="#" class="soc__instagram">
+                                <svg class="soc__svg"><use xlink:href="images/sprite.svg#instagram"></use></svg>
+                            </a>
+                            <a href="#" class="soc__youtube">
+                                <svg class="soc__svg"><use xlink:href="images/sprite.svg#youtube"></use></svg>
+                            </a>
+                            <a href="#" class="soc__twitter">
+                                <svg class="soc__svg"><use xlink:href="images/sprite.svg#twitter"></use></svg>
+                            </a>
+                        </div>
+                        <div class="footer-bottom__txt">
+                            <p>
+                                © Российский университет кооперации<br>
+                                Учредитель – Центросоюз Российской Федерации<br>
+                                Министерство науки и высшего образования РФ<br>
+                                Министерство просвещения РФ<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <ul>
+                            <li>Приемная комиссия: <a href="tel:+89872979297">8 (987) 297-92-97</a></li>
+                            <li>Бухгалтерия: <a href="tel:+89600516305">8 (960) 051-63-05</a></li>
+                            <li>Отдел кадров: <a href="tel:+88432103026">8 (843) 210-30-26</a></li>
+                            <li>Деканаты: <a href="tel:+88432103025">8 (843) 210-30-25</a></li>
+                            <li><a href="mailto:kazan@ruc.su" class="m-0">kazan@ruc.su</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.footer-bottom -->
+
+            </div>
+        </div>
+        <!-- /.container -->
+
+    </footer>
+    <!-- /.footer -->
+
+    <div class="modal">
+        <div class="modal__wrapper">
+            <div class="modal__body">
+                <div class="close">
+                    <svg class="close__svg"><use xlink:href="images/sprite.svg#close"></use></svg>
+                </div>
+                <div class="branch">
+                    <div class="branch__head">
+                        Выберите филиал:
+                    </div>
+
+                    <div class="branch__list">
+                        <div class="branch__item">
+                            <a href="#">Головной вуз</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Арзамасский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Владимирский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Ижевский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Калининградский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Мурманский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Саранский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Сыктывкарский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Камчатский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Башкирский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Волгоградский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Казанский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Краснодарский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Поволжский кооперативный институт</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Смоленский филиал</a>
+                        </div>
+                        <div class="branch__item">
+                            <a href="#">Чебоксарский кооперативный институт</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.branch -->
+            </div>
+            <!-- /.modal__body -->
+        </div>
+        <!-- /.modal__wrapper -->
+    </div>
+    <!-- /.modal -->
+
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="js/jquery.fancybox.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/svgxuse.js" defer></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
