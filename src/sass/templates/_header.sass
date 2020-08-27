@@ -1,6 +1,23 @@
 .header 
-    position: relative
+    position: fixed
+    top: 0
+    width: 100%
     z-index: 50
+    transition: all 0.15s
+
+.header.scroll
+    transform: translateY(-57px)
+    animation-name: hidden 
+    animation-duration: 0.15s
+    @media ( max-width: 991px )
+        transform: translateY(0px)
+        animation: none
+
+@keyframes hidden
+    0%
+        transform: translateY(0px)
+    100%
+        transform: translateY(-57px)
 
 .header-top
     background: $primary
@@ -187,3 +204,8 @@
         margin-left: 15px
         position: inherit
         transform: translateY(0%)
+
+.sticky 
+  position: fixed
+  top: 0
+  width: 100%

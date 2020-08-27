@@ -1,4 +1,7 @@
 .navigation
+    width: 23%
+    @media ( max-width: 960px )
+        width: 100%
     .nav 
         ul 
             background: #ffffff
@@ -7,12 +10,14 @@
             position: relative
             margin-left: -10px
             padding: 30px 30px 30px 20px
-            width: 270px
             background: $primary
             min-height: 90px
             display: flex
             align-items: center
             transition: background 0.2s
+            @media ( max-width: 960px )
+                padding: 20px 
+                min-height: auto
             &::after
                 content: ''
                 position: absolute
@@ -32,10 +37,14 @@
             &:hover
                 background: #77A4FF
                 border-radius: 10px 0 0 10px
+                @media ( max-width: 960px )
+                    border-radius: 0
 
 .nav__list.active 
     background: #ffffff
     border-radius: 10px 0 0 10px
+    @media ( max-width: 960px )
+        border-radius: 0
     &:hover
         background: #ffffff
     a 
@@ -45,7 +54,11 @@
 
 .nav__list.active + li 
     border-radius: 0 10px 0 0
+    @media ( max-width: 960px )
+        border-radius: 0
     &::after
         width: calc(100% - 20px) 
     &:hover
         border-radius: 10px 10px 0 10px
+        @media ( max-width: 960px )
+            border-radius: 0

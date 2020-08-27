@@ -1,12 +1,17 @@
 .bread-crumbs
     margin-bottom: 3.7rem
+    @media ( max-width: 1150px )
+        margin-bottom: 2rem
     ul 
         display: flex
         align-items: center
+        flex-wrap: wrap
         .item
             position: relative
             padding-right: 35px
             font-size: 1.4rem
+            @media ( max-width: 767px )
+                font-size: 1.2rem
             &:last-child
                 padding-right: 0
                 &::after

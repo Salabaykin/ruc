@@ -1,5 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+  // Header Fixed
+  const header = document.querySelector('.header');
+
+  function fixed() {
+    if (window.scrollY > 57) {
+      header.classList.add('scroll');
+    } else {
+      header.classList.remove('scroll');
+    }
+  }
+
+  window.addEventListener('scroll', fixed);
+
   // Promo-Swiper
   var promoSwiper = new Swiper('.promo-slider.swiper-container', {
     speed: 400,
@@ -64,6 +77,16 @@ document.addEventListener("DOMContentLoaded", function() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      767: {
+        spaceBetween: 30,
+        slidesPerView: 2
+      },
+      650: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+    }
   });
 
 
@@ -78,6 +101,14 @@ document.addEventListener("DOMContentLoaded", function() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      767: {
+        slidesPerView: 2
+      },
+      500: {
+        slidesPerView: 1
+      },
+    }
   });
 
 

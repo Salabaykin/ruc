@@ -1,6 +1,9 @@
 .more-news
     margin-top: 40px
+    @media ( max-width: 1150px )
+        margin-top: 20px
     &__head
+        margin-bottom: 23px
         display: flex
         justify-content: space-between
         align-items: center
@@ -8,6 +11,8 @@
         h3 
             color: #000000
             font-size: 3rem
+            @media ( max-width: 1150px )
+                font-size: 2rem
     &__more 
         color: #5f94ff
         font-size: 1.2rem
@@ -17,6 +22,38 @@
         letter-spacing: 0.6px
     &-slider
         .swiper-slide
+            .news-card 
+                padding: 0
             a 
                 &:hover
                     text-decoration: none
+        .swiper-button-prev:after,
+        .swiper-button-next:after
+            font-family: inherit
+            font-weight: bold
+            font-size: 2rem
+            color: #000000
+            margin-top: 2px
+        .swiper-button-prev:after
+            content: '<'
+        .swiper-button-next:after
+            content: '>'
+        .swiper-button-prev,
+        .swiper-button-next
+            top: 70px
+            background-color: #ffffff
+            width: 4rem
+            height: 4rem
+            margin-top: 0
+            border-radius: 3px
+            @media ( max-width: 650px)
+                top: 125px
+            @media ( max-width: 510px)
+                top: 100px
+            @media ( max-width: 450px)
+                top: 85px
+            @media ( max-width: 380px)
+                top: 75px
+        .swiper-button-prev.swiper-button-disabled, 
+        .swiper-button-next.swiper-button-disabled
+            opacity: 0.2
