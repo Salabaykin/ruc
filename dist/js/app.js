@@ -153,6 +153,61 @@ document.addEventListener("DOMContentLoaded", function() {
   } 
 
 
+  // Virtual-Tour-Swiper
+  const virtualTourSlider = document.querySelectorAll('.virtual-tour-slider.swiper-container .swiper-slide');
+  if (virtualTourSlider.length > 5) {
+    var virtualTour = new Swiper('.virtual-tour-slider.swiper-container', {
+      speed: 400,
+      slidesPerView: 5,
+      lazy: true,
+      spaceBetween: 20,
+      watchOverflow: true,
+      loop: false,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        1650: {
+          slidesPerView: 4,
+          centeredSlides: false,
+          loop: false
+        },
+        1380: {
+          slidesPerView: 3,
+          centeredSlides: false,
+          loop: false
+        },
+        991: {
+          slidesPerView: 'auto',
+          centeredSlides: true,
+          // spaceBetween: 10,
+          loop: true
+        },
+        670: {
+          slidesPerView: 2,
+          centeredSlides: true,
+          // spaceBetween: 10,
+          loop: true
+        }
+      }
+    });
+  } 
+
+
+  // Iframe Style 
+  // let iframeName = document.querySelectorAll('.iframe');
+
+  // iframeName.forEach((el) => {
+  //   el.contentDocument.body.innerHTML = el.contentDocument.body.innerHTML + '<style>#playsvg{display: none !important;}</style>';
+  // });
+
+
   // Crop-Text
   const cropElement = document.querySelectorAll('.crop-text'), // выбор элементов 
         size = 200, // кол-во символов 
@@ -278,12 +333,14 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   })();
+  
+  window.addEventListener('resize', resize);
 
-  var group = accordion();
-  group.init('#accordion');
-
-
-  // WOW Animations 
-  new WOW().init();
+  function resize() {
+    if(document.documentElement.clientWidth < 767) {
+      var group = accordion();
+      group.init('#accordion');
+    }
+  }
 
 });
