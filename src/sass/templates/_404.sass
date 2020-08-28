@@ -1,10 +1,9 @@
 .not-found
     position: relative
-    padding: 10rem 0
+    padding: 5rem 0
     background: $primary
-    @media ( max-width: 1200px )
-        margin-top: 3rem
-        padding: 4rem 0 2rem 0
+    @media ( max-width: 991px )
+        padding: 2rem 0
     &__title,
     &__descr,
     &__subtitle
@@ -13,9 +12,63 @@
     &__title
         font-weight: bold
         font-size: 27rem
+        line-height: 1
+        @media ( max-width: 991px )
+            font-size: 15rem
+        @media ( max-width: 400px )
+            font-size: 10rem
     &__subtitle
         font-size: 3rem
+        @media ( max-width: 991px )
+            font-size: 1.4rem
     &__descr
         font-size: 2rem
+        @media ( max-width: 991px )
+            font-size: 1.4rem
     &__map
-
+        margin-top: 5rem
+        display: flex
+        flex-wrap: wrap 
+    &__item
+        margin-bottom: 3rem
+        margin-right: 3rem
+        width: 250px
+        a 
+            position: relative
+            display: block
+            padding-bottom: 1rem
+            margin-bottom: 1.5rem
+            color: #ffffff 
+            font-weight: bold 
+            &::after
+                content: ''
+                position: absolute
+                bottom: 0
+                left: 0
+                background: $secondary 
+                width: 80px
+                height: 3px
+                border-radius: 3px 
+        ul 
+            li 
+                position: relative
+                padding-left: 16px
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+                    left: 0
+                    width: 5px
+                    height: 5px
+                    border-radius: 50%
+                    background: #ffffff
+                a 
+                    margin-bottom: 0
+                    padding-bottom: 0
+                    color: #ffffff
+                    font-weight: normal
+                    &::after
+                        display: none
+                    &:hover
+                        text-decoration: underline
