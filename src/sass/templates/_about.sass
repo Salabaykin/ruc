@@ -1,0 +1,224 @@
+.about 
+    &__title
+        padding-bottom: 3rem
+        margin-bottom: 2.5rem
+        position: relative
+        color: #161618
+        font-size: 4.8rem
+        font-weight: 500
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            background: $secondary 
+            width: 100px
+            height: 5px
+            border-radius: 3px
+        &--white
+            color: #ffffff
+    &-head
+        padding-top: 4rem
+        padding-bottom: 130px
+        width: 100%
+        min-height: 60rem
+        background: url('../images/about/about-bg.jpg') no-repeat 
+        background-size: cover 
+        background-position: center bottom
+        &__content
+            margin-top: 7rem
+            padding-right: 20rem
+        &__title
+            position: relative
+            font-size: 4.8rem
+            font-weight: 500
+            padding-bottom: 4rem
+            margin-bottom: 4rem
+            &::after
+                content: ''
+                position: absolute
+                bottom: 0
+                left: 0
+                background: $secondary 
+                width: 100px
+                height: 5px
+                border-radius: 3px
+        &__subtitle
+            font-size: 2.4rem
+            line-height: 32px
+        &__items
+            margin-top: -40px
+            margin-bottom: 150px
+            display: flex
+            justify-content: space-between
+        &__item
+            margin-right: 1.5rem
+            display: flex
+            align-items: center
+            &:last-child
+                margin-right: 0
+        &__img
+            width: 125px
+            height: 118px
+            img 
+                width: 100%
+        &__wrap
+            margin-left: 2rem
+        &__num
+            color: $secondary
+            font-size: 6rem
+            line-height: 1
+        &__txt
+            font-size: 2.4rem
+            font-weight: 500
+.council
+    margin-bottom: 85px
+    p 
+        color: #6d6e71
+        font-size: 1.8rem
+        line-height: 26px
+        margin-bottom: 3rem
+    &__list
+        margin-top: 60px
+        display: flex
+        flex-wrap: wrap 
+    &__item
+        padding: 2rem
+        margin: 0 2rem 2rem 0
+        width: 370px
+        min-height: 165px
+        border-radius: 5px
+        border: 1px solid #dddddd
+        background-color: #ffffff
+        display: flex
+    &__photo
+        min-width: 80px
+        max-width: 80px
+        min-height: 80px
+        img 
+            width: 100%
+    &__info
+        margin-left: 25px
+    &__name
+        position: relative
+        color: #010101
+        font-size: 1.8rem
+        font-weight: 500
+        margin-bottom: 1rem
+        padding-bottom: 0.7rem
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            background: $secondary 
+            width: 35px
+            height: 2px
+            border-radius: 3px
+    &__descr 
+        color: #6d6e71
+        font-size: 1.4rem
+
+.virtual-tour
+    padding: 70px 0 80px
+    position: relative
+    background: $primary
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: url(../images/programme/prog-bg.png) no-repeat 
+        background-position: top
+    .about__title
+        margin-bottom: 0
+    &-slider
+        &__nav 
+            position: relative
+            margin: 5rem 0 
+            display: flex
+            -webkit-user-select: none
+            -moz-user-select: none
+            -ms-user-select: none
+            user-select: none
+        &__item
+            width: 360px
+            height: 230px
+            a 
+                display: block
+                overflow: hidden
+                width: 360px
+                height: 230px
+                iframe
+                    width: 100%
+                    height: 100%
+        .swiper-slide
+            display: flex
+            justify-content: center
+        .swiper-button-prev:after,
+        .swiper-button-next:after
+            display: none
+        .swiper-button-prev:focus,
+        .swiper-button-next:focus
+            outline: none !important
+        .swiper-button-prev,
+        .swiper-button-next
+            position: inherit
+            left: 0
+            right: 0
+            margin-top: 0
+        .swiper-button-next
+            transform: rotate(180deg)
+            margin-left: 1rem
+        .gallery-slider__prev,
+        .gallery-slider__next 
+            border: 1px solid rgba(255, 255, 255, 0.7)
+            border-radius: 3px
+            width: 4.4rem
+            height: 4.4rem
+            display: flex
+            align-items: center
+            justify-content: center
+            transition: all 0.2s
+            &:hover
+                background: #ffffff
+                .gallery-slider__svg
+                    fill: $primary
+        .swiper-pagination
+            margin-left: 4rem
+            position: inherit
+            display: flex
+            align-items: center
+        .swiper-pagination-bullets .swiper-pagination-bullet
+            margin: 0 1.5rem
+            background: #ffffff
+            opacity: 0.5
+            width: 1rem
+            height: 1rem
+            transition: opacity 0.2s
+            @media ( max-width: 767px )
+                margin: 0 1rem
+            &:hover
+                opacity: 1
+        .swiper-pagination-bullet.swiper-pagination-bullet-active
+            position: relative
+            background: #ffffff
+            opacity: 1
+            width: 1.2rem
+            height: 1.2rem
+            &::after
+                content: ''
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                width: 2.4rem
+                height: 2.4rem
+                border: 2px solid #ffffff
+                border-radius: 50%
+                opacity: 0.5
+    
+
+    

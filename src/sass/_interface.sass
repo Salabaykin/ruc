@@ -101,4 +101,20 @@
         opacity: 0
         z-index: 1
         transition: opacity 0.3s
+
+.doc
+    position: relative
+    color: $primary
+    font-size: 1.8rem
+    text-decoration: underline
+    padding-left: 3rem
+    &::before
+        content: ''
+        position: absolute
+        top: -5px
+        left: 0
+        width: 21px
+        height: 28px
+        background: url('../images/icons/file.svg') no-repeat
+        background-size: cover 
         
