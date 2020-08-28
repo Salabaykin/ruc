@@ -1,0 +1,58 @@
+.documents
+    margin-bottom: 55px
+    &-tabs 
+        margin-top: 3rem
+        display: flex
+        border: 1px solid #dddddd
+        &__list
+            width: 300px
+            display: flex
+            flex-direction: column
+        &__link 
+            position: relative
+            cursor: pointer
+            padding: 0 25px
+            min-height: 100px
+            background-color: #f7f7f7
+            border: none 
+            text-align: left
+            border-bottom: 1px solid #dddddd
+            color: #6d6e71
+            font-size: 1.4rem
+            font-weight: 500
+            text-transform: uppercase
+            transition: all 0.2s
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                height: 100%
+                width: 4px
+                background: $primary
+                opacity: 0
+            &:last-child
+                border-bottom: none 
+            &:hover
+                background-color: $primary
+                color: #ffffff
+        &__body
+            padding: 40px 35px
+        &__content 
+            display: none
+            
+.documents-tabs__link.active
+    background-color: #ffffff
+    color: $primary 
+    &::before
+        opacity: 1
+
+.documents-tabs__content.active 
+    display: flex
+    animation: opacity 0.9s ease
+ 
+@keyframes opacity 
+    0% 
+       opacity: 0
+    100% 
+       opacity: 1

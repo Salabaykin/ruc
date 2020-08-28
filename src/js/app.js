@@ -200,14 +200,6 @@ document.addEventListener("DOMContentLoaded", function() {
   } 
 
 
-  // Iframe Style 
-  // let iframeName = document.querySelectorAll('.iframe');
-
-  // iframeName.forEach((el) => {
-  //   el.contentDocument.body.innerHTML = el.contentDocument.body.innerHTML + '<style>#playsvg{display: none !important;}</style>';
-  // });
-
-
   // Crop-Text
   const cropElement = document.querySelectorAll('.crop-text'), // выбор элементов 
         size = 200, // кол-во символов 
@@ -244,26 +236,51 @@ document.addEventListener("DOMContentLoaded", function() {
   overlay.addEventListener('click', function() {toggle()});
 
 
-  // Programme-Tabs
-  const tabLinks = document.querySelectorAll('.programme-tabs__link'),
-        tabContent = document.querySelectorAll(".programme__content");
+  // Tabs
+  class Tabs {
+    constructor(button, content) {
+      this.button = button;
+      this.content = content;
+    }
 
-  tabLinks.forEach(function(el) {
-    el.addEventListener("click", openTabs);
-  });
+    render() {
+      const showTabs = (el) => {
+        const btnTarget = el.currentTarget;
+        const country = btnTarget.dataset.country;
+        this.content.forEach((el) => {
+          this.removeClass(el);
+        });
+        this.button.forEach((el) => {
+          this.removeClass(el);
+        });
+        document.querySelector('#' + country).classList.add('active');
+        btnTarget.classList.add('active');
+      }
+      
+      this.button.forEach(function(el) {
+        el.addEventListener("click", showTabs);
+      });
+    }
 
-  function openTabs(el) {
-    const btnTarget = el.currentTarget;
-    const country = btnTarget.dataset.country;
-    tabContent.forEach(function(el) {
-        el.classList.remove('active');
-    });
-    tabLinks.forEach(function(el) {
-        el.classList.remove('active');
-    });
-    document.querySelector('#' + country).classList.add('active');
-    btnTarget.classList.add('active');
+    removeClass(el) {
+      el.classList.remove('active');
+    }
+
   }
+
+  // Documents-Tabs
+  const documenttabLinks = document.querySelectorAll('.documents-tabs__link'),
+        documenttabContent = document.querySelectorAll('.documents-tabs__content');
+
+  // Programme-Tabs
+  const programmetabLinks = document.querySelectorAll('.programme-tabs__link'),
+        programmetabContent = document.querySelectorAll(".programme__content");
+
+  const documentsTabs = new Tabs(documenttabLinks, documenttabContent);
+  documentsTabs.render();
+
+  const programmeTabs = new Tabs(programmetabLinks, programmetabContent);
+  programmeTabs.render();
 
 
   // Search-Block 
