@@ -1,11 +1,16 @@
 .documents
     margin-bottom: 55px
+    &__link
+        color: #161618
+        font-size: 2.4rem
+        text-decoration: underline
     &-tabs 
         margin-top: 3rem
         display: flex
         border: 1px solid #dddddd
         &__list
             width: 300px
+            min-width: 300px
             display: flex
             flex-direction: column
         &__link 
@@ -37,10 +42,34 @@
                 background-color: $primary
                 color: #ffffff
         &__body
+            width: 100%
+            height: 100%
             padding: 40px 35px
-            max-height: 100%
         &__content 
             display: none
+        &__item
+            position: relative
+            padding-left: 3.5rem
+            margin: 0 1.5rem 2rem 
+            width: 340px
+            cursor: pointer
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 21px
+                height: 28px
+                background: url('../images/icons/pdf-icon.svg') no-repeat
+                background-size: cover 
+            &:hover
+                a 
+                    color: $primary
+                    text-decoration: underline
+            a 
+                color: #6d6e71
+                font-size: 1.8rem
+                
             
 .documents-tabs__link.active
     background-color: #ffffff
@@ -49,12 +78,10 @@
         opacity: 1
 
 .documents-tabs__content.active 
-    width: 100%
-    height: 100%
-    display: flex
-    flex-direction: column
-    flex-wrap: wrap
+    max-height: 720px
     overflow: auto
+    display: flex
+    flex-wrap: wrap
     animation: opacity 0.9s ease
  
 @keyframes opacity 
