@@ -287,7 +287,19 @@ document.addEventListener("DOMContentLoaded", function() {
   const searchButton = document.querySelector('.search-button'),
         searchForm = document.querySelector('.search');
 
+  const toggleClose = () => {
+    searchButton.innerHTML = searchButton.classList.contains('active')
+    ? `<svg class="search-button__icon">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>`
+    : `<svg class="search-button__icon">
+        <use xlink:href="images/sprite.svg#search"></use>
+      </svg>`;
+  }
+
   searchButton.addEventListener('click', function() {
+    searchButton.classList.toggle('active');
+    toggleClose();
     searchForm.classList.toggle('active');
   })
 
