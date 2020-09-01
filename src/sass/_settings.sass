@@ -11,10 +11,11 @@ body
     line-height: 1.3
     font-size: calc(1rem + 6px)
     color: $txt-color
-    padding-right: calc(17px - (100vw - 100%)) 
     padding-top: 147px
     @media ( max-width: 1330px )
         padding-top: 131px
+    @media ( min-width: 1024px )
+        padding-right: calc(17px - (100vw - 100%)) 
     @media ( max-width: 991px )
         padding-top: 75px
     @media ( max-width: 565px )
