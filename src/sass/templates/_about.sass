@@ -6,60 +6,116 @@
         color: #161618
         font-size: 4.8rem
         font-weight: 500
+        @media ( max-width: 1250px )
+            font-size: 3.8rem
+            padding-bottom: 2rem
+            margin-bottom: 2.4rem
+        @media ( max-width: 1024px )
+            font-size: 2.5rem
+        @media ( max-width: 400px )
+            font-size: 2rem
         &::after
             content: ''
             position: absolute
             bottom: 0
             left: 0
             background: $secondary 
-            width: 100px
-            height: 5px
+            width: 10rem
+            height: 0.5rem
             border-radius: 3px
         &--white
             color: #ffffff
     &-head
         padding-top: 4rem
-        padding-bottom: 130px
+        padding-bottom: 13rem
         width: 100%
         min-height: 60rem
         background: url('../images/about/about-bg.jpg') no-repeat 
         background-size: cover 
         background-position: center bottom
+        @media ( max-width: 1250px )
+            padding-bottom: 10rem
+            min-height: 52rem
+        @media ( max-width: 1050px )
+            min-height: 43rem
+            background-size: contain
+            background-position: top
+        @media ( max-width: 850px )
+            min-height: 40rem
+        @media ( max-width: 580px )
+            background-size: 170%
+            padding-bottom: 8rem
         &__content
             margin-top: 7rem
             padding-right: 20rem
+            @media ( max-width: 1250px )
+                margin-top: 5rem
+            @media ( max-width: 1050px )
+                margin-top: 3rem
+            @media ( max-width: 850px )
+                padding-right: 0
         &__title
             position: relative
             font-size: 4.8rem
             font-weight: 500
             padding-bottom: 4rem
             margin-bottom: 4rem
+            @media ( max-width: 1250px )
+                font-size: 4rem 
+                padding-bottom: 3rem
+                margin-bottom: 3rem
+            @media ( max-width: 1050px )
+                font-size: 3rem
+                padding-bottom: 2rem
+                margin-bottom: 2rem
+            @media ( max-width: 580px )
+                font-size: 2.5rem
             &::after
                 content: ''
                 position: absolute
                 bottom: 0
                 left: 0
                 background: $secondary 
-                width: 100px
-                height: 5px
+                width: 10rem
+                height: 0.5rem
                 border-radius: 3px
         &__subtitle
             font-size: 2.4rem
             line-height: 32px
+            @media ( max-width: 1250px )
+                font-size: 2rem 
+            @media ( max-width: 1050px )
+                font-size: 1.6rem
         &__items
-            margin-top: -40px
-            margin-bottom: 150px
+            margin-top: -4rem
+            margin-bottom: 15rem
             display: flex
             justify-content: space-between
+            @media ( max-width: 1250px )
+                margin-bottom: 8rem
+                justify-content: space-around
+            @media ( max-width: 1050px )
+                margin-bottom: 6rem
+                flex-wrap: wrap
+            @media ( max-width: 580px )
+                flex-direction: column
+                align-items: center
+                margin-bottom: 2rem
         &__item
             margin-right: 1.5rem
             display: flex
             align-items: center
+            @media ( max-width: 1050px )
+                margin-bottom: 2rem
+            @media ( max-width: 580px )
+                margin-right: 0
+                min-width: 25rem
             &:last-child
                 margin-right: 0
         &__img
-            width: 125px
-            height: 118px
+            width: 12.5rem
+            @media ( max-width: 1050px )
+                width: 9rem
             img 
                 width: 100%
         &__wrap
@@ -68,37 +124,66 @@
             color: $secondary
             font-size: 6rem
             line-height: 1
+            @media ( max-width: 1250px )
+                font-size: 4rem
+            @media ( max-width: 1050px )
+                font-size: 3rem
         &__txt
             font-size: 2.4rem
             font-weight: 500
+            @media ( max-width: 1250px )
+                font-size: 2rem
+            @media ( max-width: 1050px )
+                font-size: 1.6rem
 .council
-    margin-bottom: 85px
+    margin-bottom: 8.5rem
+    @media ( max-width: 1050px )
+        margin-bottom: 5rem
+    @media ( max-width: 580px )
+        margin-bottom: 2rem
     p 
         color: #6d6e71
         font-size: 1.8rem
         line-height: 26px
         margin-bottom: 3rem
+        @media ( max-width: 1050px )
+            font-size: 1.6rem
     &__list
-        margin-top: 60px
+        margin-top: 6rem
         display: flex
         flex-wrap: wrap 
+        @media ( max-width: 1050px )
+            margin-top: 4rem
     &__item
         padding: 2rem
-        margin: 0 2rem 2rem 0
-        width: 370px
-        min-height: 165px
+        margin: 1rem
+        width: 31.5%
+        min-height: 16.5rem
         border-radius: 5px
         border: 1px solid #dddddd
         background-color: #ffffff
         display: flex
+        @media ( max-width: 1150px )
+            width: 47%
+        @media ( max-width: 740px )
+            width: 100%
+            min-height: 12.5rem
+            margin: 0
+            margin-bottom: 1rem
     &__photo
-        min-width: 80px
-        max-width: 80px
-        min-height: 80px
+        min-width: 8rem
+        max-width: 8rem
+        min-height: 8rem
+        @media ( max-width: 400px )
+            min-width: 5rem
+            max-width: 5rem
+            min-height: 5rem
         img 
             width: 100%
     &__info
-        margin-left: 25px
+        margin-left: 2.5rem
+        @media ( max-width: 400px )
+            margin-left: 1.5rem
     &__name
         position: relative
         color: #010101
@@ -106,6 +191,8 @@
         font-weight: 500
         margin-bottom: 1rem
         padding-bottom: 0.7rem
+        @media ( max-width: 400px )
+            font-size: 1.4rem
         &::after
             content: ''
             position: absolute
@@ -120,9 +207,11 @@
         font-size: 1.4rem
 
 .virtual-tour
-    padding: 70px 0 80px
+    padding: 7rem 0 8rem
     position: relative
     background: $primary
+    @media ( max-width: 1024px )
+        padding: 4rem 0
     &::after
         content: ''
         position: absolute
@@ -146,11 +235,15 @@
         &__item
             width: 100%
             height: 230px
+            @media ( max-width: 1024px )
+                height: 215px
             a 
                 display: block
                 overflow: hidden
                 width: 100%
                 height: 230px
+                @media ( max-width: 1024px )
+                    height: 215px
                 iframe
                     width: 100%
                     height: 100%
@@ -191,6 +284,8 @@
             position: inherit
             display: flex
             align-items: center
+            @media ( max-width: 450px )
+                margin-left: 1rem
         .swiper-pagination-bullets .swiper-pagination-bullet
             margin: 0 1.5rem
             background: #ffffff
@@ -200,6 +295,9 @@
             transition: opacity 0.2s
             @media ( max-width: 767px )
                 margin: 0 1rem
+            @media ( max-width: 450px )
+                width: 0.7rem
+                height: 0.7rem
             &:hover
                 opacity: 1
         .swiper-pagination-bullet.swiper-pagination-bullet-active
@@ -208,6 +306,9 @@
             opacity: 1
             width: 1.2rem
             height: 1.2rem
+            @media ( max-width: 450px )
+                width: 1rem
+                height: 1rem
             &::after
                 content: ''
                 position: absolute
@@ -219,6 +320,9 @@
                 border: 2px solid #ffffff
                 border-radius: 50%
                 opacity: 0.5
+                @media ( max-width: 450px )
+                    width: 2rem
+                    height: 2rem
     
 
     

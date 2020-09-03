@@ -184,16 +184,16 @@ document.addEventListener("DOMContentLoaded", function() {
           loop: false
         },
         991: {
-          slidesPerView: 'auto',
-          centeredSlides: true,
+          slidesPerView: 2,
+          centeredSlides: false,
           // spaceBetween: 10,
-          loop: true
+          // loop: true
         },
         670: {
-          slidesPerView: 2,
-          centeredSlides: true,
+          slidesPerView: 1,
+          centeredSlides: false,
           // spaceBetween: 10,
-          loop: true
+          // loop: true
         }
       }
     });
@@ -363,13 +363,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   })();
   
-  window.addEventListener('resize', resize);
-
-  function resize() {
-    if(document.documentElement.clientWidth < 767) {
-      var group = accordion();
-      group.init('#accordion');
-    }
+  if(document.documentElement.clientWidth < 767) {
+    var group = accordion();
+    group.init('#accordion');
   }
 
 });
