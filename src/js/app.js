@@ -201,11 +201,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   // Crop-Text
-  const cropElement = document.querySelectorAll('.crop-text'), // выбор элементов 
-        size = 200, // кол-во символов 
-        endCharacter = '...'; // окончание 
-
-  function cropText() {
+  function cropText(selector, size) {
+    const cropElement = document.querySelectorAll(selector), // выбор элементов 
+    endCharacter = '...'; // окончание 
     cropElement.forEach(function(el) {
       let text = el.innerText;
 
@@ -215,7 +213,8 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }
-  cropText();
+  cropText('.crop-text', 200);
+  cropText('.news-section__title', 50);
 
 
   // Menu-Open
