@@ -1,5 +1,52 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+  // Header Nav 
+  function hideElements() {
+    const navList = document.querySelector('.header-bottom__wrapper .nav ul'),
+          navItem = document.querySelectorAll('.header-bottom__wrapper .nav .nav__list'),
+          navMore = document.querySelector('.nav-more');
+
+    let open = null;
+
+    navItem.forEach((item, i) => {
+
+      if (i > 4) {
+        if (!open) {
+          const li = document.createElement('li');
+          li.classList.add('nav__list');
+          li.classList.add('more');
+          li.innerHTML = `
+              <a href="#">
+                  <span></span>
+              </a>
+          `;
+          navList.appendChild(li);
+          open = true;
+          const more = document.querySelector('li.nav__list.more');
+          more.addEventListener('click', (e) => {
+            e.preventDefault();
+            navMore.classList.toggle('active');
+          });
+        }
+        navMore.appendChild(item);
+      }
+
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.more') && !e.target.closest('.nav-more')) {
+        navMore.classList.remove('active');
+      }
+    })
+
+    if (navItem.length <= 6) {
+      more.remove();
+    }
+    
+  }
+
+  hideElements();
+
   // Header Fixed
   const header = document.querySelector('.header');
 

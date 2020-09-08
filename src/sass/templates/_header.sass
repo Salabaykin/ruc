@@ -129,6 +129,20 @@
             max-width: 8rem
     .nav
         margin: 0 2rem
+        position: relative
+        &-more
+            display: none
+            position: absolute
+            right: 0
+            padding: 3rem 3rem 2.7rem 2.5rem
+            background: #ffffff
+            border-radius: 0 0 3px 3px
+            z-index: -1
+            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2)
+            .nav__list:not(:last-child)
+                padding-bottom: 2rem
+            @media ( max-width: 1330px )
+                padding: 2rem 2rem 1.7rem 2.5rem
         ul 
             display: flex
             align-items: center
@@ -136,7 +150,7 @@
             margin-right: 3.5rem
             &:last-child
                 margin-right: 0
-            a 
+            a
                 position: relative
                 padding-bottom: 0.625em
                 font-size: 1.6rem
@@ -158,8 +172,65 @@
                         opacity: 1
                 @media ( max-width: 1330px )
                     font-size: 1.3rem
+        .more 
+            margin-right: 0
+            width: 35px
+            height: 35px
+            display: flex
+            align-items: center
+            justify-content: center
+            a
+                padding: 0
+                width: 35px
+                height: 35px
+                display: flex
+                align-items: center
+                justify-content: center
+                &::after
+                    display: none
+                span 
+                    position: relative
+                    transform: rotate(90deg)
+                    width: 6px
+                    height: 6px
+                    background: $primary
+                    border-radius: 10px
+                    &::after,
+                    &::before
+                        transition: all 0.2s
+                        content: ''
+                        position: absolute
+                        left: 0
+                        width: 6px
+                        height: 6px
+                        background: $primary
+                        border-radius: 10px
+                    &::after
+                        top: 10px
+                    &::before
+                        top: -10px
+                &:hover
+                    transition: all 0.2s
+                    span
+                        background: $secondary
+                        transition: all 0.2s
+                        &::after,
+                        &::before
+                            background: $secondary
         @media ( max-width: 1150px )
             display: none
+
+.nav-more.active 
+    display: block
+    top: 50px
+    animation-name: navMoreOpen
+    animation-duration: 0.2s
+
+@keyframes navMoreOpen
+    0%
+        top: 0
+    100%
+        top: 50px
 
 .burger-button
     position: absolute
