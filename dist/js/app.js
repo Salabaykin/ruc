@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }
-  cropText('.crop-text', 200);
+  cropText('.crop-text', 170);
   cropText('.news-section__title', 63);
 
 

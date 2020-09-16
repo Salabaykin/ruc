@@ -28,7 +28,7 @@
         display: flex
         &:last-child
             margin-bottom: 0
-        @media ( max-width: 1090px )
+        @media ( max-width: 767px )
             flex-direction: column
             margin-bottom: 0
 
@@ -75,6 +75,13 @@
                 &:nth-child(1), &:nth-child(4)
                     display: flex
                     width: 77rem
+                    .news-section__images 
+                        border-radius: 3px 3px 0 0 
+                        width: 300px
+                        height: 0px
+                        overflow: hidden
+                        padding-bottom: 125%
+                        background: center / cover no-repeat
                     @media ( max-width: 1220px )
                         &:nth-child(1), &:nth-child(4)
                             margin-right: 0
@@ -85,13 +92,6 @@
                         margin-right: 0
                         display: flex
                         flex-direction: row !important
-                        &:nth-child(1),
-                        &:nth-child(4)
-                            margin-bottom: 1.5rem
-                        .news-section__images
-                            min-height: 18.5rem
-                        .news-section__title
-                            margin-bottom: 0
                     @media ( max-width: 767px )
                         flex-direction: column !important
                         .news-section__images
@@ -108,15 +108,15 @@
                 &:nth-child(2), &:nth-child(3)
                     display: flex
                     flex-direction: column
-                    max-width: 37rem
+                    width: 37rem
                     margin-right: 0
                     .news-section__images 
-                        min-width: 37rem
-                        max-width: 37rem
-                        min-height: 18.5rem
-                        position: relative
-                        padding: 0 0 48% 0
+                        width: 100%
+                        border-radius: 3px
+                        height: 0px
                         overflow: hidden
+                        padding-bottom: 50%
+                        background: center / cover no-repeat
                         border-radius: 3px 3px 0 0 
                     .news-section__text
                         display: none
@@ -137,47 +137,44 @@
                             margin-bottom: 3rem
                         &:nth-child(2)
                             margin-right: 3rem
-                    @media ( max-width: 1090px ) 
+                    @media ( max-width: 767px )
                         max-width: 100%
                         width: 100%
                         margin-right: 0
-                        display: flex
-                        flex-direction: row !important
+                        flex-direction: column !important
                         &:nth-child(2), 
                         &:nth-child(3)
                             margin-bottom: 1.5rem
                             max-width: 100%
                             width: 100%
                             margin-right: 0
-                            .news-section__images
-                                max-width: 37rem
-                                min-width: 30rem
                             .news-section__title
                                 margin-bottom: 0
-                    @media ( max-width: 767px )
-                        flex-direction: column !important
-                        &:nth-child(2), 
-                        &:nth-child(3)
                             .news-section__images
-                                @media ( max-width: 767px )
-                                    border-radius: 3px 3px 0 0 
-                                    max-width: 100%
-                                    padding: 0
-                                    min-width: 100%
-                                    width: 100%
-                                    height: 0px
-                                    overflow: hidden
-                                    padding-bottom: 50%
-                                    background: center / cover no-repeat
+                                border-radius: 3px 3px 0 0 
+                                max-width: 100%
+                                padding: 0
+                                min-width: 100%
+                                width: 100%
+                                height: 0px
+                                overflow: hidden
+                                padding-bottom: 50%
+                                background: center / cover no-repeat
                 &:nth-child(1), &:nth-child(2)
                     margin-bottom: 3rem
+                    @media ( max-width: 767px )
+                        margin-bottom: 1.5rem
                 &:nth-child(3)
                     margin-right: 3rem
                     margin-bottom: 3rem
+                    @media ( max-width: 767px )
+                        margin-bottom: 1.5rem
                 &:nth-child(4)
                     margin-bottom: 3rem
+                    @media ( max-width: 767px )
+                        margin-bottom: 1.5rem
 
-        &_reverse--left,
+        &_reverse--left
             flex-wrap: wrap
             .news-section__item
                 &:nth-child(n+3)
@@ -185,38 +182,40 @@
                 &:nth-child(1)
                     margin-right: 3rem
                     display: flex
-                    max-width: 77rem
+                    width: 77rem
+                    .news-section__images
+                        border-radius: 3px 3px 0 0 
+                        width: 300px
+                        height: 0px
+                        overflow: hidden
+                        padding-bottom: 125%
+                        background: center / cover no-repeat
                     @media ( max-width: 1220px )
-                        max-width: 100%
-                        margin-right: 0
-                    @media ( max-width: 1090px )
-                        width: 100%
-                        display: flex
-                        flex-direction: row !important
-                        margin-bottom: 1.5rem
-                        .news-section__images
-                            min-height: 18.5rem
+                        flex-direction: column
+                        .news-section__text
+                            display: none
                         .news-section__title
                             margin-bottom: 0
-                    @media ( max-width: 767px )
-                        flex-direction: column !important
+                            &::after
+                                display: none
                         .news-section__images
-                            @media ( max-width: 767px )
-                                max-width: 100%
-                                padding: 0
-                                min-width: 100%
+                            width: 100%
+                            height: 0px
+                            overflow: hidden
+                            padding-bottom: 50%
+                            background: center / cover no-repeat 
+                            border-radius: 3px 3px 0 0 
                 &:nth-child(2)
                     margin-right: 0
                     display: flex
                     flex-direction: column
-                    max-width: 37rem
+                    width: 37rem
                     .news-section__images 
-                        min-width: 37rem
-                        max-width: 37rem
-                        min-height: 18.5rem
-                        position: relative
-                        padding: 0 0 48% 0
+                        width: 100%
+                        height: 0px
                         overflow: hidden
+                        padding-bottom: 50%
+                        background: center / cover no-repeat 
                         border-radius: 3px 3px 0 0 
                     .news-section__text
                         display: none
@@ -224,62 +223,57 @@
                         margin-bottom: 0
                         &::after
                             display: none
-                    @media ( max-width: 1220px )
-                        max-width: 100%
-                        width: 100%
-                        margin-right: 0
-                        display: flex
-                        flex-direction: row !important
-                        margin-bottom: 1.5rem
-                        .news-section__images
-                            min-width: 30rem
-                            max-width: 37rem
-                            min-height: 100%
-                        .news-section__text
-                            display: block
-                        .news-section__title
-                            margin-bottom: 3.44444em 
-                            &::after
-                                display: block
-                    @media ( max-width: 1090px ) 
-                        .news-section__images
-                            min-height: 18.5rem
-                        .news-section__text
-                            display: none
-                        .news-section__title
-                            margin-bottom: 0
-                            &::after
-                                display: none
-                        
-                    @media ( max-width: 767px )
-                        flex-direction: column !important
-                        &:nth-child(2)
-                            .news-section__images
-                                @media ( max-width: 767px )
-                                    max-width: 100%
-                                    padding: 0
-                                    min-width: 100%
                 &:nth-child(1), &:nth-child(2)
                     margin-bottom: 3rem
-                    @media ( max-width: 1090px ) 
+                    @media ( max-width: 1220px )
+                        max-width: calc(50% - 1.5rem)
+                        width: 100%
+                    @media ( max-width: 767px ) 
+                        max-width: 100%
                         margin-bottom: 1.5rem
+                
         &_reverse--right
             flex-wrap: wrap
             .news-section__item
                 &:nth-child(n+3)
                     display: none
+                &:nth-child(2)
+                    margin-right: 0
+                    display: flex
+                    width: 77rem
+                    .news-section__images
+                        border-radius: 3px 3px 0 0 
+                        width: 300px
+                        height: 0px
+                        overflow: hidden
+                        padding-bottom: 125%
+                        background: center / cover no-repeat
+                    @media ( max-width: 1220px )
+                        flex-direction: column
+                        .news-section__text
+                            display: none
+                        .news-section__title
+                            margin-bottom: 0
+                            &::after
+                                display: none
+                        .news-section__images
+                            width: 100%
+                            height: 0px
+                            overflow: hidden
+                            padding-bottom: 50%
+                            background: center / cover no-repeat 
+                            border-radius: 3px 3px 0 0 
                 &:nth-child(1)
                     margin-right: 3rem
                     display: flex
                     flex-direction: column
-                    max-width: 37rem
+                    width: 37rem
                     .news-section__images 
-                        min-width: 37rem
-                        max-width: 37rem
-                        min-height: 18.5rem
-                        position: relative
-                        padding: 0 0 48% 0
+                        width: 100%
+                        height: 0px
                         overflow: hidden
+                        padding-bottom: 50%
+                        background: center / cover no-repeat 
                         border-radius: 3px 3px 0 0 
                     .news-section__text
                         display: none
@@ -287,62 +281,13 @@
                         margin-bottom: 0
                         &::after
                             display: none
-                    @media ( max-width: 1220px )
-                        max-width: 100%
-                        width: 100%
-                        margin-right: 0
-                        display: flex
-                        flex-direction: row
-                        margin-bottom: 1.5rem
-                        .news-section__images
-                            min-width: 30rem
-                            max-width: 37rem
-                            min-height: 100%
-                        .news-section__text
-                            display: block
-                        .news-section__title
-                            margin-bottom: 3.44444em 
-                            &::after
-                                display: block
-                    @media ( max-width: 1090px ) 
-                        .news-section__images
-                            min-height: 18.5rem
-                        .news-section__text
-                            display: none
-                        .news-section__title
-                            margin-bottom: 0
-                            &::after
-                                display: none
-                        
-                    @media ( max-width: 767px )
-                        flex-direction: column
-                        .news-section__images
-                            max-width: 100%
-                            padding: 0
-                            min-width: 100%
-                &:nth-child(2)
-                    margin-right: 0
-                    display: flex
-                    max-width: 77rem
-                    @media ( max-width: 1220px )
-                        max-width: 100%
-                    @media ( max-width: 1090px )
-                        width: 100%
-                        display: flex
-                        flex-direction: row 
-                        .news-section__images
-                            min-height: 18.5rem
-                        .news-section__title
-                            margin-bottom: 0
-                    @media ( max-width: 767px )
-                        flex-direction: column 
-                        .news-section__images
-                            max-width: 100%
-                            padding: 0
-                            min-width: 100%
                 &:nth-child(1), &:nth-child(2)
                     margin-bottom: 3rem
-                    @media ( max-width: 1090px ) 
+                    @media ( max-width: 1220px )
+                        max-width: calc(50% - 1.5rem)
+                        width: 100%
+                    @media ( max-width: 767px ) 
+                        max-width: 100%
                         margin-bottom: 1.5rem
                         
         &_triple
@@ -351,28 +296,18 @@
                 display: flex
                 flex-direction: column
                 max-width: 37rem
+                width: 100%
                 margin-bottom: 3rem
-                @media ( max-width: 1090px )
+                @media ( max-width: 767px )
                     max-width: 100%
                     margin-bottom: 1.5rem
-                    margin-right: 0
-                    flex-direction: row
-                @media ( max-width: 767px )
-                    flex-direction: column
                 .news-section__images 
-                    min-width: 37rem
-                    max-width: 37rem
-                    min-height: 18.5rem
-                    position: relative
-                    padding: 0 0 48% 0
+                    width: 100%
+                    height: 0px
                     overflow: hidden
+                    padding-bottom: 50%
+                    background: center / cover no-repeat
                     border-radius: 3px 3px 0 0 
-                    @media ( max-width: 1090px )
-                        min-width: 30rem
-                    @media ( max-width: 767px )
-                        max-width: 100%
-                        padding: 0
-                        min-width: 100%
                 .news-section__text
                     display: none
                 .news-section__title
@@ -381,7 +316,7 @@
                         display: none
                 &:nth-child(3n)
                     margin-right: 0
-                @media ( min-width: 1090px ) and ( max-width: 1216px )
+                @media ( min-width: 767px ) and ( max-width: 1216px )
                     max-width: calc(50% - 1.5rem)
                     width: 100%
                     &:nth-child(2n)
@@ -396,24 +331,8 @@
                         min-width: 100%
                         max-width: 100%
 
-        &__images
-            min-width: 30rem
-            max-width: 37rem
-            min-height: 100%
-            overflow: hidden
-            border-radius: 3px 0 0 3px
-            background: center / cover no-repeat
-            @media ( max-width: 1090px )
-                min-height: 28rem
-                padding: 0 0 30% 0
-            @media ( max-width: 767px )
-                max-width: 100%
-            @media ( max-width: 575px )
-                min-width: 25rem
-            @media ( max-width: 540px )
-                min-height: 20rem
         &__content
-            padding: 3.5rem
+            padding: 3.4rem
             width: 100%
             @media ( max-width: 767px )
                 padding: 3rem 2.5rem
@@ -471,7 +390,7 @@
                 height: 0.22222em
                 border-radius: 0.55556em
                 background-color: #5f94ff
-                @media ( max-width: 1090px )
+                @media ( max-width: 767px )
                     display: none
             &:hover
                 color: $primary
@@ -479,5 +398,5 @@
             color: #6d6e71
             font-size: 1.8rem
             line-height: 1.44444em
-            @media ( max-width: 1090px )
+            @media ( max-width: 767px )
                 display: none
