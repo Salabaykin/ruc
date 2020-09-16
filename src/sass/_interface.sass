@@ -30,7 +30,7 @@
         color: $txt-color
         border: 1px solid #ffffff
 
-.title 
+h3.title 
     margin-right: 2rem
     font-size: 4.8rem
     line-height: 1
@@ -124,6 +124,31 @@ table.border-hidden
         td,
         th
             border: none !important
+
+.up
+    position: fixed
+    padding: 1.8rem
+    right: 2rem
+    bottom: 2rem
+    display: none
+    z-index: 1005
+    cursor: pointer  
+    background-color: $secondary
+    border-radius: 50%
+    line-height: 1
+    font-size: 0
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    -webkit-touch-callout: none
+    -webkit-user-select: non
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    &__svg
+        transform: rotate(90deg)
+        width: 2rem
+        height: 2rem
+        fill: #ffffff
         
 
         

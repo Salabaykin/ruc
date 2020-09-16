@@ -7,8 +7,23 @@
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
         <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
         <link rel="stylesheet" href="css/style.min.css" />
+        <style>
+            @media ( max-width: 1024px ) {
+                .promo {
+                    /* background-image: url('images/promo/mob-promo-bg.jpg') !important; */
+                    background-position: right bottom !important;   
+                }   
+            }
+            @media ( max-width: 620px ) {
+                .promo {
+                    /* background-image: url('images/promo/xs-mob-promo-bg.png') !important; */
+                    background-position: right top !important;   
+                    background-color: #fe4b64 !important;   
+                }
+            }
+        </style>
     </head>
-    <body>
+    <body class="body">
 
         <div class="overlay"></div>
         <div class="menu">
@@ -397,19 +412,13 @@
                                 <li class="nav__list">
                                     <a href="#">ВЫПУСКНИКУ</a>
                                 </li>
-                                
                                 <li class="nav__list">
-                                    <a href="#">НАУКА</a>
+                                    <a href="#">ВЫПУСКНИКУ 2</a>
                                 </li>
                                 <li class="nav__list">
-                                    <a href="#">НАУКА</a>
+                                    <a href="#">ВЫПУСКНИКУ 3</a>
                                 </li>
-                                <li class="nav__list">
-                                    <a href="#">НАУКА</a>
-                                </li>
-                                
                             </ul>
-                            <div class="nav-more"></div>
                         </nav>
                         <a
                             href="#"
@@ -452,7 +461,7 @@
         </header>
         <!-- /.header -->
 
-        <section class="promo">
+        <section class="promo" style="background-image: url('../images/promo/promo-bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center top;">
             <div class="promo-slider swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -586,14 +595,14 @@
 
                 <div class="news__wrapper">
 
-                    <div class="news-section news-section_four">
+                    <div class="news-section news-section_reverse--right">
 
                         <div class="news-section__item">
                             <a href="#">
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://volgograd.ruc.su/upload/iblock/db9/db98d25355318db78e62869c55536472.jpeg');
                                     "
                                 ></div>
                             </a>
@@ -603,13 +612,72 @@
                                         >Новость</a
                                     >
                                     <div class="news-section__date">
-                                        30 август 2020
+                                        5 август 2020
                                     </div>
                                 </div>
                                 <a href="#">
                                     <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
-                                        Центробанка в жизни студентов
+                                        11 Ключевая ставка
+                                    </h4>
+                                </a>
+                                <p class="news-section__text crop-text">
+                                    В Золотой век войдут люди, которые научатся объединяться. И объединение имеет тоже свой закон: две ауры усиливают друг друга в 7 раз, если люди – единомышленники, волна одинаковая, в одну цель направлена. Три человека – 7 в квадрате, то есть в 49 раз.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.news-section__item -->
+
+                        <div class="news-section__item">
+                            <a href="#">
+                                <div
+                                    class="news-section__images"
+                                    style="
+                                        background-image: url('https://volgograd.ruc.su/upload/iblock/db9/db98d25355318db78e62869c55536472.jpeg');
+                                    "
+                                ></div>
+                            </a>
+                            <div class="news-section__content">
+                                <div class="news-section__head">
+                                    <a href="#" class="news-section__category"
+                                        >Новость</a
+                                    >
+                                    <div class="news-section__date">
+                                        4 август 2020
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <h4 class="news-section__title">
+                                        22 Ключевая ставка: роль решений Центробанка в жизни студентов
+                                    </h4>
+                                </a>
+                                <p class="news-section__text crop-text">
+                                    В Золотой век войдут люди, которые научатся объединяться. И объединение имеет тоже свой закон: две ауры усиливают друг друга в 7 раз, если люди – единомышленники, волна одинаковая, в одну цель направлена. Три человека – 7 в квадрате, то есть в 49 раз.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- /.news-section__item -->
+
+                        <div class="news-section__item">
+                            <a href="#">
+                                <div
+                                    class="news-section__images"
+                                    style="
+                                        background-image: url('https://volgograd.ruc.su/upload/iblock/db9/db98d25355318db78e62869c55536472.jpeg');
+                                    "
+                                ></div>
+                            </a>
+                            <div class="news-section__content">
+                                <div class="news-section__head">
+                                    <a href="#" class="news-section__category"
+                                        >Новость</a
+                                    >
+                                    <div class="news-section__date">
+                                        3 август 2020
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <h4 class="news-section__title">
+                                        33 Ключевая ставка:
                                     </h4>
                                 </a>
                                 <p class="news-section__text crop-text">
@@ -629,7 +697,7 @@
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://volgograd.ruc.su/upload/iblock/db9/db98d25355318db78e62869c55536472.jpeg');
                                     "
                                 ></div>
                             </a>
@@ -639,13 +707,12 @@
                                         >Новость</a
                                     >
                                     <div class="news-section__date">
-                                        31 август 2020
+                                        2 август 2020
                                     </div>
                                 </div>
                                 <a href="#">
                                     <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
-                                        Центробанка в жизни студентов
+                                        44 Ключевая
                                     </h4>
                                 </a>
                                 <p class="news-section__text crop-text">
@@ -665,7 +732,7 @@
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://volgograd.ruc.su/upload/iblock/db9/db98d25355318db78e62869c55536472.jpeg');
                                     "
                                 ></div>
                             </a>
@@ -675,12 +742,12 @@
                                         >Новость</a
                                     >
                                     <div class="news-section__date">
-                                        31 август 2020
+                                        1 август 2020
                                     </div>
                                 </div>
                                 <a href="#">
                                     <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
+                                        44 Ключевая ставка: роль решений
                                         Центробанка в жизни студентов
                                     </h4>
                                 </a>
@@ -696,79 +763,6 @@
                         </div>
                         <!-- /.news-section__item -->
 
-                        <div class="news-section__item">
-                            <a href="#">
-                                <div
-                                    class="news-section__images"
-                                    style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
-                                    "
-                                ></div>
-                            </a>
-                            <div class="news-section__content">
-                                <div class="news-section__head">
-                                    <a href="#" class="news-section__category"
-                                        >Новость</a
-                                    >
-                                    <div class="news-section__date">
-                                        31 август 2020
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
-                                        Центробанка в жизни студентов
-                                    </h4>
-                                </a>
-                                <p class="news-section__text crop-text">
-                                    В Золотой век войдут люди, которые научатся
-                                    объединяться. И объединение имеет тоже свой
-                                    закон: две ауры усиливают друг друга в 7
-                                    раз, если люди – единомышленники, волна
-                                    одинаковая, в одну цель направлена. Три
-                                    человека – 7 в квадрате, то есть в 49 раз.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- /.news-section__item -->
-
-                        <div class="news-section__item">
-                            <a href="#">
-                                <div
-                                    class="news-section__images"
-                                    style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
-                                    "
-                                ></div>
-                            </a>
-                            <div class="news-section__content">
-                                <div class="news-section__head">
-                                    <a href="#" class="news-section__category"
-                                        >Новость</a
-                                    >
-                                    <div class="news-section__date">
-                                        31 август 2020
-                                    </div>
-                                </div>
-                                <a href="#">
-                                    <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
-                                        Центробанка в жизни студентов
-                                    </h4>
-                                </a>
-                                <p class="news-section__text crop-text">
-                                    В Золотой век войдут люди, которые научатся
-                                    объединяться. И объединение имеет тоже свой
-                                    закон: две ауры усиливают друг друга в 7
-                                    раз, если люди – единомышленники, волна
-                                    одинаковая, в одну цель направлена. Три
-                                    человека – 7 в квадрате, то есть в 49 раз.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- /.news-section__item -->
-
-                        
                     </div>
                     <!-- /.news-section -->
 
@@ -779,7 +773,7 @@
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://volgograd.ruc.su/upload/iblock/db9/db98d25355318db78e62869c55536472.jpeg');
                                     "
                                 ></div>
                             </a>
@@ -814,7 +808,7 @@
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://volgograd.ruc.su/upload/iblock/db9/db98d25355318db78e62869c55536472.jpeg');
                                     "
                                 ></div>
                             </a>
@@ -829,8 +823,7 @@
                                 </div>
                                 <a href="#">
                                     <h4 class="news-section__title">
-                                        Ключевая ставка: роль решений
-                                        Центробанка в жизни студентов
+                                        Ключевая
                                     </h4>
                                 </a>
                                 <p class="news-section__text crop-text">
@@ -849,7 +842,7 @@
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://volgograd.ruc.su/upload/iblock/db9/db98d25355318db78e62869c55536472.jpeg');
                                     "
                                 ></div>
                             </a>
@@ -886,7 +879,7 @@
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://volgograd.ruc.su/upload/iblock/db9/db98d25355318db78e62869c55536472.jpeg');
                                     "
                                 ></div>
                             </a>
@@ -924,7 +917,7 @@
                                 <div
                                     class="news-section__images"
                                     style="
-                                        background-image: url('https://static.1tv.ru/uploads/program_module/image/0/big/20_big_67aa600652.jpg');
+                                        background-image: url('https://volgograd.ruc.su/upload/iblock/db9/db98d25355318db78e62869c55536472.jpeg');
                                     "
                                 ></div>
                             </a>
@@ -996,6 +989,7 @@
 
                 </div>
                 <!-- /.news__wrapper -->
+
             </div>
             <!-- /.container -->
         </section>
@@ -1788,7 +1782,7 @@
         </footer>
         <!-- /.footer -->
 
-        <div class="modal">
+        <div class="modal modal-branch">
             <div class="modal__wrapper">
                 <div class="modal__body">
                     <div class="close">
@@ -1868,11 +1862,61 @@
         </div>
         <!-- /.modal -->
 
+        <div class="modal modal-question">
+            <div class="modal__wrapper">
+                <div class="modal__body">
+                    <div class="close">
+                        <svg class="close__svg">
+                            <use xlink:href="images/sprite.svg#close"></use>
+                        </svg>
+                    </div>
+
+                    <h3 class="modal__title">Задать вопрос ректору</h3>
+                    
+                    <div class="ask-a-question">
+            
+                                <form action="#" class="ask-a-question__form">
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-name">Ваше имя:</label>
+                                        <input class="ask-a-question__form-input" type="text" name="q-user-name" id="q-user-name" required>
+                                    </div>
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-tel">Ваш телефон:</label>
+                                        <input class="ask-a-question__form-input" type="tel" name="q-user-tel" id="q-user-tel" required>
+                                    </div>
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-email">Ваш E-Mail:</label>
+                                        <input class="ask-a-question__form-input" type="email" name="q-user-email" id="q-user-email" required>
+                                    </div>
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-message">Ваше сообщение:</label>
+                                        <textarea class="ask-a-question__form-textarea" name="q-user-message" id="q-user-message" placeholder="Напишите сообщение..." required></textarea>
+                                    </div>
+                                    
+                                    <button class="button button--red ask-a-question__form-button">Отправить</button>
+                                </form>
+                            
+                        
+                    </div>
+                    <!-- /.ask-a-question -->
+                </div>
+                <!-- /.modal__body -->
+            </div>
+            <!-- /.modal__wrapper -->
+        </div>
+        <!-- /.modal -->
+
+        <div class="up">
+            <svg class="up__svg">
+                <use xlink:href="images/sprite.svg#arrow"></use>
+            </svg>
+        </div>
         <script
             defer
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         ></script>
         <script defer src="js/jquery.fancybox.min.js"></script>
+        <script defer src="js/imask.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/swiper.min.js"></script>
         <script defer src="js/svgxuse.js" defer></script>

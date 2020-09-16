@@ -37,8 +37,8 @@
             background: #ffffff
             color: $txt-color
     &__icon
-        margin-right: 0.5rem
-        width: 3rem
+        margin-right: 0.8rem
+        width: 2.2rem
         height: 2.2rem
         fill: rgba(255,255,255,0.5)
         transition: all 0.2s
@@ -115,7 +115,7 @@
             font-size: 1rem
             padding: 1rem 2rem
     &__logo
-        max-width: 14.4rem
+        max-width: 11rem
         max-height: 6.6rem
         overflow: hidden
         img 
@@ -179,6 +179,7 @@
             display: flex
             align-items: center
             justify-content: center
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
             a
                 padding: 0
                 width: 35px
@@ -226,6 +227,9 @@
     animation-name: navMoreOpen
     animation-duration: 0.2s
 
+.nav-more.active .nav__list 
+    margin-right: 0
+
 @keyframes navMoreOpen
     0%
         top: 0
@@ -243,6 +247,7 @@
     transform: translateY(-50%)
     left: 2.5rem
     cursor: pointer
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
     &:hover
         .burger-button__icon
             fill: $secondary
@@ -266,6 +271,13 @@
     transform: translateY(-50%)
     right: 2.5rem
     cursor: pointer
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    -webkit-touch-callout: none
+    -webkit-user-select: non
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
     &:hover
         .search-button__icon
             fill: $secondary
