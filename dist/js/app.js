@@ -355,7 +355,11 @@ document.addEventListener("DOMContentLoaded", function() {
         if (e.target.closest(this.button)) {
           e.preventDefault();
           document.querySelector(this.modal).classList.toggle('active');
-          document.body.classList.toggle('hidden');
+          if (document.querySelector('.modal.active')) {
+            document.body.classList.add('hidden');
+          } else {
+            document.body.classList.remove('hidden');
+          }
         }
       });
       this.closeModal();
@@ -368,7 +372,11 @@ document.addEventListener("DOMContentLoaded", function() {
       closeBtn.forEach(item => {
         item.addEventListener('click', () => {
           document.querySelector(this.modal).classList.remove('active');
-          document.body.classList.remove('hidden');
+          if (document.querySelector('.menu.open')) {
+            document.body.classList.add('hidden');
+          } else {
+            document.body.classList.remove('hidden');
+          }
         });
       });
 
@@ -378,7 +386,11 @@ document.addEventListener("DOMContentLoaded", function() {
           
           if (!target.closest('.modal__body') && !target.closest(this.button)) {
             document.querySelector(this.modal).classList.remove('active');
-            document.body.classList.remove('hidden');
+            if (document.querySelector('.menu.open')) {
+              document.body.classList.add('hidden');
+            } else {
+              document.body.classList.remove('hidden');
+            }
           }
         });
       });
@@ -387,7 +399,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   const modalBranch = new Modal('.modal-link', '.modal-branch');
-  const modalQuestion = new Modal('.header-bottom__button', '.modal-question');
+  const modalQuestion = new Modal('.button__modal-question', '.modal-question');
 
   // Accordion 
   var accordion = (function (element) {
