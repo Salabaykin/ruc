@@ -2,11 +2,12 @@
     display: none;
     background-color: #cccccc;
   }
-.special-settings .content {
+.special-settings .special-panel-container .content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    background-color: #cccccc !important;
 }
 .aa-block.aaFontsize, 
 .aa-block.aaColor {
@@ -44,10 +45,6 @@ display: none;
 
 .font-size-block .aaColor-black {
   background: #000000;
-}
-
-.font-size-block .aaColor-black span {
-  color: #ffffff !important;
 }
 
 .font-size-block .aaColor-yellow {
@@ -112,6 +109,10 @@ display: none;
   background-color: #000000;
   color: #ffffff;
 }
+.special-aaVersion-on.special-aaColor-black .main {
+  background-color: #000000;
+}
+
 .special-aaVersion-on.special-aaColor-black .btn:focus,
 .special-aaVersion-on.special-aaColor-black button:focus,
 .special-aaVersion-on.special-aaColor-black input[type="button"]:focus,
@@ -621,6 +622,10 @@ display: none;
   background-color: #000000;
 }
 .special-aaVersion-on.special-aaColor-yellow .promo, 
+.special-aaVersion-on.special-aaColor-yellow .main,
+.special-aaVersion-on.special-aaColor-yellow .main .content,
+.special-aaVersion-on.special-aaColor-yellow .navigation .nav ul,
+.special-aaVersion-on.special-aaColor-yellow .navigation .nav__list,
 .special-aaVersion-on.special-aaColor-yellow  .programme, 
 .special-aaVersion-on.special-aaColor-yellow .news-section__item, 
 .special-aaVersion-on.special-aaColor-yellow .programme-item ,
@@ -1230,6 +1235,10 @@ display: none;
 }
 
 .special-aaVersion-on.special-aaColor-blue .promo, 
+.special-aaVersion-on.special-aaColor-blue .main,
+.special-aaVersion-on.special-aaColor-blue .main .content,
+.special-aaVersion-on.special-aaColor-blue .navigation .nav ul,
+.special-aaVersion-on.special-aaColor-blue .navigation .nav__list,
 .special-aaVersion-on.special-aaColor-blue  .programme, 
 .special-aaVersion-on.special-aaColor-blue .news-section__item, 
 .special-aaVersion-on.special-aaColor-blue .programme-item ,
@@ -1892,6 +1901,10 @@ display: none;
   line-height: 15.4;
 }
 
+.special-aaVersion-on.special-aaFontsize-small body {
+  padding-top: 14.125em;
+}
+
 .special-aaVersion-on.special-aaFontsize-small .aaFontsize .fl-l,
 .special-aaVersion-on.special-aaFontsize-small .aaFontsize a {
   line-height: 22.4px;
@@ -1959,6 +1972,9 @@ display: none;
 .special-aaVersion-on.special-aaFontsize-normal a    {
   font-size: 20px;
   line-height: 1.4;
+}
+.special-aaVersion-on.special-aaFontsize-normal body {
+  padding-top: 12.125em;
 }
 .special-aaVersion-on.special-aaFontsize-normal .header-top--button {
   font-size: 1.2rem;
@@ -2085,7 +2101,7 @@ display: none;
     min-height: 60rem;
 }
 .special-aaVersion-on.special-aaFontsize-big body {
-    padding-top: 19rem;
+    padding-top: 33rem;
 }
 .special-aaVersion-on.special-aaFontsize-big .header-top--button {
   font-size: 1.2rem;
