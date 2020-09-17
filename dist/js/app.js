@@ -449,33 +449,33 @@ document.addEventListener("DOMContentLoaded", function() {
       $('html, body').animate({ 'scrollTop': 0 }, 400);
   });
   
-    const setEye = () => {
-    const eye = document.createElement('style');
-    eye.className = 'eye';
-    eye.textContent = `
-      html {
-        font-size: 13px !important;
-      }
-      body {
-        filter: grayscale(100%) !important;
-      }
-    `;
-    document.body.append(eye);
-  }
+  //   const setEye = () => {
+  //   const eye = document.createElement('style');
+  //   eye.className = 'eye';
+  //   eye.textContent = `
+  //     html {
+  //       font-size: 13px !important;
+  //     }
+  //     body {
+  //       filter: grayscale(100%) !important;
+  //     }
+  //   `;
+  //   document.body.append(eye);
+  // }
 
-  document.querySelector('.header-top__eye').addEventListener('click', () => {
-    if (localStorage.getItem('eye')) {
-      document.querySelector('.eye').remove();
-      localStorage.removeItem('eye');
-    } else {
-      setEye();
-      localStorage.setItem('eye', 'true');
-    }
-  });
+  // document.querySelector('.header-top__eye').addEventListener('click', () => {
+  //   if (localStorage.getItem('eye')) {
+  //     document.querySelector('.eye').remove();
+  //     localStorage.removeItem('eye');
+  //   } else {
+  //     setEye();
+  //     localStorage.setItem('eye', 'true');
+  //   }
+  // });
 
-  if (localStorage.getItem('eye')) {
-    setEye();
-  }
+  // if (localStorage.getItem('eye')) {
+  //   setEye();
+  // }
 
   $().fancybox({
     selector: '.swiper-slide a',
