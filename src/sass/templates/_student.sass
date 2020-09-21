@@ -120,6 +120,7 @@
                 font-size: 1.4rem
                 padding: 1.5rem 5.5rem 1.5rem 2.5rem
             &::after
+                transition: all 0.2s
                 content: '+'
                 position: absolute
                 top: 50%
@@ -154,8 +155,12 @@
 
 .accordion-library-item.show .accordion-library-item__header 
     border-radius: 5px 5px 0 0
+    transition: all 0.2s
     &::after
+        transition: all 0.2s
+        transform-origin: center 
         transform: translateY(-50%) rotate(45deg)
+        font-size: 3rem
 
 .library-staff
     &-item
@@ -163,6 +168,9 @@
         padding-bottom: 3.5rem
         display: flex
         border-bottom: 1px solid #dddddd
+        &:last-child
+            margin-bottom: 0
+            border-bottom: 0
         @media ( max-width: 590px )
             flex-direction: column
             align-items: center
