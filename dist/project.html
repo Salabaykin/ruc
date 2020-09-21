@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Об институте</title>
+        <title>Российский университет кооперации</title>
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
         <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
         <link rel="stylesheet" href="css/style.min.css" />
+        
     </head>
-    <body>
+    <body class="body">
 
         <div class="overlay"></div>
+
         <div class="menu">
             <div class="menu__wrapper">
                 <div class="menu__head">
@@ -293,6 +295,7 @@
                     </div>
 
                     <div class="contacts">
+                        <a href="#" class="button button--red button__modal-question">Задать вопрос ректору</a>
                         <ul>
                             <li>
                                 Приемная комиссия:
@@ -349,20 +352,58 @@
                                 href="/educational-organization.html"
                                 >Сведения об образовательной организации</a
                             >
-                            <div class="header-top__eye">
-                                <svg class="header-top__icon">
-                                    <use
-                                        xlink:href="images/sprite.svg#eye"
-                                    ></use>
-                                </svg>
-                                <a href="#">Для слабовидящих</a>
-                            </div>
+                            
+                            <span class="aa-hide" itemprop="Copy">
+                                <div class="header-top__eye">
+                                    
+                                        <svg class="header-top__icon">
+                                            <use
+                                                xlink:href="images/sprite.svg#eye"
+                                            ></use>
+                                        </svg>
+                                        <!-- <a href="#">Для слабовидящих</a> -->
+                                        <a class="fl-r" href="/?set-aa=special" data-aa-on="" title="Aa"><span class="hide">Для слабовидящих</span></a>
+                                    
+                                </div>
+                            </span>
                         </div>
                     </div>
                 </div>
                 <!-- /.container -->
             </div>
             <!-- /.header-top -->
+
+            <div class="special-settings">
+                <div class="container special-panel-container">
+                    <div class="content">
+                        <div class="aa-block aaFontsize">
+                            <div class="fl-l">Размер:</div>
+                            <div class="font-size-block">
+                                <a class="aaFontsize-small a-current" data-aa-fontsize="small" href="#" title="Уменьшенный размер шрифта">A</a>
+                                <a class="aaFontsize-normal" href="#" data-aa-fontsize="normal" title="Нормальный размер шрифта">A</a>
+                                <a class="aaFontsize-big" data-aa-fontsize="big" href="#" title="Увеличенный размер шрифта">A</a>
+                            </div>
+                        </div>
+                        <div class="aa-block aaColor">
+                            Цвет:
+                            <div class="font-size-block">
+                                <a class="aaColor-black a-current" data-aa-color="black" href="#" title="Черным по белому"><span>C</span></a>
+                                <a class="aaColor-yellow" data-aa-color="yellow" href="#" title="Желтым по черному"><span>C</span></a>
+                                <a class="aaColor-blue" data-aa-color="blue" href="#" title="Синим по голубому"><span>C</span></a>
+                            </div>
+                        </div>
+        
+                        <div class="aa-block aaImage">
+                            Изображения:
+                        <span class="aaImage-wrapper">
+                            <a class="aaImage-on a-current" data-aa-image="on" href="#">Вкл.</a>
+                            <a class="aaImage-off" data-aa-image="off" href="#">Выкл.</a>
+                        </span>
+                        </div>
+                        <span class="aa-block"><a href="/?set-aa=normal" data-aa-off=""><i class="icon icon-special-version"></i> Обычная версия сайта</a></span>
+                    </div>
+                </div>
+            </div>
 
             <div class="header-bottom">
                 <div class="container header-bottom__container">
@@ -383,6 +424,12 @@
                         <nav class="nav">
                             <ul>
                                 <li class="nav__list">
+                                    <a href="#">Об институте</a>
+                                </li>
+                                <li class="nav__list">
+                                    <a href="#">Новости</a>
+                                </li>
+                                <li class="nav__list">
                                     <a href="#">АБИТУРИЕНТУ</a>
                                 </li>
                                 <li class="nav__list">
@@ -391,12 +438,11 @@
                                 <li class="nav__list">
                                     <a href="#">ВЫПУСКНИКУ</a>
                                 </li>
-                                <li class="nav__list"><a href="#">НАУКА</a></li>
                                 <li class="nav__list">
-                                    <a href="#">ВАКАНСИИ</a>
+                                    <a href="#">ВЫПУСКНИКУ 2</a>
                                 </li>
                                 <li class="nav__list">
-                                    <a href="#">COVID-19 Инфо</a>
+                                    <a href="#">ВЫПУСКНИКУ 3</a>
                                 </li>
                             </ul>
                         </nav>
@@ -441,439 +487,186 @@
         </header>
         <!-- /.header -->
 
-        <section class="about">
-
-            <div class="about-head">
-
-                <div class="container">
-
-                    <div class="bread-crumbs">
-                        <ul>
-                            <li class="item">
-                                <a href="/">Главная</a>
-                            </li>
-                            <li class="item">
-                                <span class="active">Об институте</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.bread-crumbs -->
-
-                    <div class="about-head__content">
-
-                        <h2 class="about-head__title">Казанский кооперативный институт - крупнейший филиал Российского университета кооперации</h2>
-                        <p class="about-head__subtitle">
-                            Казанский кооперативный институт (филиал) автономной некоммерческой образовательной организации высшего образования Центросоюза Российской Федерации «Российский университет кооперации»
-                        </p>
-
-                    </div>
-                    <!-- /.about-head__content -->
-
+        <section class="promo student" style="background-image: url('../images/student/student-bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center top;">
+            <div class="container">
+                <div class="student__content">
+                    <h2 class="promo-slider__title wow fadeInUp" data-wow-duration="1.3s">
+                        Студентам
+                    </h2>
+                    <p class="student__descr wow fadeInUp" data-wow-duration="1.3s">
+                        Самые активные и талантливые студенты Российского университета кооперации составляют студенческий кадровый резерв, представленный всеми факультетами, институтами и филиалами университета. Молодые люди, входящие в кадровый резерв, не только отлично учатся, но и активно проявляют себя в науке, творчестве и общественной жизни. Они коммуникабельны и наделены лидерскими качествами.<br><br>
+                        Целью создания студенческого кадрового резерва стало повышение кадрового потенциала Российского университета кооперации, выявление молодых лидеров вуза, призванных в ближайшей перспективе сыграть ведущую роль в научной, педагогической и административной сферах деятельности университета. <br><br>
+                        Взаимодействуя с руководством вуза, представители студенческого кадрового резерва разрабатывают и реализуют собственные проекты, связанные с вопросами студенческого самоуправления, маркетинговых исследований, издания студенческих СМИ и др.
+                    </p>
                 </div>
-                <!-- /.container -->
-
-            </div>
-            <!-- /.about-head -->
-
-            <div class="container about-head__items">
-
-                <div class="about-head__item">
-                    <div class="about-head__img">
-                        <img src="images/about/icons/icon-3.png" alt="">
-                    </div>
-                    <div class="about-head__wrap">
-                        <div class="about-head__num">± 7000</div>
-                        <div class="about-head__txt">студентов</div>
-                    </div>
-                </div>
-
-                <div class="about-head__item">
-                    <div class="about-head__img">
-                        <img src="images/about/icons/icon-2.png" alt="">
-                    </div>
-                    <div class="about-head__wrap">
-                        <div class="about-head__num">> 400</div>
-                        <div class="about-head__txt">преподавателей</div>
-                    </div>
-                </div>
-
-                <div class="about-head__item">
-                    <div class="about-head__img">
-                        <img src="images/about/icons/icon-1.png" alt="">
-                    </div>
-                    <div class="about-head__wrap">
-                        <div class="about-head__num">47</div>
-                        <div class="about-head__txt">образовательных<br>программ</div>
-                    </div>
-                </div>
-
+                <!-- /.student__content -->
             </div>
             <!-- /.container -->
-
-            <div class="history">
-                <div class="container">
-
-                    <h2 class="about__title">История института</h2>
-                    
-                    <p class="history__descr">
-                        Дата создания образовательной организации: <br>1987 год, распоряжение Центрального союза потребительских обществ СССР <br>от 13 октября 1987, № 366.
-                    </p>
-
-                    <div class="slider-wrapper">
-
-                        <div class="swiper-container history-thumbs">
-                            <div class="swiper-wrapper">
-                              <div class="swiper-slide"><span>2010</span></div>
-                              <div class="swiper-slide"><span>2011</span></div>
-                              <div class="swiper-slide"><span>2012</span></div>
-                              <div class="swiper-slide"><span>2013</span></div>
-                              <div class="swiper-slide"><span>2014</span></div>
-                              <div class="swiper-slide"><span>2015</span></div>
-                              <div class="swiper-slide"><span>2016</span></div>
-                              <div class="swiper-slide"><span>2017</span></div>
-                              <div class="swiper-slide"><span>2018</span></div>
-                              <div class="swiper-slide"><span>2019</span></div>
-                            </div>
-    
-                            <div class="history-slider-prev swiper-button-prev">
-                                <svg class="history-slider__svg">
-                                    <use xlink:href="images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                            <div class="history-slider-next swiper-button-next">
-                                <svg class="history-slider__svg">
-                                    <use xlink:href="images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-    
-                        </div>
-    
-                        <div class="history-slider swiper-container">
-    
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-
-                                    <div class="history-slider__content">
-
-                                        <div class="history-slider__text">
-                                            <p>
-                                                В Университете эффективно действует система непрерывного образования, которая включает в себя довузовское обучение, начальное, среднее и высшее профессиональное образование, послевузовское и дополнительное профессиональное образование - повышение квалификации и переподготовку специалистов, обучение в аспирантуре и докторантуре, защиту кандидатских и докторских диссертаций. 
-                                            </p>
-                                            <p>
-                                                За успешную международную деятельность и заслуги в подготовке высококвалифицированных специалистов для системы потребительской кооперации СССР в 1980 году Московский кооперативный институт Центросоюза был награжден орденом Дружбы народов. Свидетельством международного признания Университета являются награды Международной Конвенции Качества: "Международный золотой знак качества" (2002 г., Лондон) и "Международный платиновый знак качества" (2003 г., Париж).
-                                            </p>
-                                        </div>
-                                        <!-- /.history-slider__text -->
-    
-                                        <div class="history-slider__images">
-                                            <img src="images/about/img-1.png" alt="">
-                                        </div>
-                                        <!-- /.history-slider__images -->
-
-                                    </div>
-                                    <!-- /.history-slider__content -->
-
-                                </div>
-                                <div class="swiper-slide">Slide 2</div>
-                                <div class="swiper-slide">
-                                    
-                                    <div class="history-slider__content">
-
-                                        <div class="history-slider__text">
-                                            <p>
-                                                В Университете эффективно действует система непрерывного образования, которая включает в себя довузовское обучение, начальное, среднее и высшее профессиональное образование, послевузовское и дополнительное профессиональное образование - повышение квалификации и переподготовку специалистов, обучение в аспирантуре и докторантуре, защиту кандидатских и докторских диссертаций. 
-                                            </p>
-                                            <p>
-                                                За успешную международную деятельность и заслуги в подготовке высококвалифицированных специалистов для системы потребительской кооперации СССР в 1980 году Московский кооперативный институт Центросоюза был награжден орденом Дружбы народов. Свидетельством международного признания Университета являются награды Международной Конвенции Качества: "Международный золотой знак качества" (2002 г., Лондон) и "Международный платиновый знак качества" (2003 г., Париж).
-                                            </p>
-                                        </div>
-                                        <!-- /.history-slider__text -->
-
-                                    </div>
-                                    <!-- /.history-slider__content -->
-
-                                </div>
-                                <div class="swiper-slide">Slide 4</div>
-                                <div class="swiper-slide">Slide 5</div>
-                                <div class="swiper-slide">Slide 6</div>
-                                <div class="swiper-slide">Slide 7</div>
-                                <div class="swiper-slide">Slide 8</div>
-                                <div class="swiper-slide">Slide 9</div>
-                                <div class="swiper-slide">Slide 10</div>
-                            </div>
-    
-                        </div>
-                        <!-- /.history-slider -->
-
-                    </div>
-                    <!-- /.slider-wrapper -->
-
-                </div>
-                <!-- /.container -->
-            </div>
-            <!-- /.history -->
-
-            <div class="council">
-
-                <div class="container">
-
-                    <h2 class="about__title">Ученый совет</h2>
-
-                    <p>
-                        Учёный совет является выборным представительным органом, который осуществляет общее руководство учебной, научной, воспитательной, кадровой и организационной деятельностью Казанского кооперативного института.
-                        Учёный совет организует свою работу в соответствии с действующим законодательством Российской Федерации в сфере образования и науки, законодательными и нормативными актами потребительской кооперации России, постановлениями Совета и Правления Центросоюза РФ, Уставом Российского университета кооперации, Положением о Казанском кооперативном институте.
-                    </p>
-                    <p>
-                        Работа Учёного совета ориентирована на интеграцию учебного процесса и фундаментальных научных исследований как на основу университетской жизни. Это предопределяет основные функции, присущие идеальной модели университета В. Гумбольдта, главные из которых: производство знаний; накопление и хранение знаний; передача знаний; распространение знаний. Эти четыре функции обусловливают возможности классического университета в подготовке интеллектуальной элиты общества.
-                        Учёный совет руководствуется фундаментальными принципами, декларированные В. Гумбольдтом - это фундаментальность образования; академическая свобода в преподавании и исследовании; обучение через исследование; отказ от утилитарного знания 
-                        и господства эмпирической науки.
-                    </p>
-
-                    <a href="#" class="doc">Положение об Ученом совете</a>
-
-                    <div class="council__list">
-
-                        <div class="council__item">
-                            <div class="council__photo">
-                                <img src="images/icons/no-photo.svg" alt="no-photo">
-                            </div>
-                            <div class="council__info">
-                                <div class="council__name">Набиева Алсу Рустэмовна</div>
-                                <div class="council__descr">ректор института, кандидат исторических наук; Председатель Учёного совета</div>
-                            </div>
-                        </div>
-                        <!-- /.council__item -->
-
-                        <div class="council__item">
-                            <div class="council__photo">
-                                <img src="images/icons/no-photo.svg" alt="no-photo">
-                            </div>
-                            <div class="council__info">
-                                <div class="council__name">Набиева Алсу Рустэмовна</div>
-                                <div class="council__descr">ректор института, кандидат исторических наук; Председатель Учёного совета</div>
-                            </div>
-                        </div>
-                        <!-- /.council__item -->
-
-                        <div class="council__item">
-                            <div class="council__photo">
-                                <img src="images/icons/no-photo.svg" alt="no-photo">
-                            </div>
-                            <div class="council__info">
-                                <div class="council__name">Набиева Алсу Рустэмовна</div>
-                                <div class="council__descr">ректор института, кандидат исторических наук; Председатель Учёного совета</div>
-                            </div>
-                        </div>
-                        <!-- /.council__item -->
-
-                    </div>
-                    <!-- /.council__list -->
-
-                </div>
-                <!-- /.container -->
-
-            </div>
-            <!-- /.council -->
-
-            <div class="documents">
-
-                <div class="container">
-
-                    <h2 class="about__title">Нормативное обеспечение деятельности Российского университета кооперации</h2>
-
-                    <a class="documents__link" href="#">Устав Российского университета кооперации</a>
-
-                    <div class="documents-tabs">
-
-                        <div class="documents-tabs__list">
-
-                            <button class="documents-tabs__link active" data-country="tab-1">Нормативные акты общего назначения</button>
-
-                            <button class="documents-tabs__link" data-country="tab-2">Нормативные документы, регламентирующие деятельность структурных подразделений университета
-                            </button>
-
-                            <button class="documents-tabs__link" data-country="tab-3">Методические документы для обеспечения образовательного процесса
-                            </button>
-
-                            <button class="documents-tabs__link" data-country="tab-4">Обеспечение образовательного процесса по программам высшего образования</button>
-
-                            <button class="documents-tabs__link" data-country="tab-5">Обеспечение образовательного процесса по программам среднего проф. образования</button>
-
-                            <button class="documents-tabs__link" data-country="tab-6">Нормативное обеспечение организации научной деятельности</button>
-                            
-                            <button class="documents-tabs__link" data-country="tab-7">Нормативное обеспечение системы менеджмента качества</button>
-
-                            <button class="documents-tabs__link" data-country="tab-8">Нормативное обеспечение воспитательной работы</button>
-
-                        </div>
-
-                        <div class="documents-tabs__body">
-
-                            <div id="tab-1" class="documents-tabs__content active">
-                                
-                                <div class="documents-tabs__item">
-                                    <a href="#">Коллективный договор</a>
-                                </div>
-                                
-                                <div class="documents-tabs__item">
-                                    <a href="#">Коллективный договор 2018</a>
-                                </div>
-                                
-                                <div class="documents-tabs__item">
-                                    <a href="#">Правила внутреннего трудового распорядка</a>
-                                </div>
-                                
-                                <div class="documents-tabs__item">
-                                    <a href="#">Правила внутреннего трудового распорядка 2018</a>
-                                </div>
-                                
-                                <div class="documents-tabs__item">
-                                    <a href="#">Правила внутреннего распорядка обучающихся в Российском университете кооперации 2018</a>
-                                </div>
-                                
-                                <div class="documents-tabs__item">
-                                    <a href="#">Правила оказания платных образовательных услуг</a>
-                                </div>
-                                
-                                <div class="documents-tabs__item">
-                                    <a href="#">Программа развития Российского университета кооперации</a>
-                                </div>
-
-                            </div>
-                            <!-- /.programme__content -->
-
-                            <div id="tab-2" class="documents-tabs__content">
-                                2 tab
-                            </div>
-                            <!-- /.programme__content -->
-
-                            <div id="tab-3" class="documents-tabs__content">
-                                3 tab
-                            </div>
-                            <!-- /.programme__content -->
-
-                            <div id="tab-4" class="documents-tabs__content">
-                                4 tab
-                            </div>
-                            <!-- /.programme__content -->
-
-                            <div id="tab-5" class="documents-tabs__content">
-                                5 tab
-                            </div>
-                            <!-- /.programme__content -->
-
-                            <div id="tab-6" class="documents-tabs__content">
-                                6 tab
-                            </div>
-                            <!-- /.programme__content -->
-
-                            <div id="tab-7" class="documents-tabs__content">
-                                7 tab
-                            </div>
-                            <!-- /.programme__content -->
-
-                            <div id="tab-8" class="documents-tabs__content">
-                                8 tab
-                            </div>
-                            <!-- /.programme__content -->
-
-                        </div>
-
-                    </div>
-                    <!-- /.documents-tabs -->
-
-                </div>
-                <!-- /.container -->
-
-            </div>
-            <!-- /.documents -->
-
-            <div class="virtual-tour">
-
-                <div class="container">
-                    <h2 class="about__title about__title--white">Виртуальный тур по Казанскому<br>кооперативному институту</h2>
-                </div>
-                <!-- /.container -->
-
-                <div class="virtual-tour-slider swiper-container">
-
-                    <div class="container">
-
-                        <div class="virtual-tour-slider__nav">
-                            <div class="swiper-button-prev gallery-slider__prev">
-                                <svg class="gallery-slider__svg">
-                                    <use xlink:href="images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                            <div class="swiper-button-next gallery-slider__next">
-                                <svg class="gallery-slider__svg">
-                                    <use xlink:href="images/sprite.svg#arrow"></use>
-                                </svg>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-
-                    </div>
-
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="virtual-tour-slider__item">
-                                <a class="video-hover" data-type="iframe" href="javascript:;" data-fancybox="virtual-tour" data-src="https://sferika.ru/tour/ins/3157/9546">
-                                    <iframe style="border-width: initial; border-style: none;" src="https://sferika.ru/tour/ins/3157/9546"></iframe>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="virtual-tour-slider__item">
-                                <a class="video-hover" data-type="iframe" href="javascript:;" data-fancybox="virtual-tour" data-src="https://sferika.ru/tour/ins/3157/9546">
-                                    <iframe style="border-width: initial; border-style: none;" src="https://sferika.ru/tour/ins/3157/9546"></iframe>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="virtual-tour-slider__item">
-                                <a class="video-hover" data-type="iframe" href="javascript:;" data-fancybox="virtual-tour" data-src="https://sferika.ru/tour/ins/3157/9546">
-                                    <iframe style="border-width: initial; border-style: none;" src="https://sferika.ru/tour/ins/3157/9546"></iframe>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="virtual-tour-slider__item">
-                                <a class="video-hover" data-type="iframe" href="javascript:;" data-fancybox="virtual-tour" data-src="https://sferika.ru/tour/ins/3157/9546">
-                                    <iframe style="border-width: initial; border-style: none;" src="https://sferika.ru/tour/ins/3157/9546"></iframe>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="virtual-tour-slider__item">
-                                <a class="video-hover" data-type="iframe" href="javascript:;" data-fancybox="virtual-tour" data-src="https://sferika.ru/tour/ins/3157/9546">
-                                    <iframe style="border-width: initial; border-style: none;" src="https://sferika.ru/tour/ins/3157/9546"></iframe>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="virtual-tour-slider__item">
-                                <a class="video-hover" data-type="iframe" href="javascript:;" data-fancybox="virtual-tour" data-src="https://sferika.ru/tour/ins/3157/9546">
-                                    <iframe style="border-width: initial; border-style: none;" src="https://sferika.ru/tour/ins/3157/9546"></iframe>
-                                </a>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- /.virtual-tour -->
-
         </section>
-        <!-- /.about -->
+        <!-- /.promo -->
+
+        <main class="main reverse-page">
+
+            <div class="container main__wrapper">
+            
+                <div class="content">
+                    <div class="content-container">
+            
+                        <div class="bread-crumbs">
+                            <ul>
+                                <li class="item">
+                                    <a href="/">Главная</a>
+                                </li>
+                                <li class="item">
+                                    <span class="active">Курсовая работа</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.bread-crumbs -->
+            
+                        <div class="content-inner">
+    
+                            <h2>Курсовая работа</h2>
+    
+                            <div class="news-page__content">
+                                
+                                <p>
+                                    Этапы подготовки курсовой работы(проекта)
+                                </p>
+                            
+                                <div class="project-stages">
+
+                                    <div class="project-stages-item">
+
+                                        <div class="project-stages-item__step">
+                                            1<br>шаг
+                                        </div>
+
+                                        <div class="project-stages-item__title">
+                                            Оформление заявления на курсовую работу.
+                                        </div>
+
+                                        <div class="project-stages-item__docs">
+                                            <div class="doc">
+                                                <a href="#">Бланк заявления</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.project-stages__item -->
+
+                                    <div class="project-stages-item">
+
+                                        <div class="project-stages-item__step">
+                                            2<br>шаг
+                                        </div>
+
+                                        <div class="project-stages-item__title">
+                                            Получение задания на курсовую работу.
+                                        </div>
+
+                                        <div class="project-stages-item__docs">
+                                            <div class="doc">
+                                                <a href="#">Бланк заявления</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.project-stages__item -->
+
+                                    <div class="project-stages-item">
+
+                                        <div class="project-stages-item__step">
+                                            3<br>шаг
+                                        </div>
+
+                                        <div class="project-stages-item__title">
+                                            После закрепления темы и получения задания внимательно изучите методические рекомендации по написанию курсовой работы по дисциплине<br>
+                                            При написании курсовой работы регулярно консультируйтесь с руководителем
+                                        </div>
+
+                                        <div class="project-stages-item__docs">
+                                            <div class="doc">
+                                                <a href="#">Положение о курсовых работах (проектах)</a>
+                                            </div>
+                                            <div class="doc">
+                                                <a href="#">Инструкция о порядке оформления курсовых работ Инструкция о порядке оформления курсовых работ</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.project-stages__item -->
+
+                                    <div class="project-stages-item">
+
+                                        <div class="project-stages-item__step">
+                                            4<br>шаг
+                                        </div>
+
+                                        <div class="project-stages-item__title">
+                                            Завершенную курсовую работу необходимо направить руководителю для проверки на заимствование текста.
+                                        </div>
+
+                                    </div>
+                                    <!-- /.project-stages__item -->
+                                    
+                                    <div class="project-stages-item">
+
+                                        <div class="project-stages-item__step">
+                                            5<br>шаг
+                                        </div>
+
+                                        <div class="project-stages-item__title">
+                                            Внимание! Завершенную курсовую работу в электронном виде представить руководителю за месяц до защиты.
+                                        </div>
+
+                                        <div class="project-stages-item__docs">
+                                            <div class="doc">
+                                                <a href="#">Титульный лист</a>
+                                            </div>
+                                            <div class="doc">
+                                                <a href="#">Бланк рецензии</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.project-stages__item -->
+
+                                </div>
+                                <!-- /.project-stages -->
+
+                            </div>
+                            <!-- /.news-page__content -->
+    
+                        </div>
+                        <!-- /.content-inner -->
+            
+                    </div>
+                    <!-- /.content-container -->
+                </div>
+                <!-- /.content -->
+
+                <aside class="navigation">
+                    <nav class="nav">
+                        <ul>
+                            <li class="nav__list active"><a href="#">Новости</a></li>
+                            <li class="nav__list"><a href="#">Учебный процесс в условиях распространения коронавирусной инфекции</a></li>
+                            <li class="nav__list"><a href="#">Новости</a></li>
+                            <li class="nav__list active"><a href="#">Новости</a></li>
+                            <li class="nav__list"><a href="#">Новости</a></li>
+                            <li class="nav__list"><a href="#">События</a></li>
+                            <li class="nav__list"><a href="#">События университета</a></li>
+                        </ul>
+                    </nav>
+                    <!-- /.nav -->
+                </aside>
+                <!-- /.navigation -->
+    
+            </div>
+            <!-- /.main__wrapper -->
+                
+        </main>
+        <!-- /.main -->
 
         <footer class="footer">
             <div class="subscribe">
@@ -1021,10 +814,10 @@
                                         ></use>
                                     </svg>
                                 </a>
-                                <a href="#" class="soc__twitter">
+                                <a href="#" class="soc__odnoklassniki">
                                     <svg class="soc__svg">
                                         <use
-                                            xlink:href="images/sprite.svg#twitter"
+                                            xlink:href="images/sprite.svg#odnoklassniki"
                                         ></use>
                                     </svg>
                                 </a>
@@ -1041,6 +834,7 @@
                             </div>
                         </div>
                         <div class="contacts">
+                            <a href="#" class="button button--red button__modal-question">Задать вопрос ректору</a>
                             <ul>
                                 <li>
                                     Приемная комиссия:
@@ -1081,7 +875,7 @@
         </footer>
         <!-- /.footer -->
 
-        <div class="modal">
+        <div class="modal modal-branch">
             <div class="modal__wrapper">
                 <div class="modal__body">
                     <div class="close">
@@ -1161,11 +955,60 @@
         </div>
         <!-- /.modal -->
 
-        <script
-            defer
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-        ></script>
+        <div class="modal modal-question">
+            <div class="modal__wrapper">
+                <div class="modal__body">
+                    <div class="close">
+                        <svg class="close__svg">
+                            <use xlink:href="images/sprite.svg#close"></use>
+                        </svg>
+                    </div>
+
+                    <h3 class="modal__title">Задать вопрос ректору</h3>
+                    
+                    <div class="ask-a-question">
+            
+                                <form action="#" class="ask-a-question__form">
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-name">Ваше имя:</label>
+                                        <input class="ask-a-question__form-input" type="text" name="q-user-name" id="q-user-name" required зд>
+                                    </div>
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-tel">Ваш телефон:</label>
+                                        <input class="ask-a-question__form-input" type="tel" name="q-user-tel" id="q-user-tel" required>
+                                    </div>
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-email">Ваш E-Mail:</label>
+                                        <input class="ask-a-question__form-input" type="email" name="q-user-email" id="q-user-email" required>
+                                    </div>
+                                    <div class="ask-a-question__label">
+                                        <label for="q-user-message">Ваше сообщение:</label>
+                                        <textarea class="ask-a-question__form-textarea" name="q-user-message" id="q-user-message" placeholder="Напишите сообщение..." required></textarea>
+                                    </div>
+                                    
+                                    <button class="button button--red ask-a-question__form-button">Отправить</button>
+                                </form>
+                            
+                        
+                    </div>
+                    <!-- /.ask-a-question -->
+                </div>
+                <!-- /.modal__body -->
+            </div>
+            <!-- /.modal__wrapper -->
+        </div>
+        <!-- /.modal -->
+
+        <div class="up">
+            <svg class="up__svg">
+                <use xlink:href="images/sprite.svg#arrow"></use>
+            </svg>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/spec-v-2.js"></script>
         <script defer src="js/jquery.fancybox.min.js"></script>
+        <script defer src="js/imask.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/swiper.min.js"></script>
         <script defer src="js/svgxuse.js" defer></script>

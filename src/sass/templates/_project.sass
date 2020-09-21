@@ -1,0 +1,42 @@
+.project
+    &-stages
+        display: flex
+        flex-wrap: wrap
+        &-item
+            position: relative
+            width: calc(50% - 2rem)
+            margin-right: 2rem
+            margin-bottom: 3.5rem
+            @media ( max-width: 767px )
+                width: 100%
+                margin-right: 0
+            &::after
+                content: ''
+                position: absolute
+                right: 0
+                top: 3rem
+                background: url('../images/student/icons/step-arrow.svg') no-repeat
+                background-size: cover 
+                width: 100px 
+                height: 26px
+                @media ( max-width: 767px )
+                    left: 9rem
+            &:last-child
+                &::after
+                    display: none
+            &__step
+                display: flex
+                margin-bottom: 2rem
+                align-items: center
+                justify-content: center
+                text-align: center
+                border: 2px solid rgb(194, 195, 199)
+                border-radius: 50%
+                background-color: rgb(255, 255, 255)
+                width: 64px
+                height: 64px
+            &__title
+                margin-bottom: 2rem
+            &__docs
+            
+                

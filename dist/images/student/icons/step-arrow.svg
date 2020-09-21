@@ -1,0 +1,23 @@
+<svg id="Стрелка" xmlns="http://www.w3.org/2000/svg" width="100" height="26" viewBox="0 0 100 26">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #dedede;
+        stroke-linecap: round;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke-width: 4px;
+        stroke-dasharray: 0.001 8;
+      }
+
+      .cls-2 {
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <path id="Фигура_1" data-name="Фигура 1" class="cls-1" d="M647,1047.48s17.054-10.42,47.147-6.8c22.725,2.74,46.546,20.11,46.577,20.66" transform="translate(-645 -1038)"/>
+  <path id="Фигура_2" data-name="Фигура 2" class="cls-2" d="M734.868,1047.48l7.532,14.72-15.9-1.73" transform="translate(-645 -1038)"/>
+</svg>

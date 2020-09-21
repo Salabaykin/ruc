@@ -188,8 +188,3 @@
     }
 
 })();
-
-
-;; /* /bitrix/templates/modern_orange_s1/js/jquery.formstyler.min.js?159110775815916*/ ; /* /bitrix/templates/modern_orange_s1/js/jquery.magnificpopup.min.js?159110775821243*/ ; /* /bitrix/templates/modern_orange_s1/js/jquery.cookie.min.js?15911077581442*/ ; /* /bitrix/templates/modern_orange_s1/js/jquery.matchHeight-min.js?15911077583045*/ ; /* /bitrix/templates/modern_orange_s1/js/jquery.mobileNav.js?15911077581914*/ ; /* /bitrix/templates/modern_orange_s1/js/owl.carousel.min.js?159110775840534*/ ; /* /bitrix/templates/modern_orange_s1/js/perfect-scrollbar.jquery.min.js?159110775822422*/ ; /* /bitrix/templates/modern_orange_s1/js/jquery.shorten.js?15911077586270*/ ; /* /bitrix/templates/modern_orange_s1/js/main.js?15911077589933*/ ; /* /bitrix/templates/modern_orange_s1/js/special_version.js?15911077584451*/ ; /* /bitrix/components/bitrix/search.title/script.min.js?15911071026443*/
-
-//# sourceMappingURL=template_d0fc6e4a76ff0b5c7302846220323ed8.map.js

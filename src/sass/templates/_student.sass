@@ -1,0 +1,200 @@
+.student
+    padding: 7rem 0 
+    height: auto 
+    &__content
+        max-width: 76rem
+    &__descr
+        font-size: 18px
+        color: rgb(255, 255, 255)
+        line-height: 1.2
+        @media ( max-width: 1024px )
+            display: none
+
+.main.reverse-page
+    background: linear-gradient(90deg, #fff 50%, #5f94ff 50%)
+    &::before
+        background-position: right top
+    .content-container
+        padding: 4rem 3rem 4rem 0rem
+        @media (max-width: 960px)
+            padding: 2.5rem 1.5rem 2rem 1.5rem
+    .nav__list.active
+        border-radius: 0 10px 10px 0
+        @media (max-width: 960px)
+            border-radius: 0
+    .content 
+        @media (max-width: 960px)
+            order: 2
+    .navigation
+        @media (max-width: 960px)
+            order: 1
+    .navigation .nav ul
+        background: transparent 
+        margin-right: 0
+        margin-left: 0
+    .navigation .nav__list:hover
+        border-radius: 0 10px 10px 0
+        @media (max-width: 960px)
+            border-radius: 0
+    .navigation .nav__list
+        margin-left: 0
+    .navigation .nav__list::after
+        left: 0
+        @media (max-width: 960px)
+            width: 100%
+.faculties
+    margin-top: 6rem
+    display: flex
+    flex-wrap: wrap 
+    @media ( max-width: 1050px )
+        margin-top: 4rem
+    &-item
+        padding: 2rem
+        margin: 1rem
+        width: 47%
+        min-height: 16.5rem
+        border-radius: 5px
+        border: 1px solid #dddddd
+        background-color: #ffffff
+        display: flex
+        transition: all 0.2s
+        text-decoration: none !important
+        @media ( max-width: 1150px )
+            width: 100%
+        @media ( max-width: 740px )
+            width: 100%
+            min-height: 12.5rem
+            margin: 0
+            margin-bottom: 1rem
+        &:hover
+            box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.08)
+        &__photo
+            min-width: 8rem
+            max-width: 8rem
+            min-height: 8rem
+            @media ( max-width: 400px )
+                min-width: 5rem
+                max-width: 5rem
+                min-height: 5rem
+            img 
+                width: 100%
+        &__info
+            margin-left: 2.5rem
+            @media ( max-width: 400px )
+                margin-left: 1.5rem
+        &__name
+            position: relative
+            color: #010101
+            font-size: 1.8rem
+            font-weight: 500
+            margin-bottom: 1rem
+            padding-bottom: 0.7rem
+            @media ( max-width: 400px )
+                font-size: 1.4rem
+            &::after
+                content: ''
+                position: absolute
+                bottom: 0
+                left: 0
+                background: $secondary 
+                width: 35px
+                height: 2px
+                border-radius: 3px
+        &__descr 
+            color: #6d6e71
+            font-size: 1.6rem
+            line-height: 1.333
+
+.accordion-library
+    .accordion-library-item
+        margin-bottom: 1rem
+        &__header 
+            padding: 2.5rem 6.5rem 2.5rem 3.5rem
+            position: relative
+            cursor: pointer
+            border: 1px solid rgb(221, 221, 221)
+            border-radius: 5px
+            background-color: rgb(255, 255, 255)
+            transition: all 0.2s
+            @media ( max-width: 570px )
+                font-size: 1.4rem
+                padding: 1.5rem 5.5rem 1.5rem 2.5rem
+            &::after
+                content: '+'
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                right: 35px
+                font-weight: 500
+                font-size: 2.8rem
+                color: $primary
+                @media ( max-width: 570px )
+                    right: 25px
+                    font-size: 2rem
+            &:hover
+                box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.08)
+        &__content 
+            transition: opacity .4s ease
+            visibility: hidden
+            max-height: 0
+            opacity: 0
+
+.accordion-library-item.show .accordion-library-item__content 
+    padding: 2.5rem 3.5rem
+    background: #f7f7f7
+    border: 1px solid rgb(221, 221, 221)
+    border-top: 0
+    border-radius: 0 0 5px 5px
+    visibility: visible
+    max-height: 100%
+    overflow: auto !important
+    opacity: 1
+    @media ( max-width: 570px )
+        padding: 1.5rem 2.5rem
+
+.accordion-library-item.show .accordion-library-item__header 
+    border-radius: 5px 5px 0 0
+    &::after
+        transform: translateY(-50%) rotate(45deg)
+
+.library-staff
+    &-item
+        margin-bottom: 3.5rem
+        padding-bottom: 3.5rem
+        display: flex
+        border-bottom: 1px solid #dddddd
+        @media ( max-width: 590px )
+            flex-direction: column
+            align-items: center
+        &__photo
+            width: 130px
+            height: 130px
+            overflow: hidden
+            border-radius: 50%
+            border: 1px solid #dddddd
+            img
+                margin-top: -10px
+                width: 100%
+        &__content
+            margin-left: 4rem
+            @media ( max-width: 590px )
+                margin-left: 0
+                margin-top: 4rem
+        &__name
+            font-size: 2.4rem
+            margin-bottom: 0.8rem
+        &__rank 
+            position: relative
+            padding-bottom: 1.5rem
+            margin-bottom: 1.5rem
+            color: #6d6e71 
+            &::after
+                content: ''
+                position: absolute
+                bottom: 0
+                left: 0
+                background: $primary
+                height: 2px
+                width: 70px
+        &__info 
+            color: #6d6e71 

@@ -53,6 +53,40 @@ document.addEventListener("DOMContentLoaded", function() {
 
   window.addEventListener('scroll', fixed);
 
+  // History-Swiper
+  var historyThumbs = new Swiper('.history-thumbs', {
+    // spaceBetween: 83,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+      // >= 991px
+      1220: {
+        slidesPerView: 7
+      },
+      870: {
+        slidesPerView: 6,
+        // spaceBetween: 115
+      },
+      700: {
+        slidesPerView: 5
+      },
+      319: {
+        slidesPerView: 4
+      }
+    },
+  });
+  var historySlider = new Swiper('.history-slider', {
+    autoHeight: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: historyThumbs
+    }
+  });
+
   // Promo-Swiper
   var promoSwiper = new Swiper('.promo-slider.swiper-container', {
     speed: 400,
@@ -213,27 +247,28 @@ document.addEventListener("DOMContentLoaded", function() {
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        1650: {
+        1600: {
+          slidesPerView: 5,
+          centeredSlides: false,
+          loop: false
+        },
+        1500: {
           slidesPerView: 4,
           centeredSlides: false,
           loop: false
         },
-        1380: {
+        1200: {
           slidesPerView: 3,
           centeredSlides: false,
           loop: false
         },
-        991: {
+        620: {
           slidesPerView: 2,
-          centeredSlides: false,
-          // spaceBetween: 10,
-          // loop: true
+          centeredSlides: false
         },
-        670: {
+        319: {
           slidesPerView: 1,
-          centeredSlides: false,
-          // spaceBetween: 10,
-          // loop: true
+          centeredSlides: false
         }
       }
     });
@@ -329,10 +364,10 @@ document.addEventListener("DOMContentLoaded", function() {
   const toggleClose = () => {
     searchButton.innerHTML = searchButton.classList.contains('active')
     ? `<svg class="search-button__icon">
-        <use xlink:href="/local/templates/new_template/images/sprite.svg#close"></use>
+        <use xlink:href="/images/sprite.svg#close"></use>
       </svg>`
     : `<svg class="search-button__icon">
-        <use xlink:href="/local/templates/new_template/images/sprite.svg#search"></use>
+        <use xlink:href="/images/sprite.svg#search"></use>
       </svg>`;
   }
 
@@ -401,93 +436,63 @@ document.addEventListener("DOMContentLoaded", function() {
   const modalBranch = new Modal('.modal-link', '.modal-branch');
   const modalQuestion = new Modal('.button__modal-question', '.modal-question');
 
-  // Accordion 
-  var accordion = (function (element) {
-    var _getItem = function (elements, className) { // функция для получения элемента с указанным классом
-      var element = undefined;
-      elements.forEach(function (item) {
-        if (item.classList.contains(className)) {
-          element = item;
-        }
-      });
-      return element;
-    };
-    return function () {
-      var _mainElement = {}, // .accordion
-        _items = {}, // .accordion-item
-        _contents = {}; // .accordion-item-content 
-      var _actionClick = function (e) {
-        if (!e.target.classList.contains('accordion-item__header')) { // прекращаем выполнение функции если кликнули не по заголовку
-          return;
-        }
-        e.preventDefault(); // отменям стандартное действие
-        // получаем необходимые данные
-        var header = e.target;
-        var item = header.parentElement;
-        item.classList.toggle('show');
-      },
-      _setupListeners = function () {
-        // добавим к элементу аккордиона обработчик события click
-        _mainElement.addEventListener('click', _actionClick);
-      };
 
-      return {
-        init: function (element) {
-          _mainElement = (typeof element === 'string' ? document.querySelector(element) : element);
-          _items = _mainElement.querySelectorAll('.accordion-item');
-          _setupListeners();
-        }
-      }
+  // Accordion
+  class Accordion {
+    constructor(id, header) {
+      this.header = header;
+      this.id = id;
+      this.render();
     }
-  })();
-  
-  if(document.documentElement.clientWidth < 767) {
-    var group = accordion();
-    group.init('#accordion');
+
+    render() {
+
+      function initAccordion(element, header) {
+
+        const mainElement = document.querySelector(element);
+
+        function actionClick(e) {
+          if (!e.target.classList.contains(header)) {
+            return;
+          }
+          e.preventDefault();
+          const headerHead = e.target;
+          const item = headerHead.parentElement;
+          item.classList.toggle('show');
+        };
+
+        function setupListeners() {
+          mainElement.addEventListener('click', actionClick);
+        }
+
+        setupListeners();
+
+      }
+
+      initAccordion(this.id, this.header);
+
+    }
+
   }
   
+  if(document.documentElement.clientWidth < 767) {
+    const menuAccordion = new Accordion('#accordion', 'accordion-item__header');
+  }
+  const libraryAccordion = new Accordion('#accordion-library', 'accordion-library-item__header');
+
+  
   // Scroll Up
-  $(window).on('scroll',
-  function () {
+  $(window).on('scroll', function () {
       if ($(window).scrollTop() > 350) {
-      $('.up').fadeIn();
+        $('.up').fadeIn();
       }
       else {
-      $('.up').fadeOut();
+        $('.up').fadeOut();
       }
   });
-  $('.up').on('click',
-  function () {
+  $('.up').on('click', function () {
       $('html, body').animate({ 'scrollTop': 0 }, 400);
   });
-  
-  //   const setEye = () => {
-  //   const eye = document.createElement('style');
-  //   eye.className = 'eye';
-  //   eye.textContent = `
-  //     html {
-  //       font-size: 13px !important;
-  //     }
-  //     body {
-  //       filter: grayscale(100%) !important;
-  //     }
-  //   `;
-  //   document.body.append(eye);
-  // }
-
-  // document.querySelector('.header-top__eye').addEventListener('click', () => {
-  //   if (localStorage.getItem('eye')) {
-  //     document.querySelector('.eye').remove();
-  //     localStorage.removeItem('eye');
-  //   } else {
-  //     setEye();
-  //     localStorage.setItem('eye', 'true');
-  //   }
-  // });
-
-  // if (localStorage.getItem('eye')) {
-  //   setEye();
-  // }
 
   $().fancybox({
     selector: '.swiper-slide a',
