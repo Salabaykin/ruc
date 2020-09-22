@@ -79,8 +79,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var historySlider = new Swiper('.history-slider', {
     autoHeight: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.history-slider-next.swiper-button-next',
+      prevEl: '.history-slider-prev.swiper-button-prev',
     },
     thumbs: {
       swiper: historyThumbs
@@ -243,8 +243,8 @@ document.addEventListener("DOMContentLoaded", function() {
         clickable: true
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next.gallery-slider__next',
+        prevEl: '.swiper-button-prev.gallery-slider__prev',
       },
       breakpoints: {
         1600: {
