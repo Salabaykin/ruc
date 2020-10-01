@@ -436,51 +436,38 @@ document.addEventListener("DOMContentLoaded", function() {
   const modalBranch = new Modal('.modal-link', '.modal-branch');
   const modalQuestion = new Modal('.button__modal-question', '.modal-question');
 
-
   // Accordion
   class Accordion {
-    constructor(id, header) {
-      this.header = header;
+    constructor(id) {
       this.id = id;
       this.render();
     }
 
     render() {
-
-      function initAccordion(element, header) {
-
-        const mainElement = document.querySelector(element);
-
+      function initAccordion(element) {
         function actionClick(e) {
-          if (!e.target.classList.contains(header)) {
-            return;
-          }
           e.preventDefault();
           const headerHead = e.target;
           const item = headerHead.parentElement;
           item.classList.toggle('show');
         };
-
-        function setupListeners() {
-          mainElement.addEventListener('click', actionClick);
+        function setupListeners(element) {
+          element.addEventListener('click', actionClick);
         }
-
-        setupListeners();
-
+        setupListeners(element);
       }
-
-      initAccordion(this.id, this.header);
-
+      initAccordion(this.id);
     }
-
   }
-  
-  if(document.documentElement.clientWidth < 767) {
-    const menuAccordion = new Accordion('#accordion', 'accordion-item__header');
-  }
-  const libraryAccordion = new Accordion('#accordion-library', 'accordion-library-item__header');
 
+  const acc = document.querySelectorAll('.accordion-init');
   
+  acc.forEach(item => {
+    const accordionInit = new Accordion(item);
+  });
+
+
+
   // Scroll Up
   $(window).on('scroll', function () {
       if ($(window).scrollTop() > 350) {

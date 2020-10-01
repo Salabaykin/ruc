@@ -12,14 +12,12 @@ body
     font-size: calc(1rem + 6px)
     color: $txt-color
     padding-top: 8.125em
+    @media ( max-width: 1150px )
+        padding-top: 7.125em
     @media ( min-width: 1024px )
         padding-right: calc(17px - (100vw - 100%)) 
-    @media ( max-width: 991px )
-        padding-top: 4.6875em
-    @media ( max-width: 565px )
-        padding-top: 4.375em
-    @media ( max-width: 380px )
-        padding-top: 4.0625em
+    @media ( max-width: 450px )
+        padding-top: 6.9em
 
 a:active, a:focus 
     outline: none

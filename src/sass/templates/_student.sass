@@ -136,9 +136,10 @@
                 box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.08)
         &__content 
             transition: opacity .4s ease
-            visibility: hidden
+            display: none
             max-height: 0
             opacity: 0
+
 
 .accordion-library-item.show .accordion-library-item__content 
     padding: 2.5rem 3.5rem
@@ -146,12 +147,26 @@
     border: 1px solid rgb(221, 221, 221)
     border-top: 0
     border-radius: 0 0 5px 5px
-    visibility: visible
+    display: block
     max-height: 100%
+    animation: accordion-visible 0.8s ease
     overflow: auto !important
     opacity: 1
     @media ( max-width: 570px )
         padding: 1.5rem 2.5rem
+
+.accordion-library-item.show .accordion-library-item__content--table
+    padding: 1.5rem 0 0 0
+    background: transparent
+    border: 0px solid rgb(221, 221, 221)
+    border-top: 0
+    border-radius: 0
+
+@keyframes accordion-visible
+    0%
+        opacity: 0
+    100%
+        opacity: 1
 
 .accordion-library-item.show .accordion-library-item__header 
     border-radius: 5px 5px 0 0

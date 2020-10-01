@@ -1,4 +1,5 @@
 .special-settings {
+    padding: 10px 0;
     display: none;
     background-color: #cccccc;
   }
@@ -9,6 +10,11 @@
     justify-content: space-between;
     background-color: #cccccc !important;
 }
+
+.aa-block {
+  padding: 0;
+}
+
 .aa-block.aaFontsize, 
 .aa-block.aaColor {
   display: flex;
@@ -638,7 +644,8 @@ display: none;
   border: 1px solid #ffff00;
 }
 .special-aaVersion-on.special-aaColor-yellow  .button, 
-.special-aaVersion-on.special-aaColor-yellow  .nav-more {
+.special-aaVersion-on.special-aaColor-yellow  .nav-more,
+.special-aaVersion-on.special-aaColor-yellow  .modal__body {
     background: #000000 !important;
 }
 .special-aaVersion-on.special-aaColor-yellow  .button:hover {
@@ -1902,7 +1909,23 @@ display: none;
 }
 
 .special-aaVersion-on.special-aaFontsize-small body {
-  padding-top: 14.125em;
+  padding-top: 12.125em;
+}
+
+@media ( max-width: 1150px ) {
+  .special-aaVersion-on.special-aaFontsize-small body {
+    padding-top: 11.125em;
+  }
+}
+@media ( max-width: 767px ) {
+  .special-aaVersion-on.special-aaFontsize-small body {
+    padding-top: 13.9em;
+  }
+}
+@media ( max-width: 515px ) {
+  .special-aaVersion-on.special-aaFontsize-small body {
+    padding-top: 12.9em;
+  }
 }
 
 .special-aaVersion-on.special-aaFontsize-small .aaFontsize .fl-l,
@@ -1917,6 +1940,17 @@ display: none;
   padding-left: 4px;
   padding-right: 4px;
 }
+
+@media ( max-width: 515px ) {
+  .aa-block a {
+    padding: 2px 8px!important;
+  }
+  .special-aaVersion-on.special-aaFontsize-small .aaFontsize .fl-l,
+  .special-aaVersion-on.special-aaFontsize-small .aaFontsize a {
+    line-height: 20px;
+  }
+}
+
 /* ==========================================================================
     Средний размер шрифта */
 /* ========================================================================== */
